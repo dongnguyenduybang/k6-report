@@ -1,0 +1,476 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 26,
+        "passed": 6,
+        "failed": 6,
+        "warnings": 14,
+        "successRate": "23.08%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "ref should not be null",
+            "description should not be empty"
+          ],
+          "actualErrors": [
+            "ref expected string",
+            "received null"
+          ],
+          "path": "::Test case #14: should return errors [\"ref should not be null\",\"description should not be empty\"] when body {\"userId\":\"{{userId}}\",\"content\":\"defaultContent\",\"ref\":null,\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "dfe126c5cfb82de55b9efc20f5271a74",
+          "timestamp": "2025-07-19T07:18:27.645Z",
+          "missing": [
+            "ref expected string",
+            "received null"
+          ],
+          "extra": [
+            "ref should not be null",
+            "description should not be empty"
+          ]
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [
+              "You have reached the limit of 3 messages for strangers"
+            ],
+          "path": "::Test case #16: should return errors [] when body {\"userId\":\"{{userId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "cac0523bfc45080b7a476d24d8ed0e8e",
+          "timestamp": "2025-07-19T07:18:27.646Z",
+          "missing": [
+              "You have reached the limit of 3 messages for strangers"
+            ],
+          "extra": []
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty"
+          ],
+          "actualErrors": [
+            "You have reached the limit of 3 messages for strangers"
+          ],
+          "path": "::Test case #17: should return errors [\"description should not be empty\"] when body {\"userId\":\"{{userId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "631efb6ba1bdb081465f3efa1334b2a3",
+          "timestamp": "2025-07-19T07:18:27.646Z",
+          "missing": [
+            "You have reached the limit of 3 messages for strangers"
+          ],
+          "extra": [
+            "description should not be empty"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "description should not be null"
+          ],
+          "actualErrors": [
+            "You have reached the limit of 3 messages for strangers"
+          ],
+          "path": "::Test case #18: should return errors [\"description should not be null\"] when body {\"userId\":\"{{userId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":null,\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "8a31b8fe1686a0d427c033dd16139951",
+          "timestamp": "2025-07-19T07:18:27.646Z",
+          "missing": [
+            "You have reached the limit of 3 messages for strangers"
+          ],
+          "extra": [
+            "description should not be null"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty",
+            "latitude should not be null"
+          ],
+          "actualErrors": [
+            "latitude expected string",
+            "received null"
+          ],
+          "path": "::Test case #22: should return errors [\"description should not be empty\",\"latitude should not be null\"] when body {\"userId\":\"{{userId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":null,\"longitude\":\"105.7833368\"}",
+          "id": "5fcf3784232e45e83ad90ace8b308949",
+          "timestamp": "2025-07-19T07:18:27.646Z",
+          "missing": [
+            "latitude expected string",
+            "received null"
+          ],
+          "extra": [
+            "description should not be empty",
+            "latitude should not be null"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty",
+            "longitude should not be null"
+          ],
+          "actualErrors": [
+            "longitude expected string",
+            "received null"
+          ],
+          "path": "::Test case #26: should return errors [\"description should not be empty\",\"longitude should not be null\"] when body {\"userId\":\"{{userId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":null}",
+          "id": "10dbaa659db2863fc2916490fc7ad6c4",
+          "timestamp": "2025-07-19T07:18:27.646Z",
+          "missing": [
+            "longitude expected string",
+            "received null"
+          ],
+          "extra": [
+            "description should not be empty",
+            "longitude should not be null"
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "expectedErrors": [
+            "content expected string,received number",
+            "description should not be empty"
+          ],
+          "actualErrors": [
+            "content expected string",
+            "received number"
+          ],
+          "path": "::Test case #6: should return errors [\"content expected string,received number\",\"description should not be empty\"] when body {\"userId\":\"{{userId}}\",\"content\":123,\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "5d970db0d7f85802e6becc41f41bf438",
+          "timestamp": "2025-07-19T07:18:27.645Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "content should not be empty",
+            "content string must contain at least 1 character(s)",
+            "description should not be empty"
+          ],
+          "actualErrors": [],
+          "path": "::Test case #7: should return errors [\"content should not be empty\",\"content string must contain at least 1 character(s)\",\"description should not be empty\"] when body {\"userId\":\"{{userId}}\",\"content\":\"\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "e140c40c7f38817d41660c220186533c",
+          "timestamp": "2025-07-19T07:18:27.645Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "content string must contain at most 2000 character(s)",
+            "description should not be empty"
+          ],
+          "actualErrors": [
+            "content string must contain at most 2000 character(s)"
+          ],
+          "path": "::Test case #8: should return errors [\"content string must contain at most 2000 character(s)\",\"description should not be empty\"] when body {\"userId\":\"{{userId}}\",\"content\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "d331168fcba68f1aa79acec357c59d04",
+          "timestamp": "2025-07-19T07:18:27.645Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "content required",
+            "description should not be empty"
+          ],
+          "actualErrors": [],
+          "path": "::Test case #9: should return errors [\"content required\",\"description should not be empty\"] when body {\"userId\":\"{{userId}}\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "d1da3257e390ab7eecfb9aa9c3f27941",
+          "timestamp": "2025-07-19T07:18:27.645Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "content should not be null",
+            "description should not be empty"
+          ],
+          "actualErrors": [],
+          "path": "::Test case #10: should return errors [\"content should not be null\",\"description should not be empty\"] when body {\"userId\":\"{{userId}}\",\"content\":null,\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "557838ba39568fc8dbbb5d3eb7d1b2be",
+          "timestamp": "2025-07-19T07:18:27.645Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "ref expected string,received number",
+            "description should not be empty"
+          ],
+          "actualErrors": [
+            "ref expected string",
+            "received number"
+          ],
+          "path": "::Test case #11: should return errors [\"ref expected string,received number\",\"description should not be empty\"] when body {\"userId\":\"{{userId}}\",\"content\":\"defaultContent\",\"ref\":123,\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "e32806e54d05c7a87c508ecd302fa777",
+          "timestamp": "2025-07-19T07:18:27.645Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "ref should not be empty",
+            "ref string must contain at least 1 character(s)",
+            "description should not be empty"
+          ],
+          "actualErrors": [
+            "ref string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #12: should return errors [\"ref should not be empty\",\"ref string must contain at least 1 character(s)\",\"description should not be empty\"] when body {\"userId\":\"{{userId}}\",\"content\":\"defaultContent\",\"ref\":\"\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "2c35aced11d27ccd4f3df7adef883d14",
+          "timestamp": "2025-07-19T07:18:27.645Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "ref required",
+            "description should not be empty"
+          ],
+          "actualErrors": [
+            "ref required"
+          ],
+          "path": "::Test case #13: should return errors [\"ref required\",\"description should not be empty\"] when body {\"userId\":\"{{userId}}\",\"content\":\"defaultContent\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "c192858af63f59d8515de2fa6955e257",
+          "timestamp": "2025-07-19T07:18:27.645Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty",
+            "latitude expected string,received number"
+          ],
+          "actualErrors": [
+            "latitude expected string",
+            "received number"
+          ],
+          "path": "::Test case #19: should return errors [\"description should not be empty\",\"latitude expected string,received number\"] when body {\"userId\":\"{{userId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":123,\"longitude\":\"105.7833368\"}",
+          "id": "5bc2df84407d9b82d344e1a04e831860",
+          "timestamp": "2025-07-19T07:18:27.646Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty",
+            "latitude should not be empty",
+            "latitude string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "latitude string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #20: should return errors [\"description should not be empty\",\"latitude should not be empty\",\"latitude string must contain at least 1 character(s)\"] when body {\"userId\":\"{{userId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"\",\"longitude\":\"105.7833368\"}",
+          "id": "26cc2262c15c6bec90bf704989d2c479",
+          "timestamp": "2025-07-19T07:18:27.646Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty",
+            "latitude required"
+          ],
+          "actualErrors": [
+            "latitude required"
+          ],
+          "path": "::Test case #21: should return errors [\"description should not be empty\",\"latitude required\"] when body {\"userId\":\"{{userId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"longitude\":\"105.7833368\"}",
+          "id": "b3334591fd66a46af4d42e402c7462aa",
+          "timestamp": "2025-07-19T07:18:27.646Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty",
+            "longitude expected string,received number"
+          ],
+          "actualErrors": [
+            "longitude expected string",
+            "received number"
+          ],
+          "path": "::Test case #23: should return errors [\"description should not be empty\",\"longitude expected string,received number\"] when body {\"userId\":\"{{userId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":123}",
+          "id": "cd442e6548311263ff5c94ba76b93511",
+          "timestamp": "2025-07-19T07:18:27.646Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty",
+            "longitude should not be empty",
+            "longitude string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "longitude string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #24: should return errors [\"description should not be empty\",\"longitude should not be empty\",\"longitude string must contain at least 1 character(s)\"] when body {\"userId\":\"{{userId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"\"}",
+          "id": "041a4de933d75c372b4bd6f601c053d7",
+          "timestamp": "2025-07-19T07:18:27.646Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty",
+            "longitude required"
+          ],
+          "actualErrors": [
+            "longitude required"
+          ],
+          "path": "::Test case #25: should return errors [\"description should not be empty\",\"longitude required\"] when body {\"userId\":\"{{userId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\"}",
+          "id": "f200bc2826ad1e06f75d4e7b7d578f51",
+          "timestamp": "2025-07-19T07:18:27.646Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        }
+      ],
+      "passedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"userId\":123,\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "ef0dbe6cd9eba3aacacb9c9be36ac098",
+          "timestamp": "2025-07-19T07:18:27.645Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "6b7fea96e6eb1901f678afcb48335647",
+          "timestamp": "2025-07-19T07:18:27.645Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"userId\":\"\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "d2e42a328083be41ef10665b411b731e",
+          "timestamp": "2025-07-19T07:18:27.645Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #4: should return errors [\"Could not resolve permission type\"] when body {\"userId\":null,\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "dc2c2d0511755582f961baaaddde2159",
+          "timestamp": "2025-07-19T07:18:27.645Z"
+        },
+        {
+          "expectedErrors": [
+            "Unauthorized request"
+          ],
+          "actualErrors": [
+            "Unauthorized request"
+          ],
+          "path": "::Test case #5: should return errors [\"Unauthorized request\"] when body {\"userId\":\"invalid_value\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "96714c5eaa66c7f369cd8d6896a71ec7",
+          "timestamp": "2025-07-19T07:18:27.645Z"
+        },
+        {
+          "expectedErrors": [
+            "description expected string,received number"
+          ],
+          "actualErrors": [
+            "description expected string",
+            "received number"
+          ],
+          "path": "::Test case #15: should return errors [\"description expected string,received number\"] when body {\"userId\":\"{{userId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":123,\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "97e63840f0866968966324b7fc9a3212",
+          "timestamp": "2025-07-19T07:18:27.645Z"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 26,
+      "rate": 0.8894241823714205
+    },
+    "http_req_duration": {
+      "p(90)": 305.27284999999995,
+      "p(95)": 694.745675,
+      "avg": 119.83353076923073,
+      "min": 11.6781,
+      "med": 33.97005,
+      "max": 887.8549
+    },
+    "http_req_connecting": {
+      "avg": 0.4130384615384616,
+      "min": 0,
+      "med": 0,
+      "max": 10.739,
+      "p(90)": 0,
+      "p(95)": 0
+    },
+    "http_req_tls_handshaking": {
+      "p(90)": 0,
+      "p(95)": 0,
+      "avg": 0.7008961538461538,
+      "min": 0,
+      "med": 0,
+      "max": 18.2233
+    },
+    "iteration_duration": {
+      "avg": 29231.283,
+      "min": 29231.283,
+      "med": 29231.283,
+      "max": 29231.283,
+      "p(90)": 29231.283,
+      "p(95)": 29231.283
+    },
+    "http_req_waiting": {
+      "min": 10.9102,
+      "med": 32.10265,
+      "max": 887.33,
+      "p(90)": 304.28135,
+      "p(95)": 684.9714,
+      "avg": 116.90003461538461
+    },
+    "http_req_sending": {
+      "avg": 0.6954615384615385,
+      "min": 0,
+      "med": 0.7381,
+      "max": 1.2347,
+      "p(90)": 1.05375,
+      "p(95)": 1.1105
+    },
+    "http_req_receiving": {
+      "avg": 2.2380346153846156,
+      "min": 0,
+      "med": 0.41535,
+      "max": 12.0283,
+      "p(90)": 9.084,
+      "p(95)": 9.937750000000001
+    },
+    "http_req_blocked": {
+      "avg": 1.1853423076923078,
+      "min": 0,
+      "med": 0,
+      "max": 30.8189,
+      "p(90)": 0,
+      "p(95)": 0
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 26,
+      "rate": 0.8894241823714205
+    },
+    "passedTestsMetric": {
+      "count": 6,
+      "rate": 0.20525173439340472
+    },
+    "failedTestsMetric": {
+      "count": 6,
+      "rate": 0.20525173439340472
+    },
+    "warningsMetric": {
+      "count": 14,
+      "rate": 0.478920713584611
+    }
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 20,
+        "passed": 12,
+        "failed": 4,
+        "warnings": 4,
+        "successRate": "60.00%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "messageId should not be empty",
+            "messageId invalid ulid"
+          ],
+          "actualErrors": [
+            "messageId invalid ulid",
+            "messageId string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #8: should return errors [\"messageId should not be empty\",\"messageId invalid ulid\"] when body {\"userId\":\"{{userId1}}\",\"messageId\":\"\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "dda8168e89ad21efed0db3e577992df1",
+          "timestamp": "2025-07-19T06:50:00.751Z",
+          "missing": [
+            "messageId string must contain at least 1 character(s)"
+          ],
+          "extra": [
+            "messageId should not be empty"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "messageId should not be null"
+          ],
+          "actualErrors": [
+            "messageId expected string",
+            "received null"
+          ],
+          "path": "::Test case #9: should return errors [\"messageId should not be null\"] when body {\"userId\":\"{{userId1}}\",\"messageId\":null,\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "4b3a1a5912d3fe84a8692444d60e2612",
+          "timestamp": "2025-07-19T06:50:00.751Z",
+          "missing": [
+            "messageId expected string",
+            "received null"
+          ],
+          "extra": [
+            "messageId should not be null"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "content should not be null"
+          ],
+          "actualErrors": [
+            "content expected string",
+            "received null"
+          ],
+          "path": "::Test case #15: should return errors [\"content should not be null\"] when body {\"userId\":\"{{userId1}}\",\"messageId\":\"{{messageId}}\",\"content\":null,\"ref\":\"ref\"}",
+          "id": "4fa1481d211f53bedacd40ed4877de67",
+          "timestamp": "2025-07-19T06:50:00.752Z",
+          "missing": [
+            "content expected string",
+            "received null"
+          ],
+          "extra": [
+            "content should not be null"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "ref should not be null"
+          ],
+          "actualErrors": [
+            "ref expected string",
+            "received null"
+          ],
+          "path": "::Test case #19: should return errors [\"ref should not be null\"] when body {\"userId\":\"{{userId1}}\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":null}",
+          "id": "232964fd847b70b8c41e6b36f4275373",
+          "timestamp": "2025-07-19T06:50:00.752Z",
+          "missing": [
+            "ref expected string",
+            "received null"
+          ],
+          "extra": [
+            "ref should not be null"
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "expectedErrors": [
+            "messageId invalid ulid",
+            "messageId expected string,received number"
+          ],
+          "actualErrors": [
+            "messageId expected string",
+            "received number"
+          ],
+          "path": "::Test case #6: should return errors [\"messageId invalid ulid\",\"messageId expected string,received number\"] when body {\"userId\":\"{{userId1}}\",\"messageId\":123,\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "dd895e2ec56d64113a855623760cee6d",
+          "timestamp": "2025-07-19T06:50:00.751Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "messageId required",
+            "messageId invalid ulid"
+          ],
+          "actualErrors": [
+            "messageId required"
+          ],
+          "path": "::Test case #7: should return errors [\"messageId required\",\"messageId invalid ulid\"] when body {\"userId\":\"{{userId1}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "5d21fab50205be41797609e957f4b944",
+          "timestamp": "2025-07-19T06:50:00.751Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "content should not be empty",
+            "content string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "content string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #12: should return errors [\"content should not be empty\",\"content string must contain at least 1 character(s)\"] when body {\"userId\":\"{{userId1}}\",\"messageId\":\"{{messageId}}\",\"content\":\"\",\"ref\":\"ref\"}",
+          "id": "311da1420694673d6788e2d644128b24",
+          "timestamp": "2025-07-19T06:50:00.751Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "ref should not be empty",
+            "ref string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "ref string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #17: should return errors [\"ref should not be empty\",\"ref string must contain at least 1 character(s)\"] when body {\"userId\":\"{{userId1}}\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"\"}",
+          "id": "11b6d2e5fe2bc28391281f21ec244f72",
+          "timestamp": "2025-07-19T06:50:00.752Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        }
+      ],
+      "passedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"userId\":123,\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "45eea0ca101e93f0330b8a8253970955",
+          "timestamp": "2025-07-19T06:50:00.751Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "0cd29361867ef2c84a8bc029581bcb43",
+          "timestamp": "2025-07-19T06:50:00.751Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"userId\":\"\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "74745eb6f733e76e304b6cebcff03972",
+          "timestamp": "2025-07-19T06:50:00.751Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #4: should return errors [\"Could not resolve permission type\"] when body {\"userId\":null,\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "86dcd3f41c29a977a69cd6d3f39e10ba",
+          "timestamp": "2025-07-19T06:50:00.751Z"
+        },
+        {
+          "expectedErrors": [
+            "Unauthorized request"
+          ],
+          "actualErrors": [
+            "Unauthorized request"
+          ],
+          "path": "::Test case #5: should return errors [\"Unauthorized request\"] when body {\"userId\":\"invalid_value\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "90ccc591f88f8caeb589f29ad00ce63a",
+          "timestamp": "2025-07-19T06:50:00.751Z"
+        },
+        {
+          "expectedErrors": [
+            "messageId invalid ulid"
+          ],
+          "actualErrors": [
+            "messageId invalid ulid"
+          ],
+          "path": "::Test case #10: should return errors [\"messageId invalid ulid\"] when body {\"userId\":\"{{userId1}}\",\"messageId\":\"invalid_ULID\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "7593736c3be1507169c3aa72ec1db58f",
+          "timestamp": "2025-07-19T06:50:00.751Z"
+        },
+        {
+          "expectedErrors": [
+            "content expected string,received number"
+          ],
+          "actualErrors": [
+            "content expected string",
+            "received number"
+          ],
+          "path": "::Test case #11: should return errors [\"content expected string,received number\"] when body {\"userId\":\"{{userId1}}\",\"messageId\":\"{{messageId}}\",\"content\":123,\"ref\":\"ref\"}",
+          "id": "f2aebe7ee85a94048ef3bcc5c5881ba3",
+          "timestamp": "2025-07-19T06:50:00.751Z"
+        },
+        {
+          "expectedErrors": [
+            "content string must contain at most 2000 character(s)"
+          ],
+          "actualErrors": [
+            "content string must contain at most 2000 character(s)"
+          ],
+          "path": "::Test case #13: should return errors [\"content string must contain at most 2000 character(s)\"] when body {\"userId\":\"{{userId1}}\",\"messageId\":\"{{messageId}}\",\"content\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"ref\":\"ref\"}",
+          "id": "18b7d61e565cf19ac52683de2caa1b20",
+          "timestamp": "2025-07-19T06:50:00.751Z"
+        },
+        {
+          "expectedErrors": [
+            "content required"
+          ],
+          "actualErrors": [
+            "content required"
+          ],
+          "path": "::Test case #14: should return errors [\"content required\"] when body {\"userId\":\"{{userId1}}\",\"messageId\":\"{{messageId}}\",\"ref\":\"ref\"}",
+          "id": "88f9410ad62165298ab768946e929cb4",
+          "timestamp": "2025-07-19T06:50:00.752Z"
+        },
+        {
+          "expectedErrors": [
+            "ref expected string,received number"
+          ],
+          "actualErrors": [
+            "ref expected string",
+            "received number"
+          ],
+          "path": "::Test case #16: should return errors [\"ref expected string,received number\"] when body {\"userId\":\"{{userId1}}\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":123}",
+          "id": "02a3844d10da8faf4d780b9b45bdba95",
+          "timestamp": "2025-07-19T06:50:00.752Z"
+        },
+        {
+          "expectedErrors": [
+            "ref required"
+          ],
+          "actualErrors": [
+            "ref required"
+          ],
+          "path": "::Test case #18: should return errors [\"ref required\"] when body {\"userId\":\"{{userId1}}\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\"}",
+          "id": "fa046e0c117099bd63e24db70117b5a2",
+          "timestamp": "2025-07-19T06:50:00.752Z"
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [],
+          "path": "::Test case #20: should return errors [] when body {\"userId\":\"{{userId1}}\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "5fc6d63af27c0241a40ea3f9ef5bbdbb",
+          "timestamp": "2025-07-19T06:50:00.752Z"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 20,
+      "rate": 0.9413673488768396
+    },
+    "http_req_duration": {
+      "max": 612.7058,
+      "p(90)": 36.76387000000001,
+      "p(95)": 73.6421700000004,
+      "avg": 58.34322999999999,
+      "min": 21.7268,
+      "med": 28.3968
+    },
+    "http_req_connecting": {
+      "max": 12.5934,
+      "p(90)": 0,
+      "p(95)": 0.629670000000009,
+      "avg": 0.6296700000000001,
+      "min": 0,
+      "med": 0
+    },
+    "http_req_tls_handshaking": {
+      "p(95)": 0.8562200000000122,
+      "avg": 0.8562200000000001,
+      "min": 0,
+      "med": 0,
+      "max": 17.1244,
+      "p(90)": 0
+    },
+    "iteration_duration": {
+      "med": 21244.0223,
+      "max": 21244.0223,
+      "p(90)": 21244.0223,
+      "p(95)": 21244.0223,
+      "avg": 21244.0223,
+      "min": 21244.0223
+    },
+    "http_req_waiting": {
+      "avg": 57.42303999999999,
+      "min": 20.0518,
+      "med": 27.2628,
+      "max": 611.6081,
+      "p(90)": 35.36243000000002,
+      "p(95)": 73.11143000000041
+    },
+    "http_req_sending": {
+      "avg": 0.6033549999999999,
+      "min": 0,
+      "med": 0.6165,
+      "max": 1.1679,
+      "p(90)": 0.9898900000000002,
+      "p(95)": 1.075655
+    },
+    "http_req_receiving": {
+      "avg": 0.3168349999999999,
+      "min": 0,
+      "med": 0.1597,
+      "max": 1.0977,
+      "p(90)": 0.8746300000000001,
+      "p(95)": 0.9664100000000001
+    },
+    "http_req_blocked": {
+      "p(90)": 0,
+      "p(95)": 1.541205000000022,
+      "avg": 1.5412050000000002,
+      "min": 0,
+      "med": 0,
+      "max": 30.8241
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 20,
+      "rate": 0.9413673488768396
+    },
+    "passedTestsMetric": {
+      "count": 12,
+      "rate": 0.5648204093261038
+    },
+    "failedTestsMetric": {
+      "count": 4,
+      "rate": 0.1882734697753679
+    },
+    "warningsMetric": {
+      "count": 4,
+      "rate": 0.1882734697753679
+    }
+  }
+}

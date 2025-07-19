@@ -1,0 +1,298 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 15,
+        "passed": 11,
+        "failed": 2,
+        "warnings": 2,
+        "successRate": "73.33%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "content should not be null"
+          ],
+          "actualErrors": [
+            "content expected string",
+            "received null"
+          ],
+          "path": "::Test case #10: should return errors [\"content should not be null\"] when body {\"userId\":\"{{userId1}}\",\"content\":null,\"ref\":\"ref\"}",
+          "id": "751a30212572b2c7addcb378c641f4be",
+          "timestamp": "2025-07-19T07:19:08.334Z",
+          "missing": [
+            "content expected string",
+            "received null"
+          ],
+          "extra": [
+            "content should not be null"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "ref should not be null"
+          ],
+          "actualErrors": [
+            "ref expected string",
+            "received null"
+          ],
+          "path": "::Test case #14: should return errors [\"ref should not be null\"] when body {\"userId\":\"{{userId1}}\",\"content\":\"defaultContent\",\"ref\":null}",
+          "id": "2e16d12a7312b700deed4100447d60df",
+          "timestamp": "2025-07-19T07:19:08.334Z",
+          "missing": [
+            "ref expected string",
+            "received null"
+          ],
+          "extra": [
+            "ref should not be null"
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "expectedErrors": [
+            "content should not be empty",
+            "content string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "content string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #7: should return errors [\"content should not be empty\",\"content string must contain at least 1 character(s)\"] when body {\"userId\":\"{{userId1}}\",\"content\":\"\",\"ref\":\"ref\"}",
+          "id": "d72ca7e225712c6c970a051a197c8a5c",
+          "timestamp": "2025-07-19T07:19:08.334Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "ref should not be empty",
+            "ref string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "ref string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #12: should return errors [\"ref should not be empty\",\"ref string must contain at least 1 character(s)\"] when body {\"userId\":\"{{userId1}}\",\"content\":\"defaultContent\",\"ref\":\"\"}",
+          "id": "885c37f25b6d2d4b115d95517736336e",
+          "timestamp": "2025-07-19T07:19:08.334Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        }
+      ],
+      "passedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"userId\":123,\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "1b2916ff0cd9460a904e54bc0047631e",
+          "timestamp": "2025-07-19T07:19:08.334Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "f5e6b42e7bb84e70fd2b21c8187a5398",
+          "timestamp": "2025-07-19T07:19:08.334Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"userId\":\"\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "c404e2b7d160d871718ddf6ea6e5acfd",
+          "timestamp": "2025-07-19T07:19:08.334Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #4: should return errors [\"Could not resolve permission type\"] when body {\"userId\":null,\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "fcec8dd55e4bf18ff5c0223866c9a0fa",
+          "timestamp": "2025-07-19T07:19:08.334Z"
+        },
+        {
+          "expectedErrors": [
+            "Unauthorized request"
+          ],
+          "actualErrors": [
+            "Unauthorized request"
+          ],
+          "path": "::Test case #5: should return errors [\"Unauthorized request\"] when body {\"userId\":\"invalid_value\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "69e83e35e2a009c6e4b45ec082dc9ebf",
+          "timestamp": "2025-07-19T07:19:08.334Z"
+        },
+        {
+          "expectedErrors": [
+            "content expected string,received number"
+          ],
+          "actualErrors": [
+            "content expected string",
+            "received number"
+          ],
+          "path": "::Test case #6: should return errors [\"content expected string,received number\"] when body {\"userId\":\"{{userId1}}\",\"content\":123,\"ref\":\"ref\"}",
+          "id": "65102d1a634cf05efef31430f28607eb",
+          "timestamp": "2025-07-19T07:19:08.334Z"
+        },
+        {
+          "expectedErrors": [
+            "content string must contain at most 2000 character(s)"
+          ],
+          "actualErrors": [
+            "content string must contain at most 2000 character(s)"
+          ],
+          "path": "::Test case #8: should return errors [\"content string must contain at most 2000 character(s)\"] when body {\"userId\":\"{{userId1}}\",\"content\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"ref\":\"ref\"}",
+          "id": "b2835bb6773069dd429037df27e71695",
+          "timestamp": "2025-07-19T07:19:08.334Z"
+        },
+        {
+          "expectedErrors": [
+            "content required"
+          ],
+          "actualErrors": [
+            "content required"
+          ],
+          "path": "::Test case #9: should return errors [\"content required\"] when body {\"userId\":\"{{userId1}}\",\"ref\":\"ref\"}",
+          "id": "876ba15959e094f7fafcc28fda4ca6de",
+          "timestamp": "2025-07-19T07:19:08.334Z"
+        },
+        {
+          "expectedErrors": [
+            "ref expected string,received number"
+          ],
+          "actualErrors": [
+            "ref expected string",
+            "received number"
+          ],
+          "path": "::Test case #11: should return errors [\"ref expected string,received number\"] when body {\"userId\":\"{{userId1}}\",\"content\":\"defaultContent\",\"ref\":123}",
+          "id": "9919540c6fe4a10bfe735dcf1d976822",
+          "timestamp": "2025-07-19T07:19:08.334Z"
+        },
+        {
+          "expectedErrors": [
+            "ref required"
+          ],
+          "actualErrors": [
+            "ref required"
+          ],
+          "path": "::Test case #13: should return errors [\"ref required\"] when body {\"userId\":\"{{userId1}}\",\"content\":\"defaultContent\"}",
+          "id": "2766c5663b384cef72c513faa1c4428a",
+          "timestamp": "2025-07-19T07:19:08.334Z"
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [],
+          "path": "::Test case #15: should return errors [] when body {\"userId\":\"{{userId1}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "b80c04384e01b578ed6c245d030a55a8",
+          "timestamp": "2025-07-19T07:19:08.334Z"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 15,
+      "rate": 0.9167557931555684
+    },
+    "http_req_duration": {
+      "avg": 85.07766,
+      "min": 25.6313,
+      "med": 30.8041,
+      "max": 821.9489,
+      "p(90)": 47.06254,
+      "p(95)": 279.54283999999916
+    },
+    "http_req_connecting": {
+      "med": 0,
+      "max": 1.2256,
+      "p(90)": 0,
+      "p(95)": 0.3676799999999987,
+      "avg": 0.08170666666666666,
+      "min": 0
+    },
+    "http_req_tls_handshaking": {
+      "avg": 1.9985533333333334,
+      "min": 0,
+      "med": 0,
+      "max": 29.9783,
+      "p(90)": 0,
+      "p(95)": 8.993489999999968
+    },
+    "iteration_duration": {
+      "p(95)": 16352.6793,
+      "avg": 16352.6793,
+      "min": 16352.6793,
+      "med": 16352.6793,
+      "max": 16352.6793,
+      "p(90)": 16352.6793
+    },
+    "http_req_waiting": {
+      "min": 10.8767,
+      "med": 29.7659,
+      "max": 820.4381,
+      "p(90)": 45.85904,
+      "p(95)": 278.7494699999992,
+      "avg": 83.09158
+    },
+    "http_req_sending": {
+      "avg": 0.7048399999999998,
+      "min": 0,
+      "med": 0.6336,
+      "max": 1.7198,
+      "p(90)": 1.23704,
+      "p(95)": 1.4746599999999996
+    },
+    "http_req_receiving": {
+      "avg": 1.28124,
+      "min": 0,
+      "med": 0,
+      "max": 15.601,
+      "p(90)": 1.3693,
+      "p(95)": 5.804709999999986
+    },
+    "http_req_blocked": {
+      "med": 0,
+      "max": 31.9658,
+      "p(90)": 0,
+      "p(95)": 9.589739999999967,
+      "avg": 2.1310533333333335,
+      "min": 0
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "max": 1,
+      "value": 1,
+      "min": 1
+    },
+    "totalTestsMetric": {
+      "count": 15,
+      "rate": 0.9167557931555684
+    },
+    "passedTestsMetric": {
+      "count": 11,
+      "rate": 0.6722875816474169
+    },
+    "failedTestsMetric": {
+      "count": 2,
+      "rate": 0.1222341057540758
+    },
+    "warningsMetric": {
+      "count": 2,
+      "rate": 0.1222341057540758
+    }
+  }
+}

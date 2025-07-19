@@ -1,0 +1,304 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 15,
+        "passed": 11,
+        "failed": 4,
+        "warnings": 0,
+        "successRate": "73.33%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "stickerId should not be empty"
+          ],
+          "actualErrors": [
+            "stickerId string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #8: should return errors [\"stickerId should not be empty\"] when body {\"userId\":\"{{userId}}\",\"stickerId\":\"\",\"ref\":\"ref\"}",
+          "id": "097129f5e5f0c498fc8c8392cfb3af1f",
+          "timestamp": "2025-07-19T07:20:23.524Z",
+          "missing": [
+            "stickerId string must contain at least 1 character(s)"
+          ],
+          "extra": [
+            "stickerId should not be empty"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "stickerId should not be null"
+          ],
+          "actualErrors": [
+            "stickerId expected string",
+            "received null"
+          ],
+          "path": "::Test case #9: should return errors [\"stickerId should not be null\"] when body {\"userId\":\"{{userId}}\",\"stickerId\":null,\"ref\":\"ref\"}",
+          "id": "4af81a3d3f698e0e67b1312a5886efbc",
+          "timestamp": "2025-07-19T07:20:23.524Z",
+          "missing": [
+            "stickerId expected string",
+            "received null"
+          ],
+          "extra": [
+            "stickerId should not be null"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "Message: This sticker has not been exists."
+          ],
+          "actualErrors": [
+            "Sticker not exist"
+          ],
+          "path": "::Test case #10: should return errors [\"Message: This sticker has not been exists.\"] when body {\"userId\":\"{{userId}}\",\"stickerId\":\"invalid_value\",\"ref\":\"ref\"}",
+          "id": "5f1a95f7d8f5b1a922b7937369ce63db",
+          "timestamp": "2025-07-19T07:20:23.524Z",
+          "missing": [
+            "Sticker not exist"
+          ],
+          "extra": [
+            "Message: This sticker has not been exists."
+          ]
+        },
+        {
+          "expectedErrors": [
+            "ref should not be null"
+          ],
+          "actualErrors": [
+            "ref expected string",
+            "received null"
+          ],
+          "path": "::Test case #14: should return errors [\"ref should not be null\"] when body {\"userId\":\"{{userId}}\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":null}",
+          "id": "8f211940d018c3bf3cb173d55ad605d7",
+          "timestamp": "2025-07-19T07:20:23.524Z",
+          "missing": [
+            "ref expected string",
+            "received null"
+          ],
+          "extra": [
+            "ref should not be null"
+          ]
+        }
+      ],
+      "warnings": [],
+      "passedTests": [
+          {
+            "expectedErrors": [
+              "Could not resolve permission type"
+            ],
+            "actualErrors": [
+              "Could not resolve permission type"
+            ],
+            "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"userId\":123,\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"ref\"}",
+            "id": "ab22a37ce895c61138411f3894858bed",
+            "timestamp": "2025-07-19T07:20:23.524Z"
+          },
+          {
+            "expectedErrors": [
+              "Could not resolve permission type"
+            ],
+            "actualErrors": [
+              "Could not resolve permission type"
+            ],
+            "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"ref\"}",
+            "id": "a44a81d389b82ae57690ec2b60b12854",
+            "timestamp": "2025-07-19T07:20:23.524Z"
+          },
+          {
+            "expectedErrors": [
+              "Could not resolve permission type"
+            ],
+            "actualErrors": [
+              "Could not resolve permission type"
+            ],
+            "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"userId\":\"\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"ref\"}",
+            "id": "2670d4ded1974f1089e65da44526464d",
+            "timestamp": "2025-07-19T07:20:23.524Z"
+          },
+          {
+            "expectedErrors": [
+              "Could not resolve permission type"
+            ],
+            "actualErrors": [
+              "Could not resolve permission type"
+            ],
+            "path": "::Test case #4: should return errors [\"Could not resolve permission type\"] when body {\"userId\":null,\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"ref\"}",
+            "id": "40e4a702b5925902ab6ff91571b9e85f",
+            "timestamp": "2025-07-19T07:20:23.524Z"
+          },
+          {
+            "expectedErrors": [
+              "Unauthorized request"
+            ],
+            "actualErrors": [
+              "Unauthorized request"
+            ],
+            "path": "::Test case #5: should return errors [\"Unauthorized request\"] when body {\"userId\":\"invalid_value\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"ref\"}",
+            "id": "8f347d0a6fb70b125921602b67976146",
+            "timestamp": "2025-07-19T07:20:23.524Z"
+          },
+          {
+            "expectedErrors": [
+              "stickerId expected string,received number"
+            ],
+            "actualErrors": [
+              "stickerId expected string",
+              "received number"
+            ],
+            "path": "::Test case #6: should return errors [\"stickerId expected string,received number\"] when body {\"userId\":\"{{userId}}\",\"stickerId\":123,\"ref\":\"ref\"}",
+            "id": "5798cc068fe20d094cc196c989e8eca7",
+            "timestamp": "2025-07-19T07:20:23.524Z"
+          },
+          {
+            "expectedErrors": [
+              "stickerId required"
+            ],
+            "actualErrors": [
+              "stickerId required"
+            ],
+            "path": "::Test case #7: should return errors [\"stickerId required\"] when body {\"userId\":\"{{userId}}\",\"ref\":\"ref\"}",
+            "id": "45ab5ef54cf24c3ff72e65460955eec2",
+            "timestamp": "2025-07-19T07:20:23.524Z"
+          },
+          {
+            "expectedErrors": [
+              "ref expected string,received number"
+            ],
+            "actualErrors": [
+              "ref expected string",
+              "received number"
+            ],
+            "path": "::Test case #11: should return errors [\"ref expected string,received number\"] when body {\"userId\":\"{{userId}}\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":123}",
+            "id": "6baddb744c5bd178482e319fefd1232a",
+            "timestamp": "2025-07-19T07:20:23.524Z"
+          },
+          {
+            "expectedErrors": [
+              "ref string must contain at least 1 character(s)"
+            ],
+            "actualErrors": [
+              "ref string must contain at least 1 character(s)"
+            ],
+            "path": "::Test case #12: should return errors [\"ref string must contain at least 1 character(s)\"] when body {\"userId\":\"{{userId}}\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"\"}",
+            "id": "6727363c49f90dd8ae92680b3fbe0851",
+            "timestamp": "2025-07-19T07:20:23.524Z"
+          },
+          {
+            "expectedErrors": [
+              "ref required"
+            ],
+            "actualErrors": [
+              "ref required"
+            ],
+            "path": "::Test case #13: should return errors [\"ref required\"] when body {\"userId\":\"{{userId}}\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\"}",
+            "id": "3979f0df77a1179c662dc92561266a98",
+            "timestamp": "2025-07-19T07:20:23.524Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #15: should return errors [] when body {\"userId\":\"{{userId}}\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"ref\"}",
+            "id": "ed84af6e2320ea771ff5cc9cfae515da",
+            "timestamp": "2025-07-19T07:20:23.524Z"
+          }
+        ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 15,
+      "rate": 0.9029790814963002
+    },
+    "http_req_duration": {
+      "max": 967.1997,
+      "p(90)": 112.25811999999996,
+      "p(95)": 403.10210999999913,
+      "avg": 100.79676666666667,
+      "min": 24.702,
+      "med": 30.0368
+    },
+    "http_req_connecting": {
+      "p(95)": 3.508709999999988,
+      "avg": 0.7797133333333334,
+      "min": 0,
+      "med": 0,
+      "max": 11.6957,
+      "p(90)": 0
+    },
+    "http_req_tls_handshaking": {
+      "avg": 1.6657666666666666,
+      "min": 0,
+      "med": 0,
+      "max": 24.9865,
+      "p(90)": 0,
+      "p(95)": 7.495949999999973
+    },
+    "iteration_duration": {
+      "avg": 16610.8273,
+      "min": 16610.8273,
+      "med": 16610.8273,
+      "max": 16610.8273,
+      "p(90)": 16610.8273,
+      "p(95)": 16610.8273
+    },
+    "http_req_waiting": {
+      "max": 966.6897,
+      "p(90)": 111.85767999999995,
+      "p(95)": 402.4819299999991,
+      "avg": 100.13660666666667,
+      "min": 23.893,
+      "med": 29.0127
+    },
+    "http_req_sending": {
+      "med": 0.6284,
+      "max": 1.0241,
+      "p(90)": 0.79224,
+      "p(95)": 0.8735299999999998,
+      "avg": 0.46072666666666673,
+      "min": 0
+    },
+    "http_req_receiving": {
+      "min": 0,
+      "med": 0,
+      "max": 0.8948,
+      "p(90)": 0.8015599999999999,
+      "p(95)": 0.85252,
+      "avg": 0.19943333333333335
+    },
+    "http_req_blocked": {
+      "med": 0,
+      "max": 50.2704,
+      "p(90)": 0,
+      "p(95)": 15.081119999999947,
+      "avg": 3.35136,
+      "min": 0
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 15,
+      "rate": 0.9029790814963002
+    },
+    "passedTestsMetric": {
+      "count": 11,
+      "rate": 0.6621846597639535
+    },
+    "failedTestsMetric": {
+      "count": 4,
+      "rate": 0.24079442173234672
+    },
+    "warningsMetric": {
+      "count": 0
+    }
+  }
+}

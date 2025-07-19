@@ -1,0 +1,298 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 15,
+        "passed": 12,
+        "failed": 1,
+        "warnings": 2,
+        "successRate": "80.00%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "originalMessageIds has element 0 expected string,received object",
+            "originalMessageIds has element 0 invalid ulid"
+          ],
+          "actualErrors": [
+            "originalMessageIds has element 0 expected string",
+            "received null"
+          ],
+          "path": "::Test case #12: should return errors [\"originalMessageIds has element 0 expected string,received object\",\"originalMessageIds has element 0 invalid ulid\"] when body {\"userId\":\"{{userId1}}\",\"originalMessageIds\":[null]}",
+          "id": "1a41d88e62f8409ddff43579c495279f",
+          "timestamp": "2025-07-19T06:48:30.009Z",
+          "missing": [
+            "originalMessageIds has element 0 expected string",
+            "received null"
+          ],
+          "extra": [
+            "originalMessageIds has element 0 expected string,received object",
+            "originalMessageIds has element 0 invalid ulid"
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "expectedErrors": [
+            "originalMessageIds has element 0 expected string,received number",
+            "originalMessageIds has element 0 invalid ulid"
+          ],
+          "actualErrors": [
+            "originalMessageIds has element 0 expected string",
+            "received number"
+          ],
+          "path": "::Test case #8: should return errors [\"originalMessageIds has element 0 expected string,received number\",\"originalMessageIds has element 0 invalid ulid\"] when body {\"userId\":\"{{userId1}}\",\"originalMessageIds\":[123]}",
+          "id": "70fb221281ccec504d2d0c8db76b2527",
+          "timestamp": "2025-07-19T06:48:30.008Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "originalMessageIds required",
+            "originalMessageIds expected array,received undefined"
+          ],
+          "actualErrors": [
+            "originalMessageIds required"
+          ],
+          "path": "::Test case #14: should return errors [\"originalMessageIds required\",\"originalMessageIds expected array,received undefined\"] when body {\"userId\":\"{{userId1}}\"}",
+          "id": "8e2d7aab997e8eab1f7786133c0a6ad2",
+          "timestamp": "2025-07-19T06:48:30.009Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        }
+      ],
+      "passedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"userId\":123,\"originalMessageIds\":[\"{{messageId}}\"]}",
+          "id": "f1e833f34800b328ff0074aff76b4095",
+          "timestamp": "2025-07-19T06:48:30.008Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"originalMessageIds\":[\"{{messageId}}\"]}",
+          "id": "52df8c44391777d5a211c3c53259b0c2",
+          "timestamp": "2025-07-19T06:48:30.008Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"userId\":\"\",\"originalMessageIds\":[\"{{messageId}}\"]}",
+          "id": "d637abc2db2be24cc26786f6378959fd",
+          "timestamp": "2025-07-19T06:48:30.008Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #4: should return errors [\"Could not resolve permission type\"] when body {\"userId\":null,\"originalMessageIds\":[\"{{messageId}}\"]}",
+          "id": "86f968d7b224ebcb0b4bc470bce81384",
+          "timestamp": "2025-07-19T06:48:30.008Z"
+        },
+        {
+          "expectedErrors": [
+            "Unauthorized request"
+          ],
+          "actualErrors": [
+            "Unauthorized request"
+          ],
+          "path": "::Test case #5: should return errors [\"Unauthorized request\"] when body {\"userId\":\"invalid_value\",\"originalMessageIds\":[\"{{messageId}}\"]}",
+          "id": "a272bbecdab9bef95d7fefe9912b82c3",
+          "timestamp": "2025-07-19T06:48:30.008Z"
+        },
+        {
+          "expectedErrors": [
+            "originalMessageIds expected array,received string"
+          ],
+          "actualErrors": [
+            "originalMessageIds expected array",
+            "received string"
+          ],
+          "path": "::Test case #6: should return errors [\"originalMessageIds expected array,received string\"] when body {\"userId\":\"{{userId1}}\",\"originalMessageIds\":\"not_an_array\"}",
+          "id": "56aa0ccb7247f139acd11759e2bd5a99",
+          "timestamp": "2025-07-19T06:48:30.008Z"
+        },
+        {
+          "expectedErrors": [
+            "originalMessageIds array must contain at least 1 element(s)"
+          ],
+          "actualErrors": [
+            "originalMessageIds array must contain at least 1 element(s)"
+          ],
+          "path": "::Test case #7: should return errors [\"originalMessageIds array must contain at least 1 element(s)\"] when body {\"userId\":\"{{userId1}}\",\"originalMessageIds\":[]}",
+          "id": "49a32864adeadffc65a00ceac9084a13",
+          "timestamp": "2025-07-19T06:48:30.008Z"
+        },
+        {
+          "expectedErrors": [
+            "originalMessageIds has element 0 invalid ulid"
+          ],
+          "actualErrors": [
+            "originalMessageIds has element 0 invalid ulid"
+          ],
+          "path": "::Test case #9: should return errors [\"originalMessageIds has element 0 invalid ulid\"] when body {\"userId\":\"{{userId1}}\",\"originalMessageIds\":[\"valid_string\"]}",
+          "id": "2e8f8541f11f71733d59de7b9f6efce5",
+          "timestamp": "2025-07-19T06:48:30.008Z"
+        },
+        {
+          "expectedErrors": [
+            "Code: 404. Message: Data not found. Details: Data not found."
+          ],
+          "actualErrors": [
+            "Code: 404. Message: Data not found. Details: Data not found."
+          ],
+          "path": "::Test case #10: should return errors [\"Code: 404. Message: Data not found. Details: Data not found.\"] when body {\"userId\":\"{{userId1}}\",\"originalMessageIds\":[\"01K0GQ0ZE527GA0HAGSMKW1TSG\"]}",
+          "id": "9b96be93ff93e4b4545db46efec427cd",
+          "timestamp": "2025-07-19T06:48:30.008Z"
+        },
+        {
+          "expectedErrors": [
+            "originalMessageIds has element 0 invalid ulid",
+            "originalMessageIds array must contain unique items",
+            "originalMessageIds has element 1 invalid ulid"
+          ],
+          "actualErrors": [
+            "originalMessageIds array must contain unique items",
+            "originalMessageIds has element 0 invalid ulid",
+            "originalMessageIds has element 1 invalid ulid"
+          ],
+          "path": "::Test case #11: should return errors [\"originalMessageIds has element 0 invalid ulid\",\"originalMessageIds array must contain unique items\",\"originalMessageIds has element 1 invalid ulid\"] when body {\"userId\":\"{{userId1}}\",\"originalMessageIds\":[\"uniqueItem\",\"uniqueItem\"]}",
+          "id": "7cc9908cfcc79c0e46a6d8628e134483",
+          "timestamp": "2025-07-19T06:48:30.009Z"
+        },
+        {
+          "expectedErrors": [
+            "originalMessageIds has element 0 invalid ulid",
+            "originalMessageIds has element 0 string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "originalMessageIds has element 0 invalid ulid",
+            "originalMessageIds has element 0 string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #13: should return errors [\"originalMessageIds has element 0 invalid ulid\",\"originalMessageIds has element 0 string must contain at least 1 character(s)\"] when body {\"userId\":\"{{userId1}}\",\"originalMessageIds\":[\"\"]}",
+          "id": "908bc65c6afaef636af5b54b1d77dd9e",
+          "timestamp": "2025-07-19T06:48:30.009Z"
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [],
+          "path": "::Test case #15: should return errors [] when body {\"userId\":\"{{userId1}}\",\"originalMessageIds\":[\"{{messageId}}\"]}",
+          "id": "0834da3b0a3568b804757b56f5e64e4a",
+          "timestamp": "2025-07-19T06:48:30.009Z"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "rate": 0.9276832328380272,
+      "count": 15
+    },
+    "http_req_duration": {
+      "avg": 73.93297333333334,
+      "min": 26.5278,
+      "med": 30.7094,
+      "max": 615.0376,
+      "p(90)": 59.07387999999999,
+      "p(95)": 233.0772799999994
+    },
+    "http_req_connecting": {
+      "min": 0,
+      "med": 0,
+      "max": 10.9284,
+      "p(90)": 0,
+      "p(95)": 3.2785199999999883,
+      "avg": 0.72856
+    },
+    "http_req_tls_handshaking": {
+      "med": 0,
+      "max": 16.6898,
+      "p(90)": 0,
+      "p(95)": 5.006939999999982,
+      "avg": 1.1126533333333335,
+      "min": 0
+    },
+    "iteration_duration": {
+      "max": 16168.8072,
+      "p(90)": 16168.8072,
+      "p(95)": 16168.8072,
+      "avg": 16168.8072,
+      "min": 16168.8072,
+      "med": 16168.8072
+    },
+    "http_req_waiting": {
+      "min": 24.9524,
+      "med": 29.3916,
+      "max": 613.4562,
+      "p(90)": 58.42563999999999,
+      "p(95)": 232.16801999999944,
+      "avg": 73.04382
+    },
+    "http_req_sending": {
+      "med": 0.5321,
+      "max": 0.8838,
+      "p(90)": 0.7332799999999999,
+      "p(95)": 0.7967199999999999,
+      "avg": 0.42696666666666666,
+      "min": 0
+    },
+    "http_req_receiving": {
+      "max": 1.5754,
+      "p(90)": 1.2404399999999998,
+      "p(95)": 1.4464599999999999,
+      "avg": 0.4621866666666666,
+      "min": 0,
+      "med": 0.4556
+    },
+    "http_req_blocked": {
+      "min": 0,
+      "med": 0,
+      "max": 28.1523,
+      "p(90)": 0,
+      "p(95)": 8.44568999999997,
+      "avg": 1.87682
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "max": 1,
+      "value": 1,
+      "min": 1
+    },
+    "totalTestsMetric": {
+      "count": 15,
+      "rate": 0.9276832328380272
+    },
+    "passedTestsMetric": {
+      "count": 12,
+      "rate": 0.7421465862704217
+    },
+    "failedTestsMetric": {
+      "count": 1,
+      "rate": 0.06184554885586848
+    },
+    "warningsMetric": {
+      "rate": 0.12369109771173696,
+      "count": 2
+    }
+  }
+}

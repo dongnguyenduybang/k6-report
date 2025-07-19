@@ -1,0 +1,238 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 10,
+        "passed": 7,
+        "failed": 2,
+        "warnings": 1,
+        "successRate": "70.00%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "ref should not be null"
+          ],
+          "actualErrors": [
+            "ref expected string",
+            "received null"
+          ],
+          "path": "::Test case #9: should return errors [\"ref should not be null\"] when body {\"userId\":\"{{userId}}\",\"ref\":null}",
+          "id": "ee2dbe74e5af06a8310daa5c322efa2b",
+          "timestamp": "2025-07-19T07:20:57.415Z",
+          "missing": [
+            "ref expected string",
+            "received null"
+          ],
+          "extra": [
+            "ref should not be null"
+          ]
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [
+              "Can not poke message"
+            ],
+          "path": "::Test case #10: should return errors [] when body {\"userId\":\"{{userId}}\",\"ref\":\"ref\"}",
+          "id": "3998fde00a77826b51473e010fde5ce5",
+          "timestamp": "2025-07-19T07:20:57.415Z",
+          "missing": [
+              "Can not poke message"
+            ],
+          "extra": []
+        }
+      ],
+      "warnings": [
+        {
+          "expectedErrors": [
+            "ref should not be empty",
+            "ref string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "ref string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #7: should return errors [\"ref should not be empty\",\"ref string must contain at least 1 character(s)\"] when body {\"userId\":\"{{userId}}\",\"ref\":\"\"}",
+          "id": "9fb018385f12d1f52d0b3b33fbf011c6",
+          "timestamp": "2025-07-19T07:20:57.415Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        }
+      ],
+      "passedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"userId\":123,\"ref\":\"ref\"}",
+          "id": "3e7933e36b9c36b687bd00c7bde048cd",
+          "timestamp": "2025-07-19T07:20:57.415Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"ref\":\"ref\"}",
+          "id": "5aec0604cb080c845645f5a5448de2a8",
+          "timestamp": "2025-07-19T07:20:57.415Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"userId\":\"\",\"ref\":\"ref\"}",
+          "id": "4f71ac59b0d186ef2e2e48375c7e15e3",
+          "timestamp": "2025-07-19T07:20:57.415Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #4: should return errors [\"Could not resolve permission type\"] when body {\"userId\":null,\"ref\":\"ref\"}",
+          "id": "4d6b24b5b646995f6390512420efd870",
+          "timestamp": "2025-07-19T07:20:57.415Z"
+        },
+        {
+          "expectedErrors": [
+            "Unauthorized request"
+          ],
+          "actualErrors": [
+            "Unauthorized request"
+          ],
+          "path": "::Test case #5: should return errors [\"Unauthorized request\"] when body {\"userId\":\"invalid_value\",\"ref\":\"ref\"}",
+          "id": "f36c2f9adadf7a2b16ea801672a171b1",
+          "timestamp": "2025-07-19T07:20:57.415Z"
+        },
+        {
+          "expectedErrors": [
+            "ref expected string,received number"
+          ],
+          "actualErrors": [
+            "ref expected string",
+            "received number"
+          ],
+          "path": "::Test case #6: should return errors [\"ref expected string,received number\"] when body {\"userId\":\"{{userId}}\",\"ref\":123}",
+          "id": "a1a7409c635741446d061a460a7438c1",
+          "timestamp": "2025-07-19T07:20:57.415Z"
+        },
+        {
+          "expectedErrors": [
+            "ref required"
+          ],
+          "actualErrors": [
+            "ref required"
+          ],
+          "path": "::Test case #8: should return errors [\"ref required\"] when body {\"userId\":\"{{userId}}\"}",
+          "id": "895e752a437ef31c72418ed7a5d6d893",
+          "timestamp": "2025-07-19T07:20:57.415Z"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 10,
+      "rate": 0.9642305096784589
+    },
+    "http_req_duration": {
+      "max": 73.3253,
+      "p(90)": 36.750649999999986,
+      "p(95)": 55.03797499999996,
+      "avg": 31.864160000000005,
+      "min": 21.0837,
+      "med": 28.495150000000002
+    },
+    "http_req_connecting": {
+      "avg": 0.99427,
+      "min": 0,
+      "med": 0,
+      "max": 9.9427,
+      "p(90)": 0.9942699999999965,
+      "p(95)": 5.46848499999999
+    },
+    "http_req_tls_handshaking": {
+      "p(90)": 1.631929999999994,
+      "p(95)": 8.975614999999982,
+      "avg": 1.6319299999999999,
+      "min": 0,
+      "med": 0,
+      "max": 16.3193
+    },
+    "iteration_duration": {
+      "max": 10369.7259,
+      "p(90)": 10369.7259,
+      "p(95)": 10369.7259,
+      "avg": 10369.7259,
+      "min": 10369.7259,
+      "med": 10369.7259
+    },
+    "http_req_waiting": {
+      "avg": 31.021990000000006,
+      "min": 19.6981,
+      "med": 27.761400000000002,
+      "max": 72.0838,
+      "p(90)": 35.89848999999999,
+      "p(95)": 53.99114499999996
+    },
+    "http_req_sending": {
+      "avg": 0.5952999999999999,
+      "min": 0,
+      "med": 0.65765,
+      "max": 1.0189,
+      "p(90)": 0.88813,
+      "p(95)": 0.9535149999999998
+    },
+    "http_req_receiving": {
+      "avg": 0.24687,
+      "min": 0,
+      "med": 0,
+      "max": 0.7898,
+      "p(90)": 0.6272599999999999,
+      "p(95)": 0.7085299999999998
+    },
+    "http_req_blocked": {
+      "med": 0,
+      "max": 27.5177,
+      "p(90)": 2.7517699999999903,
+      "p(95)": 15.13473499999997,
+      "avg": 2.75177,
+      "min": 0
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "rate": 0.9642305096784589,
+      "count": 10
+    },
+    "passedTestsMetric": {
+      "count": 7,
+      "rate": 0.6749613567749212
+    },
+    "failedTestsMetric": {
+      "count": 2,
+      "rate": 0.1928461019356918
+    },
+    "warningsMetric": {
+      "count": 1,
+      "rate": 0.0964230509678459
+    }
+  }
+}
