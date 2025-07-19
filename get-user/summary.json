@@ -18,7 +18,7 @@
           ],
           "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"userId\":123}",
           "id": "108b854cc1fc107b4aa3f634b1e7c97e",
-          "timestamp": "2025-07-19T06:20:21.824Z",
+          "timestamp": "2025-07-19T06:33:34.408Z",
           "missing": [
             "Unauthorized request"
           ],
@@ -35,7 +35,7 @@
           ],
           "path": "::Test case #4: should return errors [\"Could not resolve permission type\"] when body {\"userId\":null}",
           "id": "e0d77acf1162e7cd75ca276300023926",
-          "timestamp": "2025-07-19T06:20:21.824Z",
+          "timestamp": "2025-07-19T06:33:34.408Z",
           "missing": [
             "Unauthorized request"
           ],
@@ -55,7 +55,7 @@
             ],
             "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {}",
             "id": "dff8d2b7d569a27a28b75d48a3e99169",
-            "timestamp": "2025-07-19T06:20:21.824Z"
+            "timestamp": "2025-07-19T06:33:34.408Z"
           },
           {
             "expectedErrors": [
@@ -66,7 +66,7 @@
             ],
             "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"userId\":\"\"}",
             "id": "2240b6cc04b8b6b5bc680a24f0f44bf3",
-            "timestamp": "2025-07-19T06:20:21.824Z"
+            "timestamp": "2025-07-19T06:33:34.408Z"
           },
           {
             "expectedErrors": [
@@ -77,91 +77,91 @@
             ],
             "path": "::Test case #5: should return errors [\"Unauthorized request\"] when body {\"userId\":\"invalid_value\"}",
             "id": "4b6cd8171d0ac5ea8ad1e28562909457",
-            "timestamp": "2025-07-19T06:20:21.824Z"
+            "timestamp": "2025-07-19T06:33:34.408Z"
           },
           {
             "expectedErrors": [],
             "actualErrors": [],
             "path": "::Test case #6: should return errors [] when body {\"userId\":\"{{userId}}\"}",
             "id": "a89f3aabd99881b3f106a26a46b134f7",
-            "timestamp": "2025-07-19T06:20:21.825Z"
+            "timestamp": "2025-07-19T06:33:34.408Z"
           }
         ]
     }
   },
   "metrics": {
     "http_reqs": {
-      "count": 6,
-      "rate": 0.9510657793709046
+      "rate": 0.9551109475182931,
+      "count": 6
     },
     "http_req_duration": {
-      "avg": 39.89301666666667,
-      "min": 21.4623,
-      "med": 29.43925,
-      "max": 96.469,
-      "p(90)": 68.2204,
-      "p(95)": 82.34469999999999
+      "p(90)": 54.022400000000005,
+      "p(95)": 56.5267,
+      "avg": 36.61031666666667,
+      "min": 22.3852,
+      "med": 32.042699999999996,
+      "max": 59.031
     },
     "http_req_connecting": {
-      "p(90)": 5.54165,
-      "p(95)": 8.312475,
-      "avg": 1.8472166666666665,
+      "avg": 3.0625166666666668,
       "min": 0,
       "med": 0,
-      "max": 11.0833
+      "max": 18.3751,
+      "p(90)": 9.18755,
+      "p(95)": 13.781324999999999
     },
     "http_req_tls_handshaking": {
+      "avg": 3.4003,
       "min": 0,
       "med": 0,
-      "max": 17.343,
-      "p(90)": 8.6715,
-      "p(95)": 13.007249999999999,
-      "avg": 2.8905
+      "max": 20.4018,
+      "p(90)": 10.2009,
+      "p(95)": 15.301350000000001
     },
     "iteration_duration": {
-      "avg": 6307.14,
-      "min": 6307.14,
-      "med": 6307.14,
-      "max": 6307.14,
-      "p(90)": 6307.14,
-      "p(95)": 6307.14
+      "med": 6278.5084,
+      "max": 6278.5084,
+      "p(90)": 6278.5084,
+      "p(95)": 6278.5084,
+      "avg": 6278.5084,
+      "min": 6278.5084
     },
     "http_req_waiting": {
-      "avg": 39.010216666666665,
-      "min": 19.9992,
-      "med": 28.3546,
-      "max": 96.469,
-      "p(90)": 67.7726,
-      "p(95)": 82.1208
+      "avg": 35.526833333333336,
+      "min": 21.4979,
+      "med": 31.12545,
+      "max": 58.1977,
+      "p(90)": 53.60575,
+      "p(95)": 55.901725
     },
     "http_req_sending": {
-      "avg": 0.5172166666666668,
-      "min": 0,
-      "med": 0.6443000000000001,
-      "max": 1.0213,
-      "p(90)": 0.9073500000000001,
-      "p(95)": 0.9643250000000001
+      "med": 0.8603000000000001,
+      "max": 3.2206,
+      "p(90)": 2.1001000000000003,
+      "p(95)": 2.66035,
+      "avg": 0.9868000000000001,
+      "min": 0
     },
     "http_req_receiving": {
-      "p(90)": 0.78265,
-      "p(95)": 0.8391249999999999,
-      "avg": 0.36558333333333337,
-      "min": 0,
-      "med": 0.3141,
-      "max": 0.8956
-    },
-    "http_req_blocked": {
-      "avg": 4.919666666666667,
+      "p(90)": 0.29005,
+      "p(95)": 0.435075,
+      "avg": 0.09668333333333333,
       "min": 0,
       "med": 0,
-      "max": 29.518,
-      "p(90)": 14.759,
-      "p(95)": 22.1385
+      "max": 0.5801
+    },
+    "http_req_blocked": {
+      "min": 0,
+      "med": 0,
+      "max": 43.1586,
+      "p(90)": 21.5793,
+      "p(95)": 32.36895,
+      "avg": 7.1931
     },
     "vus": {
-      "max": 1,
       "value": 1,
-      "min": 1
+      "min": 1,
+      "max": 1
     },
     "vus_max": {
       "value": 1,
@@ -170,15 +170,15 @@
     },
     "totalTestsMetric": {
       "count": 6,
-      "rate": 0.9510657793709046
+      "rate": 0.9551109475182931
     },
     "passedTestsMetric": {
       "count": 4,
-      "rate": 0.6340438529139364
+      "rate": 0.6367406316788621
     },
     "failedTestsMetric": {
       "count": 2,
-      "rate": 0.3170219264569682
+      "rate": 0.31837031583943104
     },
     "warningsMetric": {
       "count": 0
