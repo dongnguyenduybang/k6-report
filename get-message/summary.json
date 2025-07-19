@@ -1,0 +1,294 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 13,
+        "passed": 6,
+        "failed": 6,
+        "warnings": 1,
+        "successRate": "46.15%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":123,\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\"}",
+          "id": "434129f0ce83b7f8fa2a133bbbaab297",
+          "timestamp": "2025-07-19T04:14:51.421Z",
+          "missing": [
+            "Invalid channel"
+          ],
+          "extra": [
+            "Could not resolve permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":null,\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\"}",
+          "id": "b23bf8b6d7d68c6eb6b8d5a5415b2917",
+          "timestamp": "2025-07-19T04:14:51.421Z",
+          "missing": [
+            "Invalid channel"
+          ],
+          "extra": [
+            "Could not resolve permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #5: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":123,\"messageId\":\"{{messageId}}\"}",
+          "id": "9b7f7d58b1440d153ff83565fa731cbd",
+          "timestamp": "2025-07-19T04:14:51.421Z",
+          "missing": [
+            "Invalid channel"
+          ],
+          "extra": [
+            "Could not resolve permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #7: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":null,\"messageId\":\"{{messageId}}\"}",
+          "id": "64ce679ff182ac49ef2a237a0657745f",
+          "timestamp": "2025-07-19T04:14:51.421Z",
+          "missing": [
+            "Invalid channel"
+          ],
+          "extra": [
+            "Could not resolve permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "messageId should not be empty",
+            "messageId invalid ulid"
+          ],
+          "actualErrors": [
+            "messageId invalid ulid",
+            "messageId string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #10: should return errors [\"messageId should not be empty\",\"messageId invalid ulid\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"\"}",
+          "id": "216f3ccf0d209548a21d5dcba86e131a",
+          "timestamp": "2025-07-19T04:14:51.421Z",
+          "missing": [
+            "messageId string must contain at least 1 character(s)"
+          ],
+          "extra": [
+            "messageId should not be empty"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "messageId should not be null"
+          ],
+          "actualErrors": [
+            "messageId invalid ulid"
+          ],
+          "path": "::Test case #11: should return errors [\"messageId should not be null\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":null}",
+          "id": "54ee25d82f7811ae7e0a494ea7f709e2",
+          "timestamp": "2025-07-19T04:14:51.421Z",
+          "missing": [
+            "messageId invalid ulid"
+          ],
+          "extra": [
+            "messageId should not be null"
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "expectedErrors": [
+            "messageId invalid ulid",
+            "messageId expected string,received number"
+          ],
+          "actualErrors": [
+            "messageId invalid ulid"
+          ],
+          "path": "::Test case #9: should return errors [\"messageId invalid ulid\",\"messageId expected string,received number\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":123}",
+          "id": "4e06860c7480dfaf877cd1e13f9837a6",
+          "timestamp": "2025-07-19T04:14:51.421Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        }
+      ],
+      "passedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\"}",
+          "id": "a498c1322a3c6444e99fd31bb4473ed0",
+          "timestamp": "2025-07-19T04:14:51.421Z"
+        },
+        {
+          "expectedErrors": [
+            "Invalid channel"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #4: should return errors [\"Invalid channel\"] when body {\"workspaceId\":\"invalid_value\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\"}",
+          "id": "872954ff63618e58ffd5028559d44fef",
+          "timestamp": "2025-07-19T04:14:51.421Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #6: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":\"\",\"messageId\":\"{{messageId}}\"}",
+          "id": "2b5694550847c2eb0ba4ca87b5df3e36",
+          "timestamp": "2025-07-19T04:14:51.421Z"
+        },
+        {
+          "expectedErrors": [
+            "Invalid channel"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #8: should return errors [\"Invalid channel\"] when body {\"workspaceId\":\"0\",\"channelId\":\"invalid_value\",\"messageId\":\"{{messageId}}\"}",
+          "id": "a79578248ad8cc89bdb8bb148f85bfea",
+          "timestamp": "2025-07-19T04:14:51.421Z"
+        },
+        {
+          "expectedErrors": [
+            "messageId invalid ulid"
+          ],
+          "actualErrors": [
+            "messageId invalid ulid"
+          ],
+          "path": "::Test case #12: should return errors [\"messageId invalid ulid\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"invalid_ULID\"}",
+          "id": "ff67f0b6dbabafe4a80bde09385050c1",
+          "timestamp": "2025-07-19T04:14:51.421Z"
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [],
+          "path": "::Test case #13: should return errors [] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\"}",
+          "id": "31f98ea51a24b9045e7d815556984705",
+          "timestamp": "2025-07-19T04:14:51.422Z"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 13,
+      "rate": 0.9585603874094066
+    },
+    "http_req_duration": {
+      "p(95)": 59.34561999999998,
+      "avg": 38.39563846153847,
+      "min": 22.0307,
+      "med": 35.6092,
+      "max": 66.7993,
+      "p(90)": 54.36922
+    },
+    "http_req_connecting": {
+      "p(90)": 0,
+      "p(95)": 3.728679999999987,
+      "avg": 0.7170538461538462,
+      "min": 0,
+      "med": 0,
+      "max": 9.3217
+    },
+    "http_req_tls_handshaking": {
+      "avg": 1.4948307692307692,
+      "min": 0,
+      "med": 0,
+      "max": 19.4328,
+      "p(90)": 0,
+      "p(95)": 7.773119999999973
+    },
+    "iteration_duration": {
+      "min": 13559.5424,
+      "med": 13559.5424,
+      "max": 13559.5424,
+      "p(90)": 13559.5424,
+      "p(95)": 13559.5424,
+      "avg": 13559.5424
+    },
+    "http_req_waiting": {
+      "med": 34.7282,
+      "max": 65.2761,
+      "p(90)": 53.45686,
+      "p(95)": 58.27787999999998,
+      "avg": 37.67001538461538,
+      "min": 21.4645
+    },
+    "http_req_sending": {
+      "avg": 0.5496769230769232,
+      "min": 0,
+      "med": 0.5406,
+      "max": 1.5054,
+      "p(90)": 0.9889200000000001,
+      "p(95)": 1.2116999999999993
+    },
+    "http_req_receiving": {
+      "med": 0,
+      "max": 1.5232,
+      "p(90)": 0.6112800000000005,
+      "p(95)": 1.067739999999999,
+      "avg": 0.17594615384615386,
+      "min": 0
+    },
+    "http_req_blocked": {
+      "avg": 2.297623076923077,
+      "min": 0,
+      "med": 0,
+      "max": 29.8691,
+      "p(90)": 0,
+      "p(95)": 11.947639999999957
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "max": 1,
+      "value": 1,
+      "min": 1
+    },
+    "totalTestsMetric": {
+      "count": 13,
+      "rate": 0.9585603874094066
+    },
+    "passedTestsMetric": {
+      "rate": 0.4424124864966492,
+      "count": 6
+    },
+    "failedTestsMetric": {
+      "count": 6,
+      "rate": 0.4424124864966492
+    },
+    "warningsMetric": {
+      "count": 1,
+      "rate": 0.0737354144161082
+    }
+  }
+}

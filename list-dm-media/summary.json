@@ -1,0 +1,61 @@
+{
+  "metrics": {
+    "http_reqs": {
+      "count": 6,
+      "rate": 1.0213040796893615
+    },
+    "http_req_duration": {
+      "avg": 28.417016666666665,
+      "min": 24.4626,
+      "med": 27.77315,
+      "max": 35.4778,
+      "p(90)": 32.65925,
+      "p(95)": 34.068525
+    },
+    "passedTestsMetric": {
+      "count": 2,
+      "rate": 0.3404346932297872
+    },
+    "failedTestsMetric": {
+      "count": 3,
+      "rate": 0.5106520398446808
+    },
+    "warningsMetric": {
+      "count": 1,
+      "rate": 0.1702173466148936
+    }
+  },
+  "testResults": {
+    "path": "/MessageView/ListDMMedia",
+    "className": "list-dm-media",
+    "allSteps": [],
+    "failedTests": [],
+    "codedTest": [],
+    "warnings": [],
+    "passedTests": 0,
+    "totalTests": 0,
+    "failedStep": [],
+    "executionDate": "2025-07-18T07:38:42.018Z",
+    "environment": "dev",
+    "detailedResults": {
+                "summary": {
+                  "totalTests": 0,
+                  "passed": 0,
+                  "failed": 0,
+                  "warnings": 0,
+                  "successRate": "NaN%",
+                  "durationMetrics": {
+                    "avg": 28.417016666666665,
+                    "min": 24.4626,
+                    "med": 27.77315,
+                    "max": 35.4778,
+                    "p90": 0,
+                    "p95": 0
+                  }
+                },
+                "failedTests": [],
+                "warnings": [],
+                "passedTests": []
+              }
+  }
+}

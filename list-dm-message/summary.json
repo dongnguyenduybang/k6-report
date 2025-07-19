@@ -1,0 +1,210 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 8,
+        "passed": 5,
+        "failed": 2,
+        "warnings": 1,
+        "successRate": "62.50%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Unauthorized request"
+          ],
+          "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"userId\":123,\"limit\":1}",
+          "id": "ab7c1b4a81e243bda3f782f8356aba8d",
+          "timestamp": "2025-07-19T04:21:29.070Z",
+          "missing": [
+            "Unauthorized request"
+          ],
+          "extra": [
+            "Could not resolve permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Unauthorized request"
+          ],
+          "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"userId\":null,\"limit\":1}",
+          "id": "6177cca95cbe45f517368a79d594bd51",
+          "timestamp": "2025-07-19T04:21:29.070Z",
+          "missing": [
+            "Unauthorized request"
+          ],
+          "extra": [
+            "Could not resolve permission type"
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "expectedErrors": [
+            "limit should not be empty",
+            "limit range from 1 to 500"
+          ],
+          "actualErrors": [
+            "limit range from 1 to 500"
+          ],
+          "path": "::Test case #7: should return errors [\"limit should not be empty\",\"limit range from 1 to 500\"] when body {\"userId\":\"{{userId1}}\",\"limit\":\"\"}",
+          "id": "437393d4099cd29d7f7da33569abbc44",
+          "timestamp": "2025-07-19T04:21:29.070Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        }
+      ],
+      "passedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"userId\":\"\",\"limit\":1}",
+          "id": "470618eef01220542f8a42acb9dd3cdf",
+          "timestamp": "2025-07-19T04:21:29.070Z"
+        },
+        {
+          "expectedErrors": [
+            "Unauthorized request"
+          ],
+          "actualErrors": [
+            "Unauthorized request"
+          ],
+          "path": "::Test case #4: should return errors [\"Unauthorized request\"] when body {\"userId\":\"invalid_value\",\"limit\":1}",
+          "id": "8f6e587d2e99e93288568a31c9e7ceb4",
+          "timestamp": "2025-07-19T04:21:29.070Z"
+        },
+        {
+          "expectedErrors": [
+            "limit expected number,received nan"
+          ],
+          "actualErrors": [
+            "limit expected number",
+            "received nan"
+          ],
+          "path": "::Test case #5: should return errors [\"limit expected number,received nan\"] when body {\"userId\":\"{{userId1}}\",\"limit\":\"invalid_number\"}",
+          "id": "969d51776fee5f22e3e99f0b4ef36d17",
+          "timestamp": "2025-07-19T04:21:29.070Z"
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [],
+          "path": "::Test case #6: should return errors [] when body {\"userId\":\"{{userId1}}\"}",
+          "id": "eee0961aba667f46d23bc88e808ebb04",
+          "timestamp": "2025-07-19T04:21:29.070Z"
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [],
+          "path": "::Test case #8: should return errors [] when body {\"userId\":\"{{userId1}}\",\"limit\":1}",
+          "id": "86f9663947e19d2e0576abf721dce79a",
+          "timestamp": "2025-07-19T04:21:29.070Z"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 8,
+      "rate": 0.9606601272130156
+    },
+    "http_req_duration": {
+      "p(95)": 59.19553,
+      "avg": 33.9643375,
+      "min": 22.4486,
+      "med": 26.94865,
+      "max": 62.151,
+      "p(90)": 56.24006
+    },
+    "http_req_connecting": {
+      "avg": 1.42305,
+      "min": 0,
+      "med": 0,
+      "max": 11.3844,
+      "p(90)": 3.4153199999999977,
+      "p(95)": 7.399859999999993
+    },
+    "http_req_tls_handshaking": {
+      "avg": 2.389925,
+      "min": 0,
+      "med": 0,
+      "max": 19.1194,
+      "p(90)": 5.735819999999996,
+      "p(95)": 12.427609999999989
+    },
+    "iteration_duration": {
+      "p(95)": 8323.8277,
+      "avg": 8323.8277,
+      "min": 8323.8277,
+      "med": 8323.8277,
+      "max": 8323.8277,
+      "p(90)": 8323.8277
+    },
+    "http_req_waiting": {
+      "min": 20.9178,
+      "med": 26.01345,
+      "max": 61.2223,
+      "p(90)": 54.23497,
+      "p(95)": 57.728635,
+      "avg": 32.9132
+    },
+    "http_req_sending": {
+      "avg": 0.5579375,
+      "min": 0,
+      "med": 0.5245500000000001,
+      "max": 0.9301,
+      "p(90)": 0.92912,
+      "p(95)": 0.92961
+    },
+    "http_req_receiving": {
+      "avg": 0.49319999999999997,
+      "min": 0,
+      "med": 0.2769,
+      "max": 2.0008,
+      "p(90)": 1.1640199999999998,
+      "p(95)": 1.5824099999999992
+    },
+    "http_req_blocked": {
+      "min": 0,
+      "med": 0,
+      "max": 31.0295,
+      "p(90)": 9.308849999999994,
+      "p(95)": 20.16917499999998,
+      "avg": 3.8786875
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 8,
+      "rate": 0.9606601272130156
+    },
+    "passedTestsMetric": {
+      "count": 5,
+      "rate": 0.6004125795081348
+    },
+    "failedTestsMetric": {
+      "count": 2,
+      "rate": 0.2401650318032539
+    },
+    "warningsMetric": {
+      "count": 1,
+      "rate": 0.12008251590162695
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 8,
+        "passed": 4,
+        "failed": 3,
+        "warnings": 1,
+        "successRate": "50.00%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Unauthorized request"
+          ],
+          "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"userId\":123,\"messageId\":\"{{messageId}}\"}",
+          "id": "93a810c4ec4c73b89d66d3db7c21f8f1",
+          "timestamp": "2025-07-19T04:13:47.827Z",
+          "missing": [
+            "Unauthorized request"
+          ],
+          "extra": [
+            "Could not resolve permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Unauthorized request"
+          ],
+          "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"userId\":null,\"messageId\":\"{{messageId}}\"}",
+          "id": "36073f0ed2caf6b459de83b8336c80ef",
+          "timestamp": "2025-07-19T04:13:47.828Z",
+          "missing": [
+            "Unauthorized request"
+          ],
+          "extra": [
+            "Could not resolve permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "messageId should not be null"
+          ],
+          "actualErrors": [
+            "messageId invalid ulid"
+          ],
+          "path": "::Test case #6: should return errors [\"messageId should not be null\"] when body {\"userId\":\"{{userId1}}\",\"messageId\":null}",
+          "id": "1bd61dedeef85d7e763a2b7801176ba5",
+          "timestamp": "2025-07-19T04:13:47.828Z",
+          "missing": [
+            "messageId invalid ulid"
+          ],
+          "extra": [
+            "messageId should not be null"
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "expectedErrors": [
+            "messageId invalid ulid",
+            "messageId expected string,received number"
+          ],
+          "actualErrors": [
+            "messageId invalid ulid"
+          ],
+          "path": "::Test case #5: should return errors [\"messageId invalid ulid\",\"messageId expected string,received number\"] when body {\"userId\":\"{{userId1}}\",\"messageId\":123}",
+          "id": "65c888a45c4720a27c72d4e5c57cc4c3",
+          "timestamp": "2025-07-19T04:13:47.828Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        }
+      ],
+      "passedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"userId\":\"\",\"messageId\":\"{{messageId}}\"}",
+          "id": "e3a2298ca3037077ac03faf00add5801",
+          "timestamp": "2025-07-19T04:13:47.828Z"
+        },
+        {
+          "expectedErrors": [
+            "Unauthorized request"
+          ],
+          "actualErrors": [
+            "Unauthorized request"
+          ],
+          "path": "::Test case #4: should return errors [\"Unauthorized request\"] when body {\"userId\":\"invalid_value\",\"messageId\":\"{{messageId}}\"}",
+          "id": "55195d8ded8604ec340961904800113c",
+          "timestamp": "2025-07-19T04:13:47.828Z"
+        },
+        {
+          "expectedErrors": [
+            "messageId invalid ulid"
+          ],
+          "actualErrors": [
+            "messageId invalid ulid"
+          ],
+          "path": "::Test case #7: should return errors [\"messageId invalid ulid\"] when body {\"userId\":\"{{userId1}}\",\"messageId\":\"invalid_ULID\"}",
+          "id": "9282e881471d793164e66727bb5eac4f",
+          "timestamp": "2025-07-19T04:13:47.828Z"
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [],
+          "path": "::Test case #8: should return errors [] when body {\"userId\":\"{{userId1}}\",\"messageId\":\"{{messageId}}\"}",
+          "id": "0eedafc0619322f8adfb8fd153dc565d",
+          "timestamp": "2025-07-19T04:13:47.828Z"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 8,
+      "rate": 0.9486906249076139
+    },
+    "http_req_duration": {
+      "med": 29.72205,
+      "max": 114.6407,
+      "p(90)": 98.80362,
+      "p(95)": 106.72215999999999,
+      "avg": 47.3428375,
+      "min": 26.9508
+    },
+    "http_req_connecting": {
+      "med": 0,
+      "max": 10.5749,
+      "p(90)": 3.172469999999998,
+      "p(95)": 6.873684999999994,
+      "avg": 1.3218625,
+      "min": 0
+    },
+    "http_req_tls_handshaking": {
+      "med": 0,
+      "max": 19.3466,
+      "p(90)": 5.803979999999997,
+      "p(95)": 12.575289999999988,
+      "avg": 2.418325,
+      "min": 0
+    },
+    "iteration_duration": {
+      "min": 8428.6301,
+      "med": 8428.6301,
+      "max": 8428.6301,
+      "p(90)": 8428.6301,
+      "p(95)": 8428.6301,
+      "avg": 8428.6301
+    },
+    "http_req_waiting": {
+      "min": 26.2572,
+      "med": 28.6334,
+      "max": 113.6979,
+      "p(90)": 97.36326,
+      "p(95)": 105.53057999999999,
+      "avg": 46.4316
+    },
+    "http_req_sending": {
+      "avg": 0.715025,
+      "min": 0,
+      "med": 0.8210999999999999,
+      "max": 1.0548,
+      "p(90)": 1.04192,
+      "p(95)": 1.04836
+    },
+    "http_req_receiving": {
+      "min": 0,
+      "med": 0,
+      "max": 1.0691,
+      "p(90)": 0.6711499999999999,
+      "p(95)": 0.8701249999999996,
+      "avg": 0.1962125
+    },
+    "http_req_blocked": {
+      "avg": 3.8050125,
+      "min": 0,
+      "med": 0,
+      "max": 30.4401,
+      "p(90)": 9.132029999999995,
+      "p(95)": 19.786064999999983
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 8,
+      "rate": 0.9486906249076139
+    },
+    "passedTestsMetric": {
+      "count": 4,
+      "rate": 0.47434531245380696
+    },
+    "failedTestsMetric": {
+      "count": 3,
+      "rate": 0.3557589843403552
+    },
+    "warningsMetric": {
+      "count": 1,
+      "rate": 0.11858632811345174
+    }
+  }
+}
