@@ -1,0 +1,187 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 6,
+        "passed": 4,
+        "failed": 2,
+        "warnings": 0,
+        "successRate": "66.67%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Unauthorized request"
+          ],
+          "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"userId\":123}",
+          "id": "108b854cc1fc107b4aa3f634b1e7c97e",
+          "timestamp": "2025-07-19T06:20:21.824Z",
+          "missing": [
+            "Unauthorized request"
+          ],
+          "extra": [
+            "Could not resolve permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Unauthorized request"
+          ],
+          "path": "::Test case #4: should return errors [\"Could not resolve permission type\"] when body {\"userId\":null}",
+          "id": "e0d77acf1162e7cd75ca276300023926",
+          "timestamp": "2025-07-19T06:20:21.824Z",
+          "missing": [
+            "Unauthorized request"
+          ],
+          "extra": [
+            "Could not resolve permission type"
+          ]
+        }
+      ],
+      "warnings": [],
+      "passedTests": [
+          {
+            "expectedErrors": [
+              "Could not resolve permission type"
+            ],
+            "actualErrors": [
+              "Could not resolve permission type"
+            ],
+            "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {}",
+            "id": "dff8d2b7d569a27a28b75d48a3e99169",
+            "timestamp": "2025-07-19T06:20:21.824Z"
+          },
+          {
+            "expectedErrors": [
+              "Could not resolve permission type"
+            ],
+            "actualErrors": [
+              "Could not resolve permission type"
+            ],
+            "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"userId\":\"\"}",
+            "id": "2240b6cc04b8b6b5bc680a24f0f44bf3",
+            "timestamp": "2025-07-19T06:20:21.824Z"
+          },
+          {
+            "expectedErrors": [
+              "Unauthorized request"
+            ],
+            "actualErrors": [
+              "Unauthorized request"
+            ],
+            "path": "::Test case #5: should return errors [\"Unauthorized request\"] when body {\"userId\":\"invalid_value\"}",
+            "id": "4b6cd8171d0ac5ea8ad1e28562909457",
+            "timestamp": "2025-07-19T06:20:21.824Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #6: should return errors [] when body {\"userId\":\"{{userId}}\"}",
+            "id": "a89f3aabd99881b3f106a26a46b134f7",
+            "timestamp": "2025-07-19T06:20:21.825Z"
+          }
+        ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 6,
+      "rate": 0.9510657793709046
+    },
+    "http_req_duration": {
+      "avg": 39.89301666666667,
+      "min": 21.4623,
+      "med": 29.43925,
+      "max": 96.469,
+      "p(90)": 68.2204,
+      "p(95)": 82.34469999999999
+    },
+    "http_req_connecting": {
+      "p(90)": 5.54165,
+      "p(95)": 8.312475,
+      "avg": 1.8472166666666665,
+      "min": 0,
+      "med": 0,
+      "max": 11.0833
+    },
+    "http_req_tls_handshaking": {
+      "min": 0,
+      "med": 0,
+      "max": 17.343,
+      "p(90)": 8.6715,
+      "p(95)": 13.007249999999999,
+      "avg": 2.8905
+    },
+    "iteration_duration": {
+      "avg": 6307.14,
+      "min": 6307.14,
+      "med": 6307.14,
+      "max": 6307.14,
+      "p(90)": 6307.14,
+      "p(95)": 6307.14
+    },
+    "http_req_waiting": {
+      "avg": 39.010216666666665,
+      "min": 19.9992,
+      "med": 28.3546,
+      "max": 96.469,
+      "p(90)": 67.7726,
+      "p(95)": 82.1208
+    },
+    "http_req_sending": {
+      "avg": 0.5172166666666668,
+      "min": 0,
+      "med": 0.6443000000000001,
+      "max": 1.0213,
+      "p(90)": 0.9073500000000001,
+      "p(95)": 0.9643250000000001
+    },
+    "http_req_receiving": {
+      "p(90)": 0.78265,
+      "p(95)": 0.8391249999999999,
+      "avg": 0.36558333333333337,
+      "min": 0,
+      "med": 0.3141,
+      "max": 0.8956
+    },
+    "http_req_blocked": {
+      "avg": 4.919666666666667,
+      "min": 0,
+      "med": 0,
+      "max": 29.518,
+      "p(90)": 14.759,
+      "p(95)": 22.1385
+    },
+    "vus": {
+      "max": 1,
+      "value": 1,
+      "min": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 6,
+      "rate": 0.9510657793709046
+    },
+    "passedTestsMetric": {
+      "count": 4,
+      "rate": 0.6340438529139364
+    },
+    "failedTestsMetric": {
+      "count": 2,
+      "rate": 0.3170219264569682
+    },
+    "warningsMetric": {
+      "count": 0
+    }
+  }
+}

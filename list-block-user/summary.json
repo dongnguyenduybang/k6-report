@@ -1,0 +1,153 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 4,
+        "passed": 3,
+        "failed": 0,
+        "warnings": 1,
+        "successRate": "75.00%"
+      },
+      "failedTests": [],
+      "warnings": [
+          {
+            "expectedErrors": [
+              "limit should not be empty",
+              "limit range from 1 to 500"
+            ],
+            "actualErrors": [
+              "limit range from 1 to 500"
+            ],
+            "path": "::Test case #3: should return errors [\"limit should not be empty\",\"limit range from 1 to 500\"] when body {\"limit\":\"\"}",
+            "id": "677f6d9f2db12a03f924dfdb5284ed3f",
+            "timestamp": "2025-07-19T06:25:46.712Z",
+            "warningMessage": "Actual errors include expected errors but don't match exactly"
+          }
+        ],
+      "passedTests": [
+          {
+            "expectedErrors": [
+              "limit expected number,received nan"
+            ],
+            "actualErrors": [
+              "limit expected number",
+              "received nan"
+            ],
+            "path": "::Test case #1: should return errors [\"limit expected number,received nan\"] when body {\"limit\":\"invalid_number\"}",
+            "id": "a8183b1137c7c0f271dc41b2a8277dbb",
+            "timestamp": "2025-07-19T06:25:46.712Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #2: should return errors [] when body {}",
+            "id": "9eaa89f3956341387247d4723c000c4a",
+            "timestamp": "2025-07-19T06:25:46.712Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #4: should return errors [] when body {\"limit\":1}",
+            "id": "d8b890cf533e754a5cd0c4e2160bfb11",
+            "timestamp": "2025-07-19T06:25:46.712Z"
+          }
+        ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 4,
+      "rate": 0.9533360816423673
+    },
+    "http_req_duration": {
+      "min": 34.2754,
+      "med": 35.089349999999996,
+      "max": 51.8951,
+      "p(90)": 47.081360000000004,
+      "p(95)": 49.488229999999994,
+      "avg": 39.0873
+    },
+    "http_req_connecting": {
+      "p(90)": 6.631520000000001,
+      "p(95)": 8.052559999999996,
+      "avg": 2.3684,
+      "min": 0,
+      "med": 0,
+      "max": 9.4736
+    },
+    "http_req_tls_handshaking": {
+      "min": 0,
+      "med": 0,
+      "max": 18.0151,
+      "p(90)": 12.610570000000003,
+      "p(95)": 15.312834999999994,
+      "avg": 4.503775
+    },
+    "iteration_duration": {
+      "avg": 4194.7245,
+      "min": 4194.7245,
+      "med": 4194.7245,
+      "max": 4194.7245,
+      "p(90)": 4194.7245,
+      "p(95)": 4194.7245
+    },
+    "http_req_waiting": {
+      "p(95)": 48.85532499999999,
+      "avg": 36.6522,
+      "min": 27.4775,
+      "med": 33.8481,
+      "max": 51.4351,
+      "p(90)": 46.27555
+    },
+    "http_req_sending": {
+      "p(95)": 0.877195,
+      "avg": 0.437075,
+      "min": 0,
+      "med": 0.4349,
+      "max": 0.8785,
+      "p(90)": 0.87589
+    },
+    "http_req_receiving": {
+      "p(95)": 5.888344999999999,
+      "avg": 1.9980250000000002,
+      "min": 0,
+      "med": 0.5971,
+      "max": 6.7979,
+      "p(90)": 4.978790000000002
+    },
+    "http_req_blocked": {
+      "min": 0,
+      "med": 0,
+      "max": 28.6694,
+      "p(90)": 20.068580000000004,
+      "p(95)": 24.36898999999999,
+      "avg": 7.16735
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 4,
+      "rate": 0.9533360816423673
+    },
+    "passedTestsMetric": {
+      "count": 3,
+      "rate": 0.7150020612317755
+    },
+    "failedTestsMetric": {
+      "count": 0,
+      "rate": 0
+    },
+    "warningsMetric": {
+      "count": 1,
+      "rate": 0.23833402041059182
+    }
+  }
+}

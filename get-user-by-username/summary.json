@@ -1,0 +1,201 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 6,
+        "passed": 1,
+        "failed": 5,
+        "warnings": 0,
+        "successRate": "16.67%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "username expected string,received number"
+          ],
+          "actualErrors": [
+            "User not exists"
+          ],
+          "path": "::Test case #1: should return errors [\"username expected string,received number\"] when body {\"username\":123}",
+          "id": "546be647cae6391834c2b8cbaac0be0c",
+          "timestamp": "2025-07-19T06:21:04.234Z",
+          "missing": [
+            "User not exists"
+          ],
+          "extra": [
+            "username expected string,received number"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "username required"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #2: should return errors [\"username required\"] when body {}",
+          "id": "e2452dbef7970b11bdb4199587e9e98c",
+          "timestamp": "2025-07-19T06:21:04.234Z",
+          "missing": [
+            "Could not resolve permission type"
+          ],
+          "extra": [
+            "username required"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "username should not be empty"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #3: should return errors [\"username should not be empty\"] when body {\"username\":\"\"}",
+          "id": "534c389047fd42d752c3e58ffb4b63fd",
+          "timestamp": "2025-07-19T06:21:04.234Z",
+          "missing": [
+            "Could not resolve permission type"
+          ],
+          "extra": [
+            "username should not be empty"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "username should not be null"
+          ],
+          "actualErrors": [
+            "User not exists"
+          ],
+          "path": "::Test case #4: should return errors [\"username should not be null\"] when body {\"username\":null}",
+          "id": "47aba1195c0d3b265c34f27f2129459c",
+          "timestamp": "2025-07-19T06:21:04.234Z",
+          "missing": [
+            "User not exists"
+          ],
+          "extra": [
+            "username should not be null"
+          ]
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [
+              "User not exists"
+            ],
+          "path": "::Test case #5: should return errors [] when body {\"username\":\"invalid_value\"}",
+          "id": "834eed35c8e9281a0bb28eeae9784e41",
+          "timestamp": "2025-07-19T06:21:04.234Z",
+          "missing": [
+              "User not exists"
+            ],
+          "extra": []
+        }
+      ],
+      "warnings": [],
+      "passedTests": [
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #6: should return errors [] when body {\"username\":\"{{username}}\"}",
+            "id": "09322adeec2e5210d03c860e317d76a3",
+            "timestamp": "2025-07-19T06:21:04.234Z"
+          }
+        ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 6,
+      "rate": 0.9515669246375172
+    },
+    "http_req_duration": {
+      "avg": 42.98373333333333,
+      "min": 21.8932,
+      "med": 36.75165,
+      "max": 89.7124,
+      "p(90)": 67.9926,
+      "p(95)": 78.85249999999999
+    },
+    "http_req_connecting": {
+      "max": 10.3881,
+      "p(90)": 5.19405,
+      "p(95)": 7.791074999999999,
+      "avg": 1.73135,
+      "min": 0,
+      "med": 0
+    },
+    "http_req_tls_handshaking": {
+      "p(95)": 12.99765,
+      "avg": 2.8883666666666667,
+      "min": 0,
+      "med": 0,
+      "max": 17.3302,
+      "p(90)": 8.6651
+    },
+    "iteration_duration": {
+      "p(90)": 6303.4969,
+      "p(95)": 6303.4969,
+      "avg": 6303.4969,
+      "min": 6303.4969,
+      "med": 6303.4969,
+      "max": 6303.4969
+    },
+    "http_req_waiting": {
+      "p(90)": 67.30695,
+      "p(95)": 78.182575,
+      "avg": 42.33473333333333,
+      "min": 21.8932,
+      "med": 35.719049999999996,
+      "max": 89.0582
+    },
+    "http_req_sending": {
+      "avg": 0.44873333333333326,
+      "min": 0,
+      "med": 0.48755,
+      "max": 0.7171,
+      "p(90)": 0.68565,
+      "p(95)": 0.701375
+    },
+    "http_req_receiving": {
+      "p(95)": 0.7279499999999999,
+      "avg": 0.20026666666666668,
+      "min": 0,
+      "med": 0,
+      "max": 0.8551,
+      "p(90)": 0.6008
+    },
+    "http_req_blocked": {
+      "min": 0,
+      "med": 0,
+      "max": 28.2669,
+      "p(90)": 14.13345,
+      "p(95)": 21.200175,
+      "avg": 4.71115
+    },
+    "vus": {
+      "max": 1,
+      "value": 1,
+      "min": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 6,
+      "rate": 0.9515669246375172
+    },
+    "passedTestsMetric": {
+      "rate": 0.1585944874395862,
+      "count": 1
+    },
+    "failedTestsMetric": {
+      "count": 5,
+      "rate": 0.792972437197931
+    },
+    "warningsMetric": {
+      "count": 0
+    }
+  }
+}
