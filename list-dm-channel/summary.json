@@ -1,0 +1,153 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 4,
+        "passed": 3,
+        "failed": 0,
+        "warnings": 1,
+        "successRate": "75.00%"
+      },
+      "failedTests": [],
+      "warnings": [
+          {
+            "expectedErrors": [
+              "limit should not be empty",
+              "limit range from 1 to 500"
+            ],
+            "actualErrors": [
+              "limit range from 1 to 500"
+            ],
+            "path": "::Test case #3: should return errors [\"limit should not be empty\",\"limit range from 1 to 500\"] when body {\"limit\":\"\"}",
+            "id": "677f6d9f2db12a03f924dfdb5284ed3f",
+            "timestamp": "2025-07-19T03:50:59.526Z",
+            "warningMessage": "Actual errors include expected errors but don't match exactly"
+          }
+        ],
+      "passedTests": [
+          {
+            "expectedErrors": [
+              "limit expected number,received nan"
+            ],
+            "actualErrors": [
+              "limit expected number",
+              "received nan"
+            ],
+            "path": "::Test case #1: should return errors [\"limit expected number,received nan\"] when body {\"limit\":\"invalid_number\"}",
+            "id": "a8183b1137c7c0f271dc41b2a8277dbb",
+            "timestamp": "2025-07-19T03:50:59.526Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #2: should return errors [] when body {}",
+            "id": "9eaa89f3956341387247d4723c000c4a",
+            "timestamp": "2025-07-19T03:50:59.526Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #4: should return errors [] when body {\"limit\":1}",
+            "id": "d8b890cf533e754a5cd0c4e2160bfb11",
+            "timestamp": "2025-07-19T03:50:59.526Z"
+          }
+        ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 4,
+      "rate": 0.9517667682209741
+    },
+    "http_req_duration": {
+      "avg": 40.384750000000004,
+      "min": 23.4997,
+      "med": 41.9452,
+      "max": 54.1489,
+      "p(90)": 53.933859999999996,
+      "p(95)": 54.04138
+    },
+    "http_req_connecting": {
+      "max": 9.7562,
+      "p(90)": 6.829340000000002,
+      "p(95)": 8.292769999999996,
+      "avg": 2.43905,
+      "min": 0,
+      "med": 0
+    },
+    "http_req_tls_handshaking": {
+      "avg": 5.21785,
+      "min": 0,
+      "med": 0,
+      "max": 20.8714,
+      "p(90)": 14.609980000000004,
+      "p(95)": 17.740689999999994
+    },
+    "iteration_duration": {
+      "avg": 4201.5067,
+      "min": 4201.5067,
+      "med": 4201.5067,
+      "max": 4201.5067,
+      "p(90)": 4201.5067,
+      "p(95)": 4201.5067
+    },
+    "http_req_waiting": {
+      "max": 51.71,
+      "p(90)": 51.45992,
+      "p(95)": 51.58496,
+      "avg": 37.60645,
+      "min": 18.6461,
+      "med": 40.03485
+    },
+    "http_req_sending": {
+      "avg": 0.6203000000000001,
+      "min": 0.5262,
+      "med": 0.61175,
+      "max": 0.7315,
+      "p(90)": 0.69613,
+      "p(95)": 0.713815
+    },
+    "http_req_receiving": {
+      "avg": 2.158,
+      "min": 0.6551,
+      "med": 1.8247499999999999,
+      "max": 4.3274,
+      "p(90)": 3.5767700000000007,
+      "p(95)": 3.952084999999999
+    },
+    "http_req_blocked": {
+      "p(95)": 27.012659999999986,
+      "avg": 7.9449,
+      "min": 0,
+      "med": 0,
+      "max": 31.7796,
+      "p(90)": 22.245720000000006
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "rate": 0.9517667682209741,
+      "count": 4
+    },
+    "passedTestsMetric": {
+      "rate": 0.7138250761657305,
+      "count": 3
+    },
+    "failedTestsMetric": {
+      "count": 0,
+      "rate": 0
+    },
+    "warningsMetric": {
+      "count": 1,
+      "rate": 0.23794169205524351
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 4,
+        "passed": 3,
+        "failed": 0,
+        "warnings": 1,
+        "successRate": "75.00%"
+      },
+      "failedTests": [],
+      "warnings": [
+          {
+            "expectedErrors": [
+              "limit should not be empty",
+              "limit range from 1 to 500"
+            ],
+            "actualErrors": [
+              "limit range from 1 to 500"
+            ],
+            "path": "::Test case #3: should return errors [\"limit should not be empty\",\"limit range from 1 to 500\"] when body {\"limit\":\"\"}",
+            "id": "677f6d9f2db12a03f924dfdb5284ed3f",
+            "timestamp": "2025-07-19T03:48:43.494Z",
+            "warningMessage": "Actual errors include expected errors but don't match exactly"
+          }
+        ],
+      "passedTests": [
+          {
+            "expectedErrors": [
+              "limit expected number,received nan"
+            ],
+            "actualErrors": [
+              "limit expected number",
+              "received nan"
+            ],
+            "path": "::Test case #1: should return errors [\"limit expected number,received nan\"] when body {\"limit\":\"invalid_number\"}",
+            "id": "a8183b1137c7c0f271dc41b2a8277dbb",
+            "timestamp": "2025-07-19T03:48:43.494Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #2: should return errors [] when body {}",
+            "id": "9eaa89f3956341387247d4723c000c4a",
+            "timestamp": "2025-07-19T03:48:43.494Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #4: should return errors [] when body {\"limit\":1}",
+            "id": "d8b890cf533e754a5cd0c4e2160bfb11",
+            "timestamp": "2025-07-19T03:48:43.495Z"
+          }
+        ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 4,
+      "rate": 0.9389863787584192
+    },
+    "http_req_duration": {
+      "p(95)": 70.62941,
+      "avg": 50.204025,
+      "min": 33.9032,
+      "med": 47.1979,
+      "max": 72.5171,
+      "p(90)": 68.74172
+    },
+    "http_req_connecting": {
+      "max": 10.0291,
+      "p(90)": 7.0203700000000016,
+      "p(95)": 8.524734999999996,
+      "avg": 2.507275,
+      "min": 0,
+      "med": 0
+    },
+    "http_req_tls_handshaking": {
+      "p(95)": 17.805884999999993,
+      "avg": 5.237025,
+      "min": 0,
+      "med": 0,
+      "max": 20.9481,
+      "p(90)": 14.663670000000003
+    },
+    "iteration_duration": {
+      "min": 4258.1541,
+      "med": 4258.1541,
+      "max": 4258.1541,
+      "p(90)": 4258.1541,
+      "p(95)": 4258.1541,
+      "avg": 4258.1541
+    },
+    "http_req_waiting": {
+      "max": 71.6104,
+      "p(90)": 62.37964000000001,
+      "p(95)": 66.99501999999998,
+      "avg": 44.825950000000006,
+      "min": 32.9711,
+      "med": 37.36115
+    },
+    "http_req_sending": {
+      "med": 0.7444500000000001,
+      "max": 0.9321,
+      "p(90)": 0.92448,
+      "p(95)": 0.9282900000000001,
+      "avg": 0.6052500000000001,
+      "min": 0
+    },
+    "http_req_receiving": {
+      "p(90)": 13.363910000000004,
+      "p(95)": 16.227604999999993,
+      "avg": 4.772825,
+      "min": 0,
+      "med": 0,
+      "max": 19.0913
+    },
+    "http_req_blocked": {
+      "max": 32.1193,
+      "p(90)": 22.483510000000006,
+      "p(95)": 27.301404999999992,
+      "avg": 8.029825,
+      "min": 0,
+      "med": 0
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "min": 1,
+      "max": 1,
+      "value": 1
+    },
+    "totalTestsMetric": {
+      "count": 4,
+      "rate": 0.9389863787584192
+    },
+    "passedTestsMetric": {
+      "count": 3,
+      "rate": 0.7042397840688144
+    },
+    "failedTestsMetric": {
+      "count": 0,
+      "rate": 0
+    },
+    "warningsMetric": {
+      "count": 1,
+      "rate": 0.2347465946896048
+    }
+  }
+}

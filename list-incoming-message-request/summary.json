@@ -1,0 +1,153 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 4,
+        "passed": 3,
+        "failed": 0,
+        "warnings": 1,
+        "successRate": "75.00%"
+      },
+      "failedTests": [],
+      "warnings": [
+          {
+            "expectedErrors": [
+              "limit should not be empty",
+              "limit range from 1 to 500"
+            ],
+            "actualErrors": [
+              "limit range from 1 to 500"
+            ],
+            "path": "::Test case #3: should return errors [\"limit should not be empty\",\"limit range from 1 to 500\"] when body {\"limit\":\"\"}",
+            "id": "677f6d9f2db12a03f924dfdb5284ed3f",
+            "timestamp": "2025-07-19T03:52:31.320Z",
+            "warningMessage": "Actual errors include expected errors but don't match exactly"
+          }
+        ],
+      "passedTests": [
+          {
+            "expectedErrors": [
+              "limit expected number,received nan"
+            ],
+            "actualErrors": [
+              "limit expected number",
+              "received nan"
+            ],
+            "path": "::Test case #1: should return errors [\"limit expected number,received nan\"] when body {\"limit\":\"invalid_number\"}",
+            "id": "a8183b1137c7c0f271dc41b2a8277dbb",
+            "timestamp": "2025-07-19T03:52:31.320Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #2: should return errors [] when body {}",
+            "id": "9eaa89f3956341387247d4723c000c4a",
+            "timestamp": "2025-07-19T03:52:31.320Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #4: should return errors [] when body {\"limit\":1}",
+            "id": "d8b890cf533e754a5cd0c4e2160bfb11",
+            "timestamp": "2025-07-19T03:52:31.320Z"
+          }
+        ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "rate": 0.9419117157922684,
+      "count": 4
+    },
+    "http_req_duration": {
+      "p(90)": 63.623020000000004,
+      "p(95)": 63.80701,
+      "avg": 49.673725000000005,
+      "min": 26.8223,
+      "med": 53.940799999999996,
+      "max": 63.991
+    },
+    "http_req_connecting": {
+      "p(95)": 8.219414999999996,
+      "avg": 2.417475,
+      "min": 0,
+      "med": 0,
+      "max": 9.6699,
+      "p(90)": 6.768930000000002
+    },
+    "http_req_tls_handshaking": {
+      "avg": 5.2507,
+      "min": 0,
+      "med": 0,
+      "max": 21.0028,
+      "p(90)": 14.701960000000005,
+      "p(95)": 17.852379999999993
+    },
+    "iteration_duration": {
+      "max": 4245.3892,
+      "p(90)": 4245.3892,
+      "p(95)": 4245.3892,
+      "avg": 4245.3892,
+      "min": 4245.3892,
+      "med": 4245.3892
+    },
+    "http_req_waiting": {
+      "p(95)": 63.134994999999996,
+      "avg": 48.5061,
+      "min": 26.8223,
+      "med": 51.920550000000006,
+      "max": 63.361,
+      "p(90)": 62.908989999999996
+    },
+    "http_req_sending": {
+      "max": 0.9101,
+      "p(90)": 0.8276600000000001,
+      "p(95)": 0.8688799999999999,
+      "avg": 0.54385,
+      "min": 0,
+      "med": 0.6326499999999999
+    },
+    "http_req_receiving": {
+      "max": 2.4951,
+      "p(90)": 1.7465700000000004,
+      "p(95)": 2.120834999999999,
+      "avg": 0.623775,
+      "min": 0,
+      "med": 0
+    },
+    "http_req_blocked": {
+      "avg": 7.974175,
+      "min": 0,
+      "med": 0,
+      "max": 31.8967,
+      "p(90)": 22.327690000000004,
+      "p(95)": 27.11219499999999
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 4,
+      "rate": 0.9419117157922684
+    },
+    "passedTestsMetric": {
+      "rate": 0.7064337868442012,
+      "count": 3
+    },
+    "failedTestsMetric": {
+      "count": 0,
+      "rate": 0
+    },
+    "warningsMetric": {
+      "count": 1,
+      "rate": 0.2354779289480671
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 9,
+        "passed": 5,
+        "failed": 4,
+        "warnings": 0,
+        "successRate": "55.56%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":123,\"channelId\":\"{{channelId}}\"}",
+          "id": "1d34581325d124f8e4be27e69159722e",
+          "timestamp": "2025-07-19T03:44:57.963Z",
+          "missing": [
+            "Invalid channel"
+          ],
+          "extra": [
+            "Could not resolve permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":null,\"channelId\":\"{{channelId}}\"}",
+          "id": "304a6fe3886a8ed9efbc9dadd87c43a3",
+          "timestamp": "2025-07-19T03:44:57.963Z",
+          "missing": [
+            "Invalid channel"
+          ],
+          "extra": [
+            "Could not resolve permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #5: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":123}",
+          "id": "f248bdf60ecccb70f7dbfbccad890ca8",
+          "timestamp": "2025-07-19T03:44:57.963Z",
+          "missing": [
+            "Invalid channel"
+          ],
+          "extra": [
+            "Could not resolve permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #7: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":null}",
+          "id": "94446e8223de168b08dc6c18efca8ca0",
+          "timestamp": "2025-07-19T03:44:57.963Z",
+          "missing": [
+            "Invalid channel"
+          ],
+          "extra": [
+            "Could not resolve permission type"
+          ]
+        }
+      ],
+      "warnings": [],
+      "passedTests": [
+          {
+            "expectedErrors": [
+              "Could not resolve permission type"
+            ],
+            "actualErrors": [
+              "Could not resolve permission type"
+            ],
+            "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"\",\"channelId\":\"{{channelId}}\"}",
+            "id": "7fdedf5f6247169411d7c0f1aad78656",
+            "timestamp": "2025-07-19T03:44:57.963Z"
+          },
+          {
+            "expectedErrors": [
+              "Invalid channel"
+            ],
+            "actualErrors": [
+              "Invalid channel"
+            ],
+            "path": "::Test case #4: should return errors [\"Invalid channel\"] when body {\"workspaceId\":\"invalid_value\",\"channelId\":\"{{channelId}}\"}",
+            "id": "15db72639e8863cfb8d6a7ec0b479688",
+            "timestamp": "2025-07-19T03:44:57.963Z"
+          },
+          {
+            "expectedErrors": [
+              "Could not resolve permission type"
+            ],
+            "actualErrors": [
+              "Could not resolve permission type"
+            ],
+            "path": "::Test case #6: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":\"\"}",
+            "id": "aa541ce93cb9c14436507ad52f560083",
+            "timestamp": "2025-07-19T03:44:57.963Z"
+          },
+          {
+            "expectedErrors": [
+              "Invalid channel"
+            ],
+            "actualErrors": [
+              "Invalid channel"
+            ],
+            "path": "::Test case #8: should return errors [\"Invalid channel\"] when body {\"workspaceId\":\"0\",\"channelId\":\"invalid_value\"}",
+            "id": "dd5c3f15085e6501aada04d86422bed0",
+            "timestamp": "2025-07-19T03:44:57.963Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #9: should return errors [] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\"}",
+            "id": "f5a34562c29e7e93c05f1afbc11caa69",
+            "timestamp": "2025-07-19T03:44:57.963Z"
+          }
+        ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 9,
+      "rate": 0.9475850888768483
+    },
+    "http_req_duration": {
+      "med": 29.5113,
+      "max": 170.7978,
+      "p(90)": 94.64012000000002,
+      "p(95)": 132.71895999999998,
+      "avg": 48.8527,
+      "min": 19.385
+    },
+    "http_req_connecting": {
+      "avg": 1.0445777777777776,
+      "min": 0,
+      "med": 0,
+      "max": 9.4012,
+      "p(90)": 1.8802400000000015,
+      "p(95)": 5.640719999999996
+    },
+    "http_req_tls_handshaking": {
+      "max": 17.6023,
+      "p(90)": 3.520460000000003,
+      "p(95)": 10.561379999999993,
+      "avg": 1.9558111111111112,
+      "min": 0,
+      "med": 0
+    },
+    "iteration_duration": {
+      "avg": 9496.7332,
+      "min": 9496.7332,
+      "med": 9496.7332,
+      "max": 9496.7332,
+      "p(90)": 9496.7332,
+      "p(95)": 9496.7332
+    },
+    "http_req_waiting": {
+      "p(95)": 130.26785999999998,
+      "avg": 47.451899999999995,
+      "min": 17.1489,
+      "med": 28.4025,
+      "max": 167.2059,
+      "p(90)": 93.32982000000001
+    },
+    "http_req_sending": {
+      "med": 0.6045,
+      "max": 0.9104,
+      "p(90)": 0.77752,
+      "p(95)": 0.8439599999999999,
+      "avg": 0.5260555555555555,
+      "min": 0
+    },
+    "http_req_receiving": {
+      "avg": 0.8747444444444444,
+      "min": 0,
+      "med": 0,
+      "max": 4.6807,
+      "p(90)": 3.0813400000000004,
+      "p(95)": 3.8810199999999995
+    },
+    "http_req_blocked": {
+      "med": 0,
+      "max": 27.527,
+      "p(90)": 5.505400000000005,
+      "p(95)": 16.51619999999999,
+      "avg": 3.0585555555555555,
+      "min": 0
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "max": 1,
+      "value": 1,
+      "min": 1
+    },
+    "totalTestsMetric": {
+      "count": 9,
+      "rate": 0.9475850888768483
+    },
+    "passedTestsMetric": {
+      "count": 5,
+      "rate": 0.5264361604871379
+    },
+    "failedTestsMetric": {
+      "count": 4,
+      "rate": 0.42114892838971035
+    },
+    "warningsMetric": {
+      "count": 0
+    }
+  }
+}

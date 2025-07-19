@@ -1,0 +1,153 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 4,
+        "passed": 3,
+        "failed": 0,
+        "warnings": 1,
+        "successRate": "75.00%"
+      },
+      "failedTests": [],
+      "warnings": [
+          {
+            "expectedErrors": [
+              "limit should not be empty",
+              "limit range from 1 to 500"
+            ],
+            "actualErrors": [
+              "limit range from 1 to 500"
+            ],
+            "path": "::Test case #3: should return errors [\"limit should not be empty\",\"limit range from 1 to 500\"] when body {\"limit\":\"\"}",
+            "id": "677f6d9f2db12a03f924dfdb5284ed3f",
+            "timestamp": "2025-07-19T03:51:30.539Z",
+            "warningMessage": "Actual errors include expected errors but don't match exactly"
+          }
+        ],
+      "passedTests": [
+          {
+            "expectedErrors": [
+              "limit expected number,received nan"
+            ],
+            "actualErrors": [
+              "limit expected number",
+              "received nan"
+            ],
+            "path": "::Test case #1: should return errors [\"limit expected number,received nan\"] when body {\"limit\":\"invalid_number\"}",
+            "id": "a8183b1137c7c0f271dc41b2a8277dbb",
+            "timestamp": "2025-07-19T03:51:30.539Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #2: should return errors [] when body {}",
+            "id": "9eaa89f3956341387247d4723c000c4a",
+            "timestamp": "2025-07-19T03:51:30.539Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #4: should return errors [] when body {\"limit\":1}",
+            "id": "d8b890cf533e754a5cd0c4e2160bfb11",
+            "timestamp": "2025-07-19T03:51:30.539Z"
+          }
+        ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 4,
+      "rate": 0.9471050137016499
+    },
+    "http_req_duration": {
+      "avg": 45.865700000000004,
+      "min": 21.4509,
+      "med": 53.307900000000004,
+      "max": 55.3961,
+      "p(90)": 55.15154,
+      "p(95)": 55.27382
+    },
+    "http_req_connecting": {
+      "avg": 3.33605,
+      "min": 0,
+      "med": 0,
+      "max": 13.3442,
+      "p(90)": 9.340940000000003,
+      "p(95)": 11.342569999999997
+    },
+    "http_req_tls_handshaking": {
+      "avg": 4.585775,
+      "min": 0,
+      "med": 0,
+      "max": 18.3431,
+      "p(90)": 12.840170000000002,
+      "p(95)": 15.591634999999993
+    },
+    "iteration_duration": {
+      "min": 4222.3531,
+      "med": 4222.3531,
+      "max": 4222.3531,
+      "p(90)": 4222.3531,
+      "p(95)": 4222.3531,
+      "avg": 4222.3531
+    },
+    "http_req_waiting": {
+      "max": 54.8876,
+      "p(90)": 54.6407,
+      "p(95)": 54.76415,
+      "avg": 44.588075,
+      "min": 21.4509,
+      "med": 51.0069
+    },
+    "http_req_sending": {
+      "avg": 0.534075,
+      "min": 0,
+      "med": 0.25425,
+      "max": 1.6278,
+      "p(90)": 1.29201,
+      "p(95)": 1.4599049999999996
+    },
+    "http_req_receiving": {
+      "p(90)": 1.8754200000000003,
+      "p(95)": 2.1666599999999994,
+      "avg": 0.7435499999999999,
+      "min": 0,
+      "med": 0.25815,
+      "max": 2.4579
+    },
+    "http_req_blocked": {
+      "avg": 8.049375,
+      "min": 0,
+      "med": 0,
+      "max": 32.1975,
+      "p(90)": 22.538250000000005,
+      "p(95)": 27.367874999999987
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "max": 1,
+      "value": 1,
+      "min": 1
+    },
+    "totalTestsMetric": {
+      "count": 4,
+      "rate": 0.9471050137016499
+    },
+    "passedTestsMetric": {
+      "count": 3,
+      "rate": 0.7103287602762374
+    },
+    "failedTestsMetric": {
+      "count": 0,
+      "rate": 0
+    },
+    "warningsMetric": {
+      "count": 1,
+      "rate": 0.23677625342541248
+    }
+  }
+}
