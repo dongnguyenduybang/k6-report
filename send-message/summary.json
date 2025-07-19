@@ -1,0 +1,338 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 19,
+        "passed": 16,
+        "failed": 2,
+        "warnings": 1,
+        "successRate": "84.21%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "Unsupported permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #7: should return errors [\"Unsupported permission type\"] when body {\"workspaceId\":\"0\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "a47fd1f66d7590444d959c1f7b80324c",
+          "timestamp": "2025-07-19T07:37:24.631Z",
+          "missing": [
+            "Could not resolve permission type"
+          ],
+          "extra": [
+            "Unsupported permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "content should not be null"
+          ],
+          "actualErrors": [
+            "content expected string",
+            "received null"
+          ],
+          "path": "::Test case #15: should return errors [\"content should not be null\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":null,\"ref\":\"ref\"}",
+          "id": "88f58f935e388875b4065d990ef648f8",
+          "timestamp": "2025-07-19T07:37:24.631Z",
+          "missing": [
+            "content expected string",
+            "received null"
+          ],
+          "extra": [
+            "content should not be null"
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "expectedErrors": [
+            "content should not be empty",
+            "content string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "content string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #12: should return errors [\"content should not be empty\",\"content string must contain at least 1 character(s)\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"\",\"ref\":\"ref\"}",
+          "id": "64deb8b0b9344d8f4b498085fab75712",
+          "timestamp": "2025-07-19T07:37:24.631Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        }
+      ],
+      "passedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":123,\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "6296067ff4a193b962a3d49ce2938189",
+          "timestamp": "2025-07-19T07:37:24.630Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "5a2cdc472681e9c8e0d1338563251445",
+          "timestamp": "2025-07-19T07:37:24.630Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "1e6d88609a8291f694f5f6cc9fa96b4e",
+          "timestamp": "2025-07-19T07:37:24.630Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #4: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":null,\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "188260dafbff431393ca38be06f921f9",
+          "timestamp": "2025-07-19T07:37:24.631Z"
+        },
+        {
+          "expectedErrors": [
+            "Invalid channel"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #5: should return errors [\"Invalid channel\"] when body {\"workspaceId\":\"invalid_value\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "46ec411279be9494a2136c97b43d197f",
+          "timestamp": "2025-07-19T07:37:24.631Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #6: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":123,\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "15eb7f5885d56c60ea1fbe2261270194",
+          "timestamp": "2025-07-19T07:37:24.631Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #8: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":\"\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "3a99ad2753b99aa879229b58390668b1",
+          "timestamp": "2025-07-19T07:37:24.631Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #9: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":null,\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "d34d8bb8d375e4e9b6a4b552c53ee0d2",
+          "timestamp": "2025-07-19T07:37:24.631Z"
+        },
+        {
+          "expectedErrors": [
+            "Invalid channel"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #10: should return errors [\"Invalid channel\"] when body {\"workspaceId\":\"0\",\"channelId\":\"invalid_value\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "b6102b204dac99361b7d9e6c82def49f",
+          "timestamp": "2025-07-19T07:37:24.631Z"
+        },
+        {
+          "expectedErrors": [
+            "content expected string,received number"
+          ],
+          "actualErrors": [
+            "content expected string",
+            "received number"
+          ],
+          "path": "::Test case #11: should return errors [\"content expected string,received number\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":123,\"ref\":\"ref\"}",
+          "id": "7bc921f28d9a4fd76b7c2ace13431f32",
+          "timestamp": "2025-07-19T07:37:24.631Z"
+        },
+        {
+          "expectedErrors": [
+            "content string must contain at most 2000 character(s)"
+          ],
+          "actualErrors": [
+            "content string must contain at most 2000 character(s)"
+          ],
+          "path": "::Test case #13: should return errors [\"content string must contain at most 2000 character(s)\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"ref\":\"ref\"}",
+          "id": "78e3ace2f24a79f0d0f46d5b12645988",
+          "timestamp": "2025-07-19T07:37:24.631Z"
+        },
+        {
+          "expectedErrors": [
+            "content required"
+          ],
+          "actualErrors": [
+            "content required"
+          ],
+          "path": "::Test case #14: should return errors [\"content required\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"ref\":\"ref\"}",
+          "id": "47a8eb75cdc55eb6ae713c5f69fe5f37",
+          "timestamp": "2025-07-19T07:37:24.631Z"
+        },
+        {
+          "expectedErrors": [
+            "ref expected string,received number"
+          ],
+          "actualErrors": [
+            "ref expected string",
+            "received number"
+          ],
+          "path": "::Test case #16: should return errors [\"ref expected string,received number\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":123}",
+          "id": "359f9e90056510b809d5baa75713759b",
+          "timestamp": "2025-07-19T07:37:24.631Z"
+        },
+        {
+          "expectedErrors": [
+            "ref string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "ref string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #17: should return errors [\"ref string must contain at least 1 character(s)\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"\"}",
+          "id": "7ea418441ac22a3df7ba7eb9bef5ad80",
+          "timestamp": "2025-07-19T07:37:24.631Z"
+        },
+        {
+          "expectedErrors": [
+            "ref required"
+          ],
+          "actualErrors": [
+            "ref required"
+          ],
+          "path": "::Test case #18: should return errors [\"ref required\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\"}",
+          "id": "1b0878ce1a9c68e0528669fed14d0baa",
+          "timestamp": "2025-07-19T07:37:24.631Z"
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [],
+          "path": "::Test case #19: should return errors [] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "9baf3931efec16376d668cffc75348bb",
+          "timestamp": "2025-07-19T07:37:24.631Z"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 19,
+      "rate": 0.9283208035920114
+    },
+    "http_req_duration": {
+      "avg": 72.76296315789473,
+      "min": 22.5826,
+      "med": 28.925,
+      "max": 801.8774,
+      "p(90)": 53.965459999999986,
+      "p(95)": 137.0577499999984
+    },
+    "http_req_connecting": {
+      "med": 0,
+      "max": 11.8323,
+      "p(90)": 0,
+      "p(95)": 1.1832299999999747,
+      "avg": 0.6227526315789473,
+      "min": 0
+    },
+    "http_req_tls_handshaking": {
+      "med": 0,
+      "max": 17.1256,
+      "p(90)": 0,
+      "p(95)": 1.7125599999999634,
+      "avg": 0.9013473684210526,
+      "min": 0
+    },
+    "iteration_duration": {
+      "med": 20466.4529,
+      "max": 20466.4529,
+      "p(90)": 20466.4529,
+      "p(95)": 20466.4529,
+      "avg": 20466.4529,
+      "min": 20466.4529
+    },
+    "http_req_waiting": {
+      "avg": 70.70427368421053,
+      "min": 16.2985,
+      "med": 28.4888,
+      "max": 800.8085,
+      "p(90)": 53.76231999999999,
+      "p(95)": 136.03672999999844
+    },
+    "http_req_sending": {
+      "max": 1.4083,
+      "p(90)": 1.22806,
+      "p(95)": 1.2527799999999998,
+      "avg": 0.631878947368421,
+      "min": 0,
+      "med": 0.6069
+    },
+    "http_req_receiving": {
+      "avg": 1.4268105263157898,
+      "min": 0,
+      "med": 0.6322,
+      "max": 7.4461,
+      "p(90)": 3.824459999999999,
+      "p(95)": 5.5407999999999955
+    },
+    "http_req_blocked": {
+      "max": 30.6454,
+      "p(90)": 0,
+      "p(95)": 3.0645399999999348,
+      "avg": 1.612915789473684,
+      "min": 0,
+      "med": 0
+    },
+    "vus": {
+      "min": 1,
+      "max": 1,
+      "value": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 19,
+      "rate": 0.9283208035920114
+    },
+    "passedTestsMetric": {
+      "count": 16,
+      "rate": 0.781743834603799
+    },
+    "failedTestsMetric": {
+      "count": 2,
+      "rate": 0.09771797932547488
+    },
+    "warningsMetric": {
+      "count": 1,
+      "rate": 0.04885898966273744
+    }
+  }
+}

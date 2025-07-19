@@ -1,0 +1,422 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 24,
+        "passed": 15,
+        "failed": 6,
+        "warnings": 3,
+        "successRate": "62.50%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "Unsupported permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #7: should return errors [\"Unsupported permission type\"] when body {\"workspaceId\":\"0\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "4f4942cf81c5bcfd02008d63e7c55c16",
+          "timestamp": "2025-07-19T07:42:16.387Z",
+          "missing": [
+            "Could not resolve permission type"
+          ],
+          "extra": [
+            "Unsupported permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "messageId should not be empty",
+            "messageId invalid ulid"
+          ],
+          "actualErrors": [
+            "messageId invalid ulid",
+            "messageId string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #13: should return errors [\"messageId should not be empty\",\"messageId invalid ulid\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "c6707c4c8aa4d461163f5a44b0e39ed4",
+          "timestamp": "2025-07-19T07:42:16.388Z",
+          "missing": [
+            "messageId string must contain at least 1 character(s)"
+          ],
+          "extra": [
+            "messageId should not be empty"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "messageId should not be null"
+          ],
+          "actualErrors": [
+            "messageId expected string",
+            "received null"
+          ],
+          "path": "::Test case #14: should return errors [\"messageId should not be null\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":null,\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "3c14aa254a916b5cc5a3590572841d86",
+          "timestamp": "2025-07-19T07:42:16.388Z",
+          "missing": [
+            "messageId expected string",
+            "received null"
+          ],
+          "extra": [
+            "messageId should not be null"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "content should not be null"
+          ],
+          "actualErrors": [
+            "content expected string",
+            "received null"
+          ],
+          "path": "::Test case #20: should return errors [\"content should not be null\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"content\":null,\"ref\":\"ref\"}",
+          "id": "45a13497bb3633ebd7ca8f717a0e256f",
+          "timestamp": "2025-07-19T07:42:16.389Z",
+          "missing": [
+            "content expected string",
+            "received null"
+          ],
+          "extra": [
+            "content should not be null"
+          ]
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [
+              "Unable to update with the same content"
+            ],
+          "path": "::Test case #23: should return errors [] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\"}",
+          "id": "f14744c5eabae232d5ae68cb92fb513a",
+          "timestamp": "2025-07-19T07:42:16.389Z",
+          "missing": [
+              "Unable to update with the same content"
+            ],
+          "extra": []
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [
+              "Unable to update with the same content"
+            ],
+          "path": "::Test case #24: should return errors [] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "d34e39688018689cfff4bbcb18bd63d0",
+          "timestamp": "2025-07-19T07:42:16.389Z",
+          "missing": [
+              "Unable to update with the same content"
+            ],
+          "extra": []
+        }
+      ],
+      "warnings": [
+        {
+          "expectedErrors": [
+            "messageId invalid ulid",
+            "messageId expected string,received number"
+          ],
+          "actualErrors": [
+            "messageId expected string",
+            "received number"
+          ],
+          "path": "::Test case #11: should return errors [\"messageId invalid ulid\",\"messageId expected string,received number\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":123,\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "771c6336c8bce2855ff7f3d08b3cdfd6",
+          "timestamp": "2025-07-19T07:42:16.388Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "messageId required",
+            "messageId invalid ulid"
+          ],
+          "actualErrors": [
+            "messageId required"
+          ],
+          "path": "::Test case #12: should return errors [\"messageId required\",\"messageId invalid ulid\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "b01b9d1f17d5e65b16948eac1e09f76e",
+          "timestamp": "2025-07-19T07:42:16.388Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "content should not be empty",
+            "content string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "content string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #17: should return errors [\"content should not be empty\",\"content string must contain at least 1 character(s)\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"content\":\"\",\"ref\":\"ref\"}",
+          "id": "c116e08cd260924ddb865661546082b8",
+          "timestamp": "2025-07-19T07:42:16.388Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        }
+      ],
+      "passedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":123,\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "6c1a91e338deeaf58fa3715652ae4e3d",
+          "timestamp": "2025-07-19T07:42:16.386Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "d254127f298f0acc0da66ec5fbe4b0c2",
+          "timestamp": "2025-07-19T07:42:16.386Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "db7c1fbed3c51e4f691877d24d4fb92d",
+          "timestamp": "2025-07-19T07:42:16.387Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #4: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":null,\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "e8b5fdeec7ec0285a23296d8ec89ed99",
+          "timestamp": "2025-07-19T07:42:16.387Z"
+        },
+        {
+          "expectedErrors": [
+            "Invalid channel"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #5: should return errors [\"Invalid channel\"] when body {\"workspaceId\":\"invalid_value\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "7a0de909ca7e9fcfa59711457eed30a9",
+          "timestamp": "2025-07-19T07:42:16.387Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #6: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":123,\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "4d5e35c106954ddbd4b9e627381d1133",
+          "timestamp": "2025-07-19T07:42:16.387Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #8: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":\"\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "d897cbbf18a00833d12c59c6696e20b3",
+          "timestamp": "2025-07-19T07:42:16.388Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #9: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":null,\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "0f03eed757c1e95d4ff4497eacac8e14",
+          "timestamp": "2025-07-19T07:42:16.388Z"
+        },
+        {
+          "expectedErrors": [
+            "Invalid channel"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #10: should return errors [\"Invalid channel\"] when body {\"workspaceId\":\"0\",\"channelId\":\"invalid_value\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "afb2075fb8a8990aefcc61fb53215606",
+          "timestamp": "2025-07-19T07:42:16.388Z"
+        },
+        {
+          "expectedErrors": [
+            "messageId invalid ulid"
+          ],
+          "actualErrors": [
+            "messageId invalid ulid"
+          ],
+          "path": "::Test case #15: should return errors [\"messageId invalid ulid\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"invalid_ULID\",\"content\":\"defaultContent\",\"ref\":\"ref\"}",
+          "id": "405f8f38c695ee98bebdca0415b345e3",
+          "timestamp": "2025-07-19T07:42:16.388Z"
+        },
+        {
+          "expectedErrors": [
+            "content expected string,received number"
+          ],
+          "actualErrors": [
+            "content expected string",
+            "received number"
+          ],
+          "path": "::Test case #16: should return errors [\"content expected string,received number\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"content\":123,\"ref\":\"ref\"}",
+          "id": "68c5e4d2ebc8be772d9a97a036ec6cdd",
+          "timestamp": "2025-07-19T07:42:16.388Z"
+        },
+        {
+          "expectedErrors": [
+            "content string must contain at most 2000 character(s)"
+          ],
+          "actualErrors": [
+            "content string must contain at most 2000 character(s)"
+          ],
+          "path": "::Test case #18: should return errors [\"content string must contain at most 2000 character(s)\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"content\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"ref\":\"ref\"}",
+          "id": "2362bfcda690f69c142417481e0fb820",
+          "timestamp": "2025-07-19T07:42:16.388Z"
+        },
+        {
+          "expectedErrors": [
+            "content required"
+          ],
+          "actualErrors": [
+            "content required"
+          ],
+          "path": "::Test case #19: should return errors [\"content required\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"ref\":\"ref\"}",
+          "id": "8deed55432c4bca1f4719281cffbd813",
+          "timestamp": "2025-07-19T07:42:16.388Z"
+        },
+        {
+          "expectedErrors": [
+            "ref expected string,received number"
+          ],
+          "actualErrors": [
+            "ref expected string",
+            "received number"
+          ],
+          "path": "::Test case #21: should return errors [\"ref expected string,received number\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":123}",
+          "id": "82191e2c99fb4067bc00e38d4a25d8da",
+          "timestamp": "2025-07-19T07:42:16.389Z"
+        },
+        {
+          "expectedErrors": [
+            "ref string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "ref string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #22: should return errors [\"ref string must contain at least 1 character(s)\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"content\":\"defaultContent\",\"ref\":\"\"}",
+          "id": "e29904a3cbeeff49fff5e5eadfc56f04",
+          "timestamp": "2025-07-19T07:42:16.389Z"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "rate": 0.963865122273078,
+      "count": 24
+    },
+    "http_req_duration": {
+      "p(90)": 52.93643,
+      "p(95)": 57.401239999999994,
+      "avg": 33.359137499999996,
+      "min": 17.3937,
+      "med": 29.10755,
+      "max": 63.3104
+    },
+    "http_req_connecting": {
+      "max": 11.0375,
+      "p(90)": 0,
+      "p(95)": 0,
+      "avg": 0.45989583333333334,
+      "min": 0,
+      "med": 0
+    },
+    "http_req_tls_handshaking": {
+      "avg": 0.7360291666666666,
+      "min": 0,
+      "med": 0,
+      "max": 17.6647,
+      "p(90)": 0,
+      "p(95)": 0
+    },
+    "iteration_duration": {
+      "p(90)": 24898.6558,
+      "p(95)": 24898.6558,
+      "avg": 24898.6558,
+      "min": 24898.6558,
+      "med": 24898.6558,
+      "max": 24898.6558
+    },
+    "http_req_waiting": {
+      "max": 62.1339,
+      "p(90)": 51.36263,
+      "p(95)": 53.34564999999999,
+      "avg": 30.358045833333335,
+      "min": 13.4884,
+      "med": 26.9546
+    },
+    "http_req_sending": {
+      "min": 0,
+      "med": 0.6875,
+      "max": 1.4001,
+      "p(90)": 0.8316199999999999,
+      "p(95)": 1.1252899999999992,
+      "avg": 0.6326291666666667
+    },
+    "http_req_receiving": {
+      "avg": 2.3684625,
+      "min": 0,
+      "med": 0,
+      "max": 11.8241,
+      "p(90)": 9.37904,
+      "p(95)": 10.962569999999998
+    },
+    "http_req_blocked": {
+      "p(95)": 0.5471449999999987,
+      "avg": 1.303375,
+      "min": 0,
+      "med": 0,
+      "max": 30.6373,
+      "p(90)": 0
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 24,
+      "rate": 0.963865122273078
+    },
+    "passedTestsMetric": {
+      "rate": 0.6024157014206737,
+      "count": 15
+    },
+    "failedTestsMetric": {
+      "count": 6,
+      "rate": 0.2409662805682695
+    },
+    "warningsMetric": {
+      "count": 3,
+      "rate": 0.12048314028413475
+    }
+  }
+}

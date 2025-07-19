@@ -1,0 +1,382 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 21,
+        "passed": 14,
+        "failed": 4,
+        "warnings": 3,
+        "successRate": "66.67%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "Unsupported permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #7: should return errors [\"Unsupported permission type\"] when body {\"workspaceId\":\"0\",\"messageId\":\"{{messageId}}\",\"emoji\":\"🎉\"}",
+          "id": "a65a4f85239ead033ffffae02e8fb342",
+          "timestamp": "2025-07-19T07:31:18.223Z",
+          "missing": [
+            "Could not resolve permission type"
+          ],
+          "extra": [
+            "Unsupported permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "messageId should not be empty",
+            "messageId invalid ulid"
+          ],
+          "actualErrors": [
+            "messageId invalid ulid",
+            "messageId string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #13: should return errors [\"messageId should not be empty\",\"messageId invalid ulid\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"\",\"emoji\":\"🎉\"}",
+          "id": "60788f0836ccea02e62ad1397e7e7d9d",
+          "timestamp": "2025-07-19T07:31:18.224Z",
+          "missing": [
+            "messageId string must contain at least 1 character(s)"
+          ],
+          "extra": [
+            "messageId should not be empty"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "messageId should not be null"
+          ],
+          "actualErrors": [
+            "messageId expected string",
+            "received null"
+          ],
+          "path": "::Test case #14: should return errors [\"messageId should not be null\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":null,\"emoji\":\"🎉\"}",
+          "id": "ac1bf5faa39beef39346b68387b870e6",
+          "timestamp": "2025-07-19T07:31:18.224Z",
+          "missing": [
+            "messageId expected string",
+            "received null"
+          ],
+          "extra": [
+            "messageId should not be null"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "emoji should not be null"
+          ],
+          "actualErrors": [
+            "emoji expected string",
+            "received null"
+          ],
+          "path": "::Test case #20: should return errors [\"emoji should not be null\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"emoji\":null}",
+          "id": "521834c817e9e531b827ee03da7b53fa",
+          "timestamp": "2025-07-19T07:31:18.224Z",
+          "missing": [
+            "emoji expected string",
+            "received null"
+          ],
+          "extra": [
+            "emoji should not be null"
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "expectedErrors": [
+            "messageId invalid ulid",
+            "messageId expected string,received number"
+          ],
+          "actualErrors": [
+            "messageId expected string",
+            "received number"
+          ],
+          "path": "::Test case #11: should return errors [\"messageId invalid ulid\",\"messageId expected string,received number\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":123,\"emoji\":\"🎉\"}",
+          "id": "746b3fb599bb601b0abc8aa5f34d279a",
+          "timestamp": "2025-07-19T07:31:18.223Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "messageId required",
+            "messageId invalid ulid"
+          ],
+          "actualErrors": [
+            "messageId required"
+          ],
+          "path": "::Test case #12: should return errors [\"messageId required\",\"messageId invalid ulid\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"emoji\":\"🎉\"}",
+          "id": "2683111bee608d34ac1609c2319acf7c",
+          "timestamp": "2025-07-19T07:31:18.223Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "emoji should not be empty",
+            "emoji invalid emoji",
+            "emoji only accepts 1 emoji"
+          ],
+          "actualErrors": [
+            "emoji invalid emoji",
+            "emoji only accepts 1 emoji"
+          ],
+          "path": "::Test case #18: should return errors [\"emoji should not be empty\",\"emoji invalid emoji\",\"emoji only accepts 1 emoji\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"emoji\":\"\"}",
+          "id": "8259cd89d6360309dd6730d289bed079",
+          "timestamp": "2025-07-19T07:31:18.224Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        }
+      ],
+      "passedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":123,\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"emoji\":\"🎉\"}",
+          "id": "57162d03d6563d51670a295309dec2b8",
+          "timestamp": "2025-07-19T07:31:18.222Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"emoji\":\"🎉\"}",
+          "id": "71e310ee83ff64fca837afab64632a24",
+          "timestamp": "2025-07-19T07:31:18.222Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"emoji\":\"🎉\"}",
+          "id": "2fa78a724ed529cfe04612b2715a6ea8",
+          "timestamp": "2025-07-19T07:31:18.222Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #4: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":null,\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"emoji\":\"🎉\"}",
+          "id": "65353983aebde48bb3cb9bdf25cc39a7",
+          "timestamp": "2025-07-19T07:31:18.222Z"
+        },
+        {
+          "expectedErrors": [
+            "Invalid channel"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #5: should return errors [\"Invalid channel\"] when body {\"workspaceId\":\"invalid_value\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"emoji\":\"🎉\"}",
+          "id": "b08c5ac96d08b8c7e279e58c6ed99c6e",
+          "timestamp": "2025-07-19T07:31:18.222Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #6: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":123,\"messageId\":\"{{messageId}}\",\"emoji\":\"🎉\"}",
+          "id": "e5dbfe48d214cc4004c194339457ee84",
+          "timestamp": "2025-07-19T07:31:18.222Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #8: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":\"\",\"messageId\":\"{{messageId}}\",\"emoji\":\"🎉\"}",
+          "id": "687c0733e8e5a4ffdaf8991c020700d0",
+          "timestamp": "2025-07-19T07:31:18.223Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #9: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":null,\"messageId\":\"{{messageId}}\",\"emoji\":\"🎉\"}",
+          "id": "f024dc0c93889593e8f022b8a88a3aaa",
+          "timestamp": "2025-07-19T07:31:18.223Z"
+        },
+        {
+          "expectedErrors": [
+            "Invalid channel"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #10: should return errors [\"Invalid channel\"] when body {\"workspaceId\":\"0\",\"channelId\":\"invalid_value\",\"messageId\":\"{{messageId}}\",\"emoji\":\"🎉\"}",
+          "id": "19146ed114a0bfa137d9392abbf17cb6",
+          "timestamp": "2025-07-19T07:31:18.223Z"
+        },
+        {
+          "expectedErrors": [
+            "messageId invalid ulid"
+          ],
+          "actualErrors": [
+            "messageId invalid ulid"
+          ],
+          "path": "::Test case #15: should return errors [\"messageId invalid ulid\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"invalid_ULID\",\"emoji\":\"🎉\"}",
+          "id": "31706a39c711195933de052fb3b210b9",
+          "timestamp": "2025-07-19T07:31:18.224Z"
+        },
+        {
+          "expectedErrors": [
+            "emoji expected string,received number"
+          ],
+          "actualErrors": [
+            "emoji expected string",
+            "received number"
+          ],
+          "path": "::Test case #16: should return errors [\"emoji expected string,received number\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"emoji\":123}",
+          "id": "3c74827a875126eb0cdd2c1c745f8d6c",
+          "timestamp": "2025-07-19T07:31:18.224Z"
+        },
+        {
+          "expectedErrors": [
+            "emoji only accepts 1 emoji"
+          ],
+          "actualErrors": [
+            "emoji only accepts 1 emoji"
+          ],
+          "path": "::Test case #17: should return errors [\"emoji only accepts 1 emoji\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"emoji\":\"🎉🎉\"}",
+          "id": "0e955ca267caff0d4faaacf68cc24878",
+          "timestamp": "2025-07-19T07:31:18.224Z"
+        },
+        {
+          "expectedErrors": [
+            "emoji required"
+          ],
+          "actualErrors": [
+            "emoji required"
+          ],
+          "path": "::Test case #19: should return errors [\"emoji required\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\"}",
+          "id": "56e66ba5124a302ff792220683870aac",
+          "timestamp": "2025-07-19T07:31:18.224Z"
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [],
+          "path": "::Test case #21: should return errors [] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"emoji\":\"🎉\"}",
+          "id": "cd76cb5bf40572a66b3bc5a97f6a9dc5",
+          "timestamp": "2025-07-19T07:31:18.224Z"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 21,
+      "rate": 0.9620306961731011
+    },
+    "http_req_duration": {
+      "avg": 35.37130476190477,
+      "min": 21.2076,
+      "med": 28.1838,
+      "max": 103.0302,
+      "p(90)": 45.5983,
+      "p(95)": 78.224
+    },
+    "http_req_connecting": {
+      "max": 21.9122,
+      "p(90)": 0,
+      "p(95)": 0,
+      "avg": 1.0434380952380953,
+      "min": 0,
+      "med": 0
+    },
+    "http_req_tls_handshaking": {
+      "p(90)": 0,
+      "p(95)": 0,
+      "avg": 0.8840333333333332,
+      "min": 0,
+      "med": 0,
+      "max": 18.5647
+    },
+    "iteration_duration": {
+      "p(95)": 21826.2053,
+      "avg": 21826.2053,
+      "min": 21826.2053,
+      "med": 21826.2053,
+      "max": 21826.2053,
+      "p(90)": 21826.2053
+    },
+    "http_req_waiting": {
+      "avg": 34.32719523809524,
+      "min": 20.6321,
+      "med": 27.521,
+      "max": 102.2321,
+      "p(90)": 45.0685,
+      "p(95)": 77.4444
+    },
+    "http_req_sending": {
+      "min": 0,
+      "med": 0.7796,
+      "max": 1.6964,
+      "p(90)": 1.3552,
+      "p(95)": 1.5189,
+      "avg": 0.8391190476190477
+    },
+    "http_req_receiving": {
+      "med": 0,
+      "max": 1.0033,
+      "p(90)": 0.7334,
+      "p(95)": 0.9294,
+      "avg": 0.2049904761904762,
+      "min": 0
+    },
+    "http_req_blocked": {
+      "avg": 1.9521238095238094,
+      "min": 0,
+      "med": 0,
+      "max": 40.9946,
+      "p(90)": 0,
+      "p(95)": 0
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "max": 1,
+      "value": 1,
+      "min": 1
+    },
+    "totalTestsMetric": {
+      "count": 21,
+      "rate": 0.9620306961731011
+    },
+    "passedTestsMetric": {
+      "count": 14,
+      "rate": 0.641353797448734
+    },
+    "failedTestsMetric": {
+      "count": 4,
+      "rate": 0.1832439421282097
+    },
+    "warningsMetric": {
+      "count": 3,
+      "rate": 0.13743295659615729
+    }
+  }
+}

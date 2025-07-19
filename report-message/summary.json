@@ -1,0 +1,464 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 27,
+        "passed": 14,
+        "failed": 9,
+        "warnings": 4,
+        "successRate": "51.85%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "Unsupported permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #7: should return errors [\"Unsupported permission type\"] when body {\"workspaceId\":\"0\",\"messageId\":\"{{messageId}}\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "f436a1122122734134404d75eb7f38a1",
+          "timestamp": "2025-07-19T07:34:49.989Z",
+          "missing": [
+            "Could not resolve permission type"
+          ],
+          "extra": [
+            "Unsupported permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "messageId should not be empty",
+            "messageId invalid ulid"
+          ],
+          "actualErrors": [
+            "messageId invalid ulid",
+            "messageId string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #13: should return errors [\"messageId should not be empty\",\"messageId invalid ulid\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "c2ccd8282ca0705f666a9412e33527ce",
+          "timestamp": "2025-07-19T07:34:49.990Z",
+          "missing": [
+            "messageId string must contain at least 1 character(s)"
+          ],
+          "extra": [
+            "messageId should not be empty"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "messageId should not be null"
+          ],
+          "actualErrors": [
+            "messageId expected string",
+            "received null"
+          ],
+          "path": "::Test case #14: should return errors [\"messageId should not be null\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":null,\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "6182f99c3caea5e3c1c07faf3c76ba33",
+          "timestamp": "2025-07-19T07:34:49.990Z",
+          "missing": [
+            "messageId expected string",
+            "received null"
+          ],
+          "extra": [
+            "messageId should not be null"
+          ]
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [
+              "Cannot report your own message"
+            ],
+          "path": "::Test case #17: should return errors [] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"reportCategory\":20,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "ea2d53d2511d631bbdbafe5a83aa27e7",
+          "timestamp": "2025-07-19T07:34:49.990Z",
+          "missing": [
+              "Cannot report your own message"
+            ],
+          "extra": []
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [
+              "Cannot report your own message"
+            ],
+          "path": "::Test case #18: should return errors [] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"reportCategory\":3,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "e8e705983a5ebe5746051fb880324d21",
+          "timestamp": "2025-07-19T07:34:49.991Z",
+          "missing": [
+              "Cannot report your own message"
+            ],
+          "extra": []
+        },
+        {
+          "expectedErrors": [
+            "reportCategory should not be empty",
+            "reportCategory expected 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 20,received nan"
+          ],
+          "actualErrors": [
+            "Cannot report your own message"
+          ],
+          "path": "::Test case #20: should return errors [\"reportCategory should not be empty\",\"reportCategory expected 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 20,received nan\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"reportCategory\":\"\",\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "cac76ce72b0a8f30fba68818f57d57fe",
+          "timestamp": "2025-07-19T07:34:49.991Z",
+          "missing": [
+            "Cannot report your own message"
+          ],
+          "extra": [
+            "reportCategory should not be empty",
+            "reportCategory expected 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 20,received nan"
+          ]
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [
+              "Cannot report your own message"
+            ],
+          "path": "::Test case #24: should return errors [] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"reportCategory\":1,\"pretendingTo\":1}",
+          "id": "9b02758955fc6930a0319d858be188d4",
+          "timestamp": "2025-07-19T07:34:49.991Z",
+          "missing": [
+              "Cannot report your own message"
+            ],
+          "extra": []
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [
+              "Cannot report your own message"
+            ],
+          "path": "::Test case #26: should return errors [] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"reportCategory\":1,\"reportReason\":\"default report reason\"}",
+          "id": "2c93c8d5fc9e9af244a8cfa31a01a103",
+          "timestamp": "2025-07-19T07:34:49.991Z",
+          "missing": [
+              "Cannot report your own message"
+            ],
+          "extra": []
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [
+              "Cannot report your own message"
+            ],
+          "path": "::Test case #27: should return errors [] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "1389616f7c15dbd3808cc0300d78eaee",
+          "timestamp": "2025-07-19T07:34:49.991Z",
+          "missing": [
+              "Cannot report your own message"
+            ],
+          "extra": []
+        }
+      ],
+      "warnings": [
+        {
+          "expectedErrors": [
+            "messageId invalid ulid",
+            "messageId expected string,received number"
+          ],
+          "actualErrors": [
+            "messageId expected string",
+            "received number"
+          ],
+          "path": "::Test case #11: should return errors [\"messageId invalid ulid\",\"messageId expected string,received number\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":123,\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "aa4c784091c81697d4bad338f2eb892c",
+          "timestamp": "2025-07-19T07:34:49.990Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "messageId required",
+            "messageId invalid ulid"
+          ],
+          "actualErrors": [
+            "messageId required"
+          ],
+          "path": "::Test case #12: should return errors [\"messageId required\",\"messageId invalid ulid\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "915cab7d9031f4c9db6fbca5767840b0",
+          "timestamp": "2025-07-19T07:34:49.990Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "reportCategory required",
+            "reportCategory expected 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 20,received undefined"
+          ],
+          "actualErrors": [
+            "reportCategory required"
+          ],
+          "path": "::Test case #19: should return errors [\"reportCategory required\",\"reportCategory expected 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 20,received undefined\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "7e3fc451deadef232062696836604094",
+          "timestamp": "2025-07-19T07:34:49.991Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "reportReason should not be empty",
+            "reportReason string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "reportReason string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #22: should return errors [\"reportReason should not be empty\",\"reportReason string must contain at least 1 character(s)\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"reportCategory\":1,\"reportReason\":\"\",\"pretendingTo\":1}",
+          "id": "83924cc56ed975245c80185b94e6660e",
+          "timestamp": "2025-07-19T07:34:49.991Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        }
+      ],
+      "passedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":123,\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "03cd171bd7281035ebba4f1c9de1e22c",
+          "timestamp": "2025-07-19T07:34:49.987Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "7eff8d103d76b1d700e6298839d58c6d",
+          "timestamp": "2025-07-19T07:34:49.988Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "ec4b52bdde864a6769997ee3830f21de",
+          "timestamp": "2025-07-19T07:34:49.988Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #4: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":null,\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "ba4c956b55851f1655c463e4c1447f78",
+          "timestamp": "2025-07-19T07:34:49.989Z"
+        },
+        {
+          "expectedErrors": [
+            "Invalid channel"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #5: should return errors [\"Invalid channel\"] when body {\"workspaceId\":\"invalid_value\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "6148da885de34c8b15b84eff39b6008c",
+          "timestamp": "2025-07-19T07:34:49.989Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #6: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":123,\"messageId\":\"{{messageId}}\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "16c3f99240d6bd96a397b5e8b2d86f27",
+          "timestamp": "2025-07-19T07:34:49.989Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #8: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":\"\",\"messageId\":\"{{messageId}}\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "423adb8aa7d64dae7d42270a65ab2d57",
+          "timestamp": "2025-07-19T07:34:49.989Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #9: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":null,\"messageId\":\"{{messageId}}\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "89596fd726af5b3fce184ec514b75bc3",
+          "timestamp": "2025-07-19T07:34:49.989Z"
+        },
+        {
+          "expectedErrors": [
+            "Invalid channel"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #10: should return errors [\"Invalid channel\"] when body {\"workspaceId\":\"0\",\"channelId\":\"invalid_value\",\"messageId\":\"{{messageId}}\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "a8effb0d3d980ccf8afbbf5fed4f190e",
+          "timestamp": "2025-07-19T07:34:49.989Z"
+        },
+        {
+          "expectedErrors": [
+            "messageId invalid ulid"
+          ],
+          "actualErrors": [
+            "messageId invalid ulid"
+          ],
+          "path": "::Test case #15: should return errors [\"messageId invalid ulid\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"invalid_ULID\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "31e207770470d85ff94450685f190d0d",
+          "timestamp": "2025-07-19T07:34:49.990Z"
+        },
+        {
+          "expectedErrors": [
+            "reportCategory expected 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 20,received nan"
+          ],
+          "actualErrors": [
+            "reportCategory expected 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 20",
+            "received nan"
+          ],
+          "path": "::Test case #16: should return errors [\"reportCategory expected 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 20,received nan\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"reportCategory\":\"invalid_enum_value\",\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "e0330ceba13a5483959d883bedd8d051",
+          "timestamp": "2025-07-19T07:34:49.990Z"
+        },
+        {
+          "expectedErrors": [
+            "reportReason expected string,received number"
+          ],
+          "actualErrors": [
+            "reportReason expected string",
+            "received number"
+          ],
+          "path": "::Test case #21: should return errors [\"reportReason expected string,received number\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"reportCategory\":1,\"reportReason\":123,\"pretendingTo\":1}",
+          "id": "65265ad99f150a273db39870638c93fe",
+          "timestamp": "2025-07-19T07:34:49.991Z"
+        },
+        {
+          "expectedErrors": [
+            "reportReason string must contain at most 255 character(s)"
+          ],
+          "actualErrors": [
+            "reportReason string must contain at most 255 character(s)"
+          ],
+          "path": "::Test case #23: should return errors [\"reportReason string must contain at most 255 character(s)\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"reportCategory\":1,\"reportReason\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"pretendingTo\":1}",
+          "id": "96cd292bb35ed4ba5e32fbcf0e441174",
+          "timestamp": "2025-07-19T07:34:49.991Z"
+        },
+        {
+          "expectedErrors": [
+            "pretendingTo expected 0 | 1 | 2 | 3,received nan"
+          ],
+          "actualErrors": [
+            "pretendingTo expected 0 | 1 | 2 | 3",
+            "received nan"
+          ],
+          "path": "::Test case #25: should return errors [\"pretendingTo expected 0 | 1 | 2 | 3,received nan\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"messageId\":\"{{messageId}}\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":\"invalid_enum_value\"}",
+          "id": "d5ef5bbfc54d267752016ed046ad6f65",
+          "timestamp": "2025-07-19T07:34:49.991Z"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "rate": 0.9650986237500605,
+      "count": 27
+    },
+    "http_req_duration": {
+      "max": 62.7408,
+      "p(90)": 47.21364000000002,
+      "p(95)": 52.13978,
+      "avg": 32.489281481481484,
+      "min": 21.8375,
+      "med": 31.5381
+    },
+    "http_req_connecting": {
+      "max": 11.7403,
+      "p(90)": 0,
+      "p(95)": 0,
+      "avg": 0.4348259259259259,
+      "min": 0,
+      "med": 0
+    },
+    "http_req_tls_handshaking": {
+      "p(90)": 0,
+      "p(95)": 0,
+      "avg": 0.8579185185185184,
+      "min": 0,
+      "med": 0,
+      "max": 23.1638
+    },
+    "iteration_duration": {
+      "p(90)": 27975.345,
+      "p(95)": 27975.345,
+      "avg": 27975.345,
+      "min": 27975.345,
+      "med": 27975.345,
+      "max": 27975.345
+    },
+    "http_req_waiting": {
+      "avg": 31.530644444444444,
+      "min": 20.4156,
+      "med": 30.3781,
+      "max": 61.7378,
+      "p(90)": 46.471840000000014,
+      "p(95)": 51.37935
+    },
+    "http_req_sending": {
+      "p(90)": 1.06168,
+      "p(95)": 1.1322499999999998,
+      "avg": 0.753288888888889,
+      "min": 0,
+      "med": 0.8687,
+      "max": 1.3469
+    },
+    "http_req_receiving": {
+      "min": 0,
+      "med": 0,
+      "max": 1.0045,
+      "p(90)": 0.65588,
+      "p(95)": 0.7689699999999999,
+      "avg": 0.20534814814814814
+    },
+    "http_req_blocked": {
+      "max": 36.0678,
+      "p(90)": 0,
+      "p(95)": 0,
+      "avg": 1.3358444444444444,
+      "min": 0,
+      "med": 0
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 27,
+      "rate": 0.9650986237500605
+    },
+    "passedTestsMetric": {
+      "count": 14,
+      "rate": 0.5004215086111425
+    },
+    "failedTestsMetric": {
+      "count": 9,
+      "rate": 0.3216995412500202
+    },
+    "warningsMetric": {
+      "rate": 0.14297757388889787,
+      "count": 4
+    }
+  }
+}

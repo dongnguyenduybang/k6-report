@@ -1,0 +1,517 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 31,
+        "passed": 11,
+        "failed": 4,
+        "warnings": 16,
+        "successRate": "35.48%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "Unsupported permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #7: should return errors [\"Unsupported permission type\"] when body {\"workspaceId\":\"0\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "8fd7e1bbd562bba339179cf5b703ceba",
+          "timestamp": "2025-07-19T07:35:53.975Z",
+          "missing": [
+            "Could not resolve permission type"
+          ],
+          "extra": [
+            "Unsupported permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "ref should not be null",
+            "description should not be empty"
+          ],
+          "actualErrors": [
+            "ref expected string",
+            "received null"
+          ],
+          "path": "::Test case #19: should return errors [\"ref should not be null\",\"description should not be empty\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":null,\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "2da9edcb26c4e9eb2c6d19ffa680ec73",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "missing": [
+            "ref expected string",
+            "received null"
+          ],
+          "extra": [
+            "ref should not be null",
+            "description should not be empty"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty",
+            "latitude should not be null"
+          ],
+          "actualErrors": [
+            "latitude expected string",
+            "received null"
+          ],
+          "path": "::Test case #27: should return errors [\"description should not be empty\",\"latitude should not be null\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":null,\"longitude\":\"105.7833368\"}",
+          "id": "0602725d3f105ec7dae39ec8b7fccb75",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "missing": [
+            "latitude expected string",
+            "received null"
+          ],
+          "extra": [
+            "description should not be empty",
+            "latitude should not be null"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty",
+            "longitude should not be null"
+          ],
+          "actualErrors": [
+            "longitude expected string",
+            "received null"
+          ],
+          "path": "::Test case #31: should return errors [\"description should not be empty\",\"longitude should not be null\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":null}",
+          "id": "a2c72f46b04cbc3e28200947ecb86638",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "missing": [
+            "longitude expected string",
+            "received null"
+          ],
+          "extra": [
+            "description should not be empty",
+            "longitude should not be null"
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "expectedErrors": [
+            "content expected string,received number",
+            "description should not be empty"
+          ],
+          "actualErrors": [
+            "content expected string",
+            "received number"
+          ],
+          "path": "::Test case #11: should return errors [\"content expected string,received number\",\"description should not be empty\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":123,\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "b7b4d17276edf207ffe94496b3ee25c3",
+          "timestamp": "2025-07-19T07:35:53.975Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "content should not be empty",
+            "content string must contain at least 1 character(s)",
+            "description should not be empty"
+          ],
+          "actualErrors": [],
+          "path": "::Test case #12: should return errors [\"content should not be empty\",\"content string must contain at least 1 character(s)\",\"description should not be empty\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "da89d9bd3992e4672461f767809f1aaa",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "content string must contain at most 2000 character(s)",
+            "description should not be empty"
+          ],
+          "actualErrors": [
+            "content string must contain at most 2000 character(s)"
+          ],
+          "path": "::Test case #13: should return errors [\"content string must contain at most 2000 character(s)\",\"description should not be empty\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "536e9699710e8cc67be436a76dc9d688",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "content required",
+            "description should not be empty"
+          ],
+          "actualErrors": [],
+          "path": "::Test case #14: should return errors [\"content required\",\"description should not be empty\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "6373c10dd99cfdd99c9a6ff1900d215f",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "content should not be null",
+            "description should not be empty"
+          ],
+          "actualErrors": [],
+          "path": "::Test case #15: should return errors [\"content should not be null\",\"description should not be empty\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":null,\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "99e20af972d032c5d042dbf80c2cfecd",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "ref expected string,received number",
+            "description should not be empty"
+          ],
+          "actualErrors": [
+            "ref expected string",
+            "received number"
+          ],
+          "path": "::Test case #16: should return errors [\"ref expected string,received number\",\"description should not be empty\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":123,\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "2850e57ab7f23da8234ca7b5a5df2c57",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "ref should not be empty",
+            "ref string must contain at least 1 character(s)",
+            "description should not be empty"
+          ],
+          "actualErrors": [
+            "ref string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #17: should return errors [\"ref should not be empty\",\"ref string must contain at least 1 character(s)\",\"description should not be empty\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "ba643005249a9fb27113813ae517d080",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "ref required",
+            "description should not be empty"
+          ],
+          "actualErrors": [
+            "ref required"
+          ],
+          "path": "::Test case #18: should return errors [\"ref required\",\"description should not be empty\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "76d3fd605dccddda1a0a92169f735be5",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty"
+          ],
+          "actualErrors": [],
+          "path": "::Test case #22: should return errors [\"description should not be empty\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "8b9710e66ac2c4e6522e3777ef061f42",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "description should not be null"
+          ],
+          "actualErrors": [],
+          "path": "::Test case #23: should return errors [\"description should not be null\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":null,\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "5b9024a192466b5e6a7766e355082104",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty",
+            "latitude expected string,received number"
+          ],
+          "actualErrors": [
+            "latitude expected string",
+            "received number"
+          ],
+          "path": "::Test case #24: should return errors [\"description should not be empty\",\"latitude expected string,received number\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":123,\"longitude\":\"105.7833368\"}",
+          "id": "3e652375ac3c474beba5860464860826",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty",
+            "latitude should not be empty",
+            "latitude string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "latitude string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #25: should return errors [\"description should not be empty\",\"latitude should not be empty\",\"latitude string must contain at least 1 character(s)\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"\",\"longitude\":\"105.7833368\"}",
+          "id": "960ac1548f2524a20ffb76d0b7bc76c7",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty",
+            "latitude required"
+          ],
+          "actualErrors": [
+            "latitude required"
+          ],
+          "path": "::Test case #26: should return errors [\"description should not be empty\",\"latitude required\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"longitude\":\"105.7833368\"}",
+          "id": "25c02ff12d943d95240d0f0405f050c1",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty",
+            "longitude expected string,received number"
+          ],
+          "actualErrors": [
+            "longitude expected string",
+            "received number"
+          ],
+          "path": "::Test case #28: should return errors [\"description should not be empty\",\"longitude expected string,received number\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":123}",
+          "id": "967446f6e4ad0d3821414562c43c686b",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty",
+            "longitude should not be empty",
+            "longitude string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "longitude string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #29: should return errors [\"description should not be empty\",\"longitude should not be empty\",\"longitude string must contain at least 1 character(s)\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"\"}",
+          "id": "7e8b1e4f4ae79d6c3575d3ba683de6af",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "description should not be empty",
+            "longitude required"
+          ],
+          "actualErrors": [
+            "longitude required"
+          ],
+          "path": "::Test case #30: should return errors [\"description should not be empty\",\"longitude required\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\"}",
+          "id": "7e854016e4768bb79768a41cce5dd36f",
+          "timestamp": "2025-07-19T07:35:53.976Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        }
+      ],
+      "passedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":123,\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "54088108c818e0be27b7b68b4912ecf0",
+          "timestamp": "2025-07-19T07:35:53.975Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "f2ce0254c6641369da1383db37183c24",
+          "timestamp": "2025-07-19T07:35:53.975Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "c00dd3d82fcd32c44944e1d99c226f97",
+          "timestamp": "2025-07-19T07:35:53.975Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #4: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":null,\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "08dae9552e8c40792c18c63dcde7d6d8",
+          "timestamp": "2025-07-19T07:35:53.975Z"
+        },
+        {
+          "expectedErrors": [
+            "Invalid channel"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #5: should return errors [\"Invalid channel\"] when body {\"workspaceId\":\"invalid_value\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "26b57e7d8337a6802c477bc80642c5a7",
+          "timestamp": "2025-07-19T07:35:53.975Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #6: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":123,\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "bcf613b68498298d0524bcc8818673fd",
+          "timestamp": "2025-07-19T07:35:53.975Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #8: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":\"\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "c9c048aadb651275778a2986698f2d3e",
+          "timestamp": "2025-07-19T07:35:53.975Z"
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #9: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":null,\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "0ef411f3032ff55f351b6c4bcfee4ca3",
+          "timestamp": "2025-07-19T07:35:53.975Z"
+        },
+        {
+          "expectedErrors": [
+            "Invalid channel"
+          ],
+          "actualErrors": [
+            "Invalid channel"
+          ],
+          "path": "::Test case #10: should return errors [\"Invalid channel\"] when body {\"workspaceId\":\"0\",\"channelId\":\"invalid_value\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":\"\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "b595801cb0e33ed009336b988e88705f",
+          "timestamp": "2025-07-19T07:35:53.975Z"
+        },
+        {
+          "expectedErrors": [
+            "description expected string,received number"
+          ],
+          "actualErrors": [
+            "description expected string",
+            "received number"
+          ],
+          "path": "::Test case #20: should return errors [\"description expected string,received number\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"description\":123,\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "243424633a858236d52ff1fed832247c",
+          "timestamp": "2025-07-19T07:35:53.976Z"
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [],
+          "path": "::Test case #21: should return errors [] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"content\":\"defaultContent\",\"ref\":\"ref\",\"latitude\":\"10.0324312\",\"longitude\":\"105.7833368\"}",
+          "id": "cb90e2b45b2a56f68a071945840c6fb6",
+          "timestamp": "2025-07-19T07:35:53.976Z"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 31,
+      "rate": 0.8511643758428655
+    },
+    "http_req_duration": {
+      "p(90)": 653.3609,
+      "p(95)": 747.4092499999999,
+      "avg": 171.195564516129,
+      "min": 20.4728,
+      "med": 31.6446,
+      "max": 1118.5338
+    },
+    "http_req_connecting": {
+      "max": 10.5119,
+      "p(90)": 0,
+      "p(95)": 0,
+      "avg": 0.3390935483870968,
+      "min": 0,
+      "med": 0
+    },
+    "http_req_tls_handshaking": {
+      "avg": 0.5575258064516129,
+      "min": 0,
+      "med": 0,
+      "max": 17.2833,
+      "p(90)": 0,
+      "p(95)": 0
+    },
+    "iteration_duration": {
+      "avg": 36415.2118,
+      "min": 36415.2118,
+      "med": 36415.2118,
+      "max": 36415.2118,
+      "p(90)": 36415.2118,
+      "p(95)": 36415.2118
+    },
+    "http_req_waiting": {
+      "p(90)": 649.635,
+      "p(95)": 745.7628500000001,
+      "avg": 167.5673387096774,
+      "min": 14.9305,
+      "med": 27.8134,
+      "max": 1117.4669
+    },
+    "http_req_sending": {
+      "min": 0,
+      "med": 0.6235,
+      "max": 1.601,
+      "p(90)": 1.1513,
+      "p(95)": 1.3746,
+      "avg": 0.6457677419354837
+    },
+    "http_req_receiving": {
+      "p(95)": 13.85305,
+      "avg": 2.982458064516129,
+      "min": 0,
+      "med": 0.3241,
+      "max": 14.7703,
+      "p(90)": 11.3649
+    },
+    "http_req_blocked": {
+      "avg": 0.9168419354838709,
+      "min": 0,
+      "med": 0,
+      "max": 28.4221,
+      "p(90)": 0,
+      "p(95)": 0
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "rate": 0.8511643758428655,
+      "count": 31
+    },
+    "passedTestsMetric": {
+      "count": 11,
+      "rate": 0.3020260688474684
+    },
+    "failedTestsMetric": {
+      "count": 4,
+      "rate": 0.10982766139907943
+    },
+    "warningsMetric": {
+      "count": 16,
+      "rate": 0.4393106455963177
+    }
+  }
+}

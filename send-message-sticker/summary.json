@@ -1,0 +1,365 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 20,
+        "passed": 15,
+        "failed": 5,
+        "warnings": 0,
+        "successRate": "75.00%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "Unsupported permission type"
+          ],
+          "actualErrors": [
+            "Could not resolve permission type"
+          ],
+          "path": "::Test case #7: should return errors [\"Unsupported permission type\"] when body {\"workspaceId\":\"0\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"ref\"}",
+          "id": "9a0a4cd1657eff07d61baf236434d49e",
+          "timestamp": "2025-07-19T07:38:12.337Z",
+          "missing": [
+            "Could not resolve permission type"
+          ],
+          "extra": [
+            "Unsupported permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "stickerId should not be empty"
+          ],
+          "actualErrors": [
+            "stickerId string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #13: should return errors [\"stickerId should not be empty\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"stickerId\":\"\",\"ref\":\"ref\"}",
+          "id": "6598d72163f5df35ae1efb920d41cbe6",
+          "timestamp": "2025-07-19T07:38:12.338Z",
+          "missing": [
+            "stickerId string must contain at least 1 character(s)"
+          ],
+          "extra": [
+            "stickerId should not be empty"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "stickerId should not be null"
+          ],
+          "actualErrors": [
+            "stickerId expected string",
+            "received null"
+          ],
+          "path": "::Test case #14: should return errors [\"stickerId should not be null\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"stickerId\":null,\"ref\":\"ref\"}",
+          "id": "768ec372dc89f18bb290638c18a9cec6",
+          "timestamp": "2025-07-19T07:38:12.338Z",
+          "missing": [
+            "stickerId expected string",
+            "received null"
+          ],
+          "extra": [
+            "stickerId should not be null"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "Message: This sticker has not been exists."
+          ],
+          "actualErrors": [
+            "Sticker not exist"
+          ],
+          "path": "::Test case #15: should return errors [\"Message: This sticker has not been exists.\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"stickerId\":\"invalid_value\",\"ref\":\"ref\"}",
+          "id": "74fd7c13c1b741ecf0f199952427594d",
+          "timestamp": "2025-07-19T07:38:12.338Z",
+          "missing": [
+            "Sticker not exist"
+          ],
+          "extra": [
+            "Message: This sticker has not been exists."
+          ]
+        },
+        {
+          "expectedErrors": [
+            "ref should not be null"
+          ],
+          "actualErrors": [
+            "ref expected string",
+            "received null"
+          ],
+          "path": "::Test case #19: should return errors [\"ref should not be null\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":null}",
+          "id": "bcb0fbd8391dc21131c184283ad5a763",
+          "timestamp": "2025-07-19T07:38:12.338Z",
+          "missing": [
+            "ref expected string",
+            "received null"
+          ],
+          "extra": [
+            "ref should not be null"
+          ]
+        }
+      ],
+      "warnings": [],
+      "passedTests": [
+          {
+            "expectedErrors": [
+              "Could not resolve permission type"
+            ],
+            "actualErrors": [
+              "Could not resolve permission type"
+            ],
+            "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":123,\"channelId\":\"{{channelId}}\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"ref\"}",
+            "id": "9884a38b64bd4505235cd8781ee06bdb",
+            "timestamp": "2025-07-19T07:38:12.337Z"
+          },
+          {
+            "expectedErrors": [
+              "Could not resolve permission type"
+            ],
+            "actualErrors": [
+              "Could not resolve permission type"
+            ],
+            "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"channelId\":\"{{channelId}}\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"ref\"}",
+            "id": "58ccc0574744914cafe1f36e30593f6d",
+            "timestamp": "2025-07-19T07:38:12.337Z"
+          },
+          {
+            "expectedErrors": [
+              "Could not resolve permission type"
+            ],
+            "actualErrors": [
+              "Could not resolve permission type"
+            ],
+            "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"\",\"channelId\":\"{{channelId}}\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"ref\"}",
+            "id": "8ddcc0fe1319c4030248791126225aaa",
+            "timestamp": "2025-07-19T07:38:12.337Z"
+          },
+          {
+            "expectedErrors": [
+              "Could not resolve permission type"
+            ],
+            "actualErrors": [
+              "Could not resolve permission type"
+            ],
+            "path": "::Test case #4: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":null,\"channelId\":\"{{channelId}}\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"ref\"}",
+            "id": "23a2e796e60e9e88b5f72a13ba4adc1b",
+            "timestamp": "2025-07-19T07:38:12.337Z"
+          },
+          {
+            "expectedErrors": [
+              "Invalid channel"
+            ],
+            "actualErrors": [
+              "Invalid channel"
+            ],
+            "path": "::Test case #5: should return errors [\"Invalid channel\"] when body {\"workspaceId\":\"invalid_value\",\"channelId\":\"{{channelId}}\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"ref\"}",
+            "id": "663bbd09ace2aa4429fcadfc6f8348e1",
+            "timestamp": "2025-07-19T07:38:12.337Z"
+          },
+          {
+            "expectedErrors": [
+              "Could not resolve permission type"
+            ],
+            "actualErrors": [
+              "Could not resolve permission type"
+            ],
+            "path": "::Test case #6: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":123,\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"ref\"}",
+            "id": "a1ac9957e970d1bc2f76613d8b7be6ec",
+            "timestamp": "2025-07-19T07:38:12.337Z"
+          },
+          {
+            "expectedErrors": [
+              "Could not resolve permission type"
+            ],
+            "actualErrors": [
+              "Could not resolve permission type"
+            ],
+            "path": "::Test case #8: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":\"\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"ref\"}",
+            "id": "9ac098be1943ad79384f6a9127ca0763",
+            "timestamp": "2025-07-19T07:38:12.337Z"
+          },
+          {
+            "expectedErrors": [
+              "Could not resolve permission type"
+            ],
+            "actualErrors": [
+              "Could not resolve permission type"
+            ],
+            "path": "::Test case #9: should return errors [\"Could not resolve permission type\"] when body {\"workspaceId\":\"0\",\"channelId\":null,\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"ref\"}",
+            "id": "106b3c85a63da2815a44d7a6c3bc4f08",
+            "timestamp": "2025-07-19T07:38:12.337Z"
+          },
+          {
+            "expectedErrors": [
+              "Invalid channel"
+            ],
+            "actualErrors": [
+              "Invalid channel"
+            ],
+            "path": "::Test case #10: should return errors [\"Invalid channel\"] when body {\"workspaceId\":\"0\",\"channelId\":\"invalid_value\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"ref\"}",
+            "id": "cbeab37b88dd7766a9ac2a5301c82124",
+            "timestamp": "2025-07-19T07:38:12.337Z"
+          },
+          {
+            "expectedErrors": [
+              "stickerId expected string,received number"
+            ],
+            "actualErrors": [
+              "stickerId expected string",
+              "received number"
+            ],
+            "path": "::Test case #11: should return errors [\"stickerId expected string,received number\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"stickerId\":123,\"ref\":\"ref\"}",
+            "id": "b462df77c291aec9e0156107d56c285b",
+            "timestamp": "2025-07-19T07:38:12.337Z"
+          },
+          {
+            "expectedErrors": [
+              "stickerId required"
+            ],
+            "actualErrors": [
+              "stickerId required"
+            ],
+            "path": "::Test case #12: should return errors [\"stickerId required\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"ref\":\"ref\"}",
+            "id": "be2ef9a9373fbde58ae35a431cc81bf2",
+            "timestamp": "2025-07-19T07:38:12.338Z"
+          },
+          {
+            "expectedErrors": [
+              "ref expected string,received number"
+            ],
+            "actualErrors": [
+              "ref expected string",
+              "received number"
+            ],
+            "path": "::Test case #16: should return errors [\"ref expected string,received number\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":123}",
+            "id": "18204c7b8271f850fbb5a00b33f3adc8",
+            "timestamp": "2025-07-19T07:38:12.338Z"
+          },
+          {
+            "expectedErrors": [
+              "ref string must contain at least 1 character(s)"
+            ],
+            "actualErrors": [
+              "ref string must contain at least 1 character(s)"
+            ],
+            "path": "::Test case #17: should return errors [\"ref string must contain at least 1 character(s)\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"\"}",
+            "id": "5eb5dd9aa875783c744acaf1eac285d9",
+            "timestamp": "2025-07-19T07:38:12.338Z"
+          },
+          {
+            "expectedErrors": [
+              "ref required"
+            ],
+            "actualErrors": [
+              "ref required"
+            ],
+            "path": "::Test case #18: should return errors [\"ref required\"] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\"}",
+            "id": "4d5f7f2d66339d9dac5b1b726b958efb",
+            "timestamp": "2025-07-19T07:38:12.338Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #20: should return errors [] when body {\"workspaceId\":\"0\",\"channelId\":\"{{channelId}}\",\"stickerId\":\"01JPPHQFHA85NG58H2TYTMCXK0\",\"ref\":\"ref\"}",
+            "id": "9488ab58355ba14ec751ca88d5547fa2",
+            "timestamp": "2025-07-19T07:38:12.338Z"
+          }
+        ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 20,
+      "rate": 0.9145472058035848
+    },
+    "http_req_duration": {
+      "p(90)": 47.28403000000003,
+      "p(95)": 122.39243000000081,
+      "avg": 89.06904499999999,
+      "min": 21.7741,
+      "med": 26.7136,
+      "max": 1219.3998
+    },
+    "http_req_connecting": {
+      "avg": 0.55138,
+      "min": 0,
+      "med": 0,
+      "max": 11.0276,
+      "p(90)": 0,
+      "p(95)": 0.5513800000000079
+    },
+    "http_req_tls_handshaking": {
+      "min": 0,
+      "med": 0,
+      "max": 17.131,
+      "p(90)": 0,
+      "p(95)": 0.8565500000000121,
+      "avg": 0.85655
+    },
+    "iteration_duration": {
+      "min": 21866.8229,
+      "med": 21866.8229,
+      "max": 21866.8229,
+      "p(90)": 21866.8229,
+      "p(95)": 21866.8229,
+      "avg": 21866.8229
+    },
+    "http_req_waiting": {
+      "p(95)": 122.05579000000081,
+      "avg": 88.18728,
+      "min": 20.2739,
+      "med": 24.272599999999997,
+      "max": 1219.0434,
+      "p(90)": 46.207640000000026
+    },
+    "http_req_sending": {
+      "max": 1.0868,
+      "p(90)": 0.83667,
+      "p(95)": 0.8626000000000001,
+      "avg": 0.45687000000000005,
+      "min": 0,
+      "med": 0.5347500000000001
+    },
+    "http_req_receiving": {
+      "max": 4.7205,
+      "p(90)": 0.7351400000000001,
+      "p(95)": 1.0467550000000028,
+      "avg": 0.4248950000000001,
+      "min": 0,
+      "med": 0
+    },
+    "http_req_blocked": {
+      "med": 0,
+      "max": 29.2689,
+      "p(90)": 0,
+      "p(95)": 1.4634450000000208,
+      "avg": 1.4634449999999999,
+      "min": 0
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 20,
+      "rate": 0.9145472058035848
+    },
+    "passedTestsMetric": {
+      "count": 15,
+      "rate": 0.6859104043526886
+    },
+    "failedTestsMetric": {
+      "count": 5,
+      "rate": 0.2286368014508962
+    },
+    "warningsMetric": {
+      "count": 0
+    }
+  }
+}
