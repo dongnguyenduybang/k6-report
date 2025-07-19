@@ -1,0 +1,190 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 5,
+        "passed": 1,
+        "failed": 4,
+        "warnings": 0,
+        "successRate": "20.00%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "userId invalid ulid"
+          ],
+          "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"userId\":123}",
+          "id": "4599c0101e22bd8e138f57039648ffb3",
+          "timestamp": "2025-07-19T04:04:27.683Z",
+          "missing": [
+            "userId invalid ulid"
+          ],
+          "extra": [
+            "Could not resolve permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "userId invalid ulid",
+            "userId string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"userId\":\"\"}",
+          "id": "b299e545c8b7ee9d520eb0d6767906c5",
+          "timestamp": "2025-07-19T04:04:27.684Z",
+          "missing": [
+            "userId invalid ulid",
+            "userId string must contain at least 1 character(s)"
+          ],
+          "extra": [
+            "Could not resolve permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "userId invalid ulid"
+          ],
+          "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"userId\":null}",
+          "id": "3b85fa265510837bee07ecd9c9b3fa7d",
+          "timestamp": "2025-07-19T04:04:27.684Z",
+          "missing": [
+            "userId invalid ulid"
+          ],
+          "extra": [
+            "Could not resolve permission type"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "Unauthorized request"
+          ],
+          "actualErrors": [
+            "userId invalid ulid"
+          ],
+          "path": "::Test case #4: should return errors [\"Unauthorized request\"] when body {\"userId\":\"invalid_value\"}",
+          "id": "eb67d917ae4424fd33233d70af7dd9d8",
+          "timestamp": "2025-07-19T04:04:27.684Z",
+          "missing": [
+            "userId invalid ulid"
+          ],
+          "extra": [
+            "Unauthorized request"
+          ]
+        }
+      ],
+      "warnings": [],
+      "passedTests": [
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #5: should return errors [] when body {\"userId\":\"{{userId}}\"}",
+            "id": "6a487c30622770aafa830af278bdff10",
+            "timestamp": "2025-07-19T04:04:27.684Z"
+          }
+        ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 5,
+      "rate": 0.9604154403762185
+    },
+    "http_req_duration": {
+      "avg": 31.312420000000003,
+      "min": 25.6361,
+      "med": 28.309,
+      "max": 44.4378,
+      "p(90)": 39.57612,
+      "p(95)": 42.00696
+    },
+    "http_req_connecting": {
+      "min": 0,
+      "med": 0,
+      "max": 10.5379,
+      "p(90)": 6.322740000000001,
+      "p(95)": 8.430319999999998,
+      "avg": 2.10758
+    },
+    "http_req_tls_handshaking": {
+      "min": 0,
+      "med": 0,
+      "max": 22.8304,
+      "p(90)": 13.698240000000002,
+      "p(95)": 18.264319999999998,
+      "avg": 4.56608
+    },
+    "iteration_duration": {
+      "min": 5204.6511,
+      "med": 5204.6511,
+      "max": 5204.6511,
+      "p(90)": 5204.6511,
+      "p(95)": 5204.6511,
+      "avg": 5204.6511
+    },
+    "http_req_waiting": {
+      "min": 25.1286,
+      "med": 28.309,
+      "max": 43.919,
+      "p(90)": 39.07676,
+      "p(95)": 41.497879999999995,
+      "avg": 30.948140000000002
+    },
+    "http_req_sending": {
+      "avg": 0.27024,
+      "min": 0,
+      "med": 0.3249,
+      "max": 0.5188,
+      "p(90)": 0.51428,
+      "p(95)": 0.51654
+    },
+    "http_req_receiving": {
+      "med": 0,
+      "max": 0.4702,
+      "p(90)": 0.28212000000000004,
+      "p(95)": 0.37615999999999994,
+      "avg": 0.09404,
+      "min": 0
+    },
+    "http_req_blocked": {
+      "min": 0,
+      "med": 0,
+      "max": 36.3569,
+      "p(90)": 21.814140000000005,
+      "p(95)": 29.085519999999995,
+      "avg": 7.271380000000001
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 5,
+      "rate": 0.9604154403762185
+    },
+    "passedTestsMetric": {
+      "count": 1,
+      "rate": 0.19208308807524369
+    },
+    "failedTestsMetric": {
+      "count": 4,
+      "rate": 0.7683323523009747
+    },
+    "warningsMetric": {
+      "count": 0
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 4,
+        "passed": 3,
+        "failed": 0,
+        "warnings": 1,
+        "successRate": "75.00%"
+      },
+      "failedTests": [],
+      "warnings": [
+          {
+            "expectedErrors": [
+              "limit should not be empty",
+              "limit range from 1 to 500"
+            ],
+            "actualErrors": [
+              "limit range from 1 to 500"
+            ],
+            "path": "::Test case #3: should return errors [\"limit should not be empty\",\"limit range from 1 to 500\"] when body {\"limit\":\"\"}",
+            "id": "677f6d9f2db12a03f924dfdb5284ed3f",
+            "timestamp": "2025-07-19T04:09:58.305Z",
+            "warningMessage": "Actual errors include expected errors but don't match exactly"
+          }
+        ],
+      "passedTests": [
+          {
+            "expectedErrors": [
+              "limit expected number,received nan"
+            ],
+            "actualErrors": [
+              "limit expected number",
+              "received nan"
+            ],
+            "path": "::Test case #1: should return errors [\"limit expected number,received nan\"] when body {\"limit\":\"invalid_number\"}",
+            "id": "a8183b1137c7c0f271dc41b2a8277dbb",
+            "timestamp": "2025-07-19T04:09:58.305Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #2: should return errors [] when body {}",
+            "id": "9eaa89f3956341387247d4723c000c4a",
+            "timestamp": "2025-07-19T04:09:58.305Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #4: should return errors [] when body {\"limit\":1}",
+            "id": "d8b890cf533e754a5cd0c4e2160bfb11",
+            "timestamp": "2025-07-19T04:09:58.306Z"
+          }
+        ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 4,
+      "rate": 0.9490656176138226
+    },
+    "http_req_duration": {
+      "avg": 38.406875,
+      "min": 31.5223,
+      "med": 38.42875,
+      "max": 45.2477,
+      "p(90)": 44.98736,
+      "p(95)": 45.11753
+    },
+    "http_req_connecting": {
+      "p(90)": 14.049840000000005,
+      "p(95)": 17.060519999999993,
+      "avg": 5.0178,
+      "min": 0,
+      "med": 0,
+      "max": 20.0712
+    },
+    "http_req_tls_handshaking": {
+      "med": 0,
+      "max": 27.5483,
+      "p(90)": 19.283810000000006,
+      "p(95)": 23.41605499999999,
+      "avg": 6.887075,
+      "min": 0
+    },
+    "iteration_duration": {
+      "p(90)": 4212.4576,
+      "p(95)": 4212.4576,
+      "avg": 4212.4576,
+      "min": 4212.4576,
+      "med": 4212.4576,
+      "max": 4212.4576
+    },
+    "http_req_waiting": {
+      "max": 43.045,
+      "p(90)": 42.53164,
+      "p(95)": 42.78832,
+      "avg": 36.7984,
+      "min": 31.2925,
+      "med": 36.42805
+    },
+    "http_req_sending": {
+      "avg": 0.41752500000000003,
+      "min": 0,
+      "med": 0.5144500000000001,
+      "max": 0.6412,
+      "p(90)": 0.60361,
+      "p(95)": 0.622405
+    },
+    "http_req_receiving": {
+      "avg": 1.1909500000000002,
+      "min": 0,
+      "med": 0.6829000000000001,
+      "max": 3.398,
+      "p(90)": 2.6251700000000007,
+      "p(95)": 3.0115849999999993
+    },
+    "http_req_blocked": {
+      "avg": 12.107,
+      "min": 0,
+      "med": 0,
+      "max": 48.428,
+      "p(90)": 33.89960000000001,
+      "p(95)": 41.16379999999998
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 4,
+      "rate": 0.9490656176138226
+    },
+    "passedTestsMetric": {
+      "count": 3,
+      "rate": 0.711799213210367
+    },
+    "failedTestsMetric": {
+      "count": 0,
+      "rate": 0
+    },
+    "warningsMetric": {
+      "count": 1,
+      "rate": 0.23726640440345564
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 4,
+        "passed": 3,
+        "failed": 0,
+        "warnings": 1,
+        "successRate": "75.00%"
+      },
+      "failedTests": [],
+      "warnings": [
+          {
+            "expectedErrors": [
+              "limit should not be empty",
+              "limit range from 1 to 500"
+            ],
+            "actualErrors": [
+              "limit range from 1 to 500"
+            ],
+            "path": "::Test case #3: should return errors [\"limit should not be empty\",\"limit range from 1 to 500\"] when body {\"limit\":\"\"}",
+            "id": "677f6d9f2db12a03f924dfdb5284ed3f",
+            "timestamp": "2025-07-19T04:05:33.971Z",
+            "warningMessage": "Actual errors include expected errors but don't match exactly"
+          }
+        ],
+      "passedTests": [
+          {
+            "expectedErrors": [
+              "limit expected number,received nan"
+            ],
+            "actualErrors": [
+              "limit expected number",
+              "received nan"
+            ],
+            "path": "::Test case #1: should return errors [\"limit expected number,received nan\"] when body {\"limit\":\"invalid_number\"}",
+            "id": "a8183b1137c7c0f271dc41b2a8277dbb",
+            "timestamp": "2025-07-19T04:05:33.971Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #2: should return errors [] when body {}",
+            "id": "9eaa89f3956341387247d4723c000c4a",
+            "timestamp": "2025-07-19T04:05:33.971Z"
+          },
+          {
+            "expectedErrors": [],
+            "actualErrors": [],
+            "path": "::Test case #4: should return errors [] when body {\"limit\":1}",
+            "id": "d8b890cf533e754a5cd0c4e2160bfb11",
+            "timestamp": "2025-07-19T04:05:33.971Z"
+          }
+        ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 4,
+      "rate": 0.95165943591862
+    },
+    "http_req_duration": {
+      "avg": 39.19475,
+      "min": 24.2113,
+      "med": 38.558400000000006,
+      "max": 55.4509,
+      "p(90)": 53.2312,
+      "p(95)": 54.341049999999996
+    },
+    "http_req_connecting": {
+      "avg": 2.533725,
+      "min": 0,
+      "med": 0,
+      "max": 10.1349,
+      "p(90)": 7.094430000000002,
+      "p(95)": 8.614664999999997
+    },
+    "http_req_tls_handshaking": {
+      "min": 0,
+      "med": 0,
+      "max": 21.2315,
+      "p(90)": 14.862050000000004,
+      "p(95)": 18.046774999999993,
+      "avg": 5.307875
+    },
+    "iteration_duration": {
+      "max": 4200.6807,
+      "p(90)": 4200.6807,
+      "p(95)": 4200.6807,
+      "avg": 4200.6807,
+      "min": 4200.6807,
+      "med": 4200.6807
+    },
+    "http_req_waiting": {
+      "avg": 38.444525,
+      "min": 23.328,
+      "med": 37.7981,
+      "max": 54.8539,
+      "p(90)": 52.528090000000006,
+      "p(95)": 53.690995
+    },
+    "http_req_sending": {
+      "avg": 0.750225,
+      "min": 0.5699,
+      "med": 0.74015,
+      "max": 0.9507,
+      "p(90)": 0.93048,
+      "p(95)": 0.9405899999999999
+    },
+    "http_req_receiving": {
+      "p(90)": 0,
+      "p(95)": 0,
+      "avg": 0,
+      "min": 0,
+      "med": 0,
+      "max": 0
+    },
+    "http_req_blocked": {
+      "p(90)": 22.419810000000005,
+      "p(95)": 27.22405499999999,
+      "avg": 8.007075,
+      "min": 0,
+      "med": 0,
+      "max": 32.0283
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 4,
+      "rate": 0.95165943591862
+    },
+    "passedTestsMetric": {
+      "rate": 0.713744576938965,
+      "count": 3
+    },
+    "failedTestsMetric": {
+      "count": 0,
+      "rate": 0
+    },
+    "warningsMetric": {
+      "count": 1,
+      "rate": 0.237914858979655
+    }
+  }
+}
