@@ -1,0 +1,225 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 9,
+        "passed": 4,
+        "failed": 1,
+        "warnings": 4,
+        "successRate": "44.44%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "ringbackToneId should not be empty",
+            "ringbackToneId invalid ulid"
+          ],
+          "actualErrors": [
+            "ringbackToneId invalid ulid",
+            "ringbackToneId string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #7: should return errors [\"ringbackToneId should not be empty\",\"ringbackToneId invalid ulid\"] when body {\"name\":\"channelname1\",\"ringbackToneId\":\"\"}",
+          "id": "8f2aad7cfc699e01f219ab7c77a12d6b",
+          "timestamp": "2025-07-21T02:25:04.220Z",
+          "missing": [
+            "ringbackToneId string must contain at least 1 character(s)"
+          ],
+          "extra": [
+            "ringbackToneId should not be empty"
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "expectedErrors": [
+            "name should not be empty",
+            "name string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "name string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #2: should return errors [\"name should not be empty\",\"name string must contain at least 1 character(s)\"] when body {\"name\":\"\",\"ringbackToneId\":\"{{ringbackToneId}}\"}",
+          "id": "e633d659978d3a62581fd128e8464e39",
+          "timestamp": "2025-07-21T02:25:04.220Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "name string must contain at most 255 character(s)"
+          ],
+          "actualErrors": [],
+          "path": "::Test case #3: should return errors [\"name string must contain at most 255 character(s)\"] when body {\"name\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"ringbackToneId\":\"{{ringbackToneId}}\"}",
+          "id": "93fcee1d35641e29b007b6a16e40c642",
+          "timestamp": "2025-07-21T02:25:04.220Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "ringbackToneId invalid ulid",
+            "ringbackToneId expected string,received number"
+          ],
+          "actualErrors": [
+            "ringbackToneId expected string",
+            "received number"
+          ],
+          "path": "::Test case #5: should return errors [\"ringbackToneId invalid ulid\",\"ringbackToneId expected string,received number\"] when body {\"name\":\"channelname1\",\"ringbackToneId\":123}",
+          "id": "8b26913dda9b2ea2fb634c0c98dafa63",
+          "timestamp": "2025-07-21T02:25:04.220Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "ringbackToneId required",
+            "ringbackToneId invalid ulid"
+          ],
+          "actualErrors": [
+            "ringbackToneId required"
+          ],
+          "path": "::Test case #6: should return errors [\"ringbackToneId required\",\"ringbackToneId invalid ulid\"] when body {\"name\":\"channelname1\"}",
+          "id": "6fb458c9d3fb7dc60229ce6e10d8e595",
+          "timestamp": "2025-07-21T02:25:04.220Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        }
+      ],
+      "passedTests": [
+        {
+          "expectedErrors": [
+            "name expected string,received number"
+          ],
+          "actualErrors": [
+            "name expected string",
+            "received number"
+          ],
+          "path": "::Test case #1: should return errors [\"name expected string,received number\"] when body {\"name\":123,\"ringbackToneId\":\"{{ringbackToneId}}\"}",
+          "id": "d776ee00b0f415d91c1a0dec1c13fdde",
+          "timestamp": "2025-07-21T02:25:04.220Z"
+        },
+        {
+          "expectedErrors": [
+            "name required"
+          ],
+          "actualErrors": [
+            "name required"
+          ],
+          "path": "::Test case #4: should return errors [\"name required\"] when body {\"ringbackToneId\":\"{{ringbackToneId}}\"}",
+          "id": "21db8ebf846721f08ad740a37768fa02",
+          "timestamp": "2025-07-21T02:25:04.220Z"
+        },
+        {
+          "expectedErrors": [
+            "ringbackToneId invalid ulid"
+          ],
+          "actualErrors": [
+            "ringbackToneId invalid ulid"
+          ],
+          "path": "::Test case #8: should return errors [\"ringbackToneId invalid ulid\"] when body {\"name\":\"channelname1\",\"ringbackToneId\":\"invalid_ULID\"}",
+          "id": "eb0c9320145785456a91c5e9e941ad1c",
+          "timestamp": "2025-07-21T02:25:04.221Z"
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [],
+          "path": "::Test case #9: should return errors [] when body {\"name\":\"channelname1\",\"ringbackToneId\":\"{{ringbackToneId}}\"}",
+          "id": "fb06a83c44e712d35aa11ce76e73a96f",
+          "timestamp": "2025-07-21T02:25:04.221Z"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 9,
+      "rate": 0.9614136421091997
+    },
+    "http_req_duration": {
+      "avg": 34.266777777777776,
+      "min": 24.5219,
+      "med": 29.0916,
+      "max": 61.3063,
+      "p(90)": 55.74862,
+      "p(95)": 58.52746
+    },
+    "http_req_connecting": {
+      "max": 11.456,
+      "p(90)": 2.291200000000002,
+      "p(95)": 6.873599999999995,
+      "avg": 1.2728888888888887,
+      "min": 0,
+      "med": 0
+    },
+    "http_req_tls_handshaking": {
+      "min": 0,
+      "med": 0,
+      "max": 17.1208,
+      "p(90)": 3.4241600000000028,
+      "p(95)": 10.272479999999993,
+      "avg": 1.902311111111111
+    },
+    "iteration_duration": {
+      "avg": 9359.2136,
+      "min": 9359.2136,
+      "med": 9359.2136,
+      "max": 9359.2136,
+      "p(90)": 9359.2136,
+      "p(95)": 9359.2136
+    },
+    "http_req_waiting": {
+      "p(95)": 57.363499999999995,
+      "avg": 33.19195555555555,
+      "min": 23.9401,
+      "med": 28.398,
+      "max": 60.3217,
+      "p(90)": 54.405300000000004
+    },
+    "http_req_sending": {
+      "avg": 0.6654666666666667,
+      "min": 0.4349,
+      "med": 0.5195,
+      "max": 1.3071,
+      "p(90)": 0.9223800000000001,
+      "p(95)": 1.1147399999999998
+    },
+    "http_req_receiving": {
+      "avg": 0.4093555555555556,
+      "min": 0,
+      "med": 0.4753,
+      "max": 0.7679,
+      "p(90)": 0.7626999999999999,
+      "p(95)": 0.7653
+    },
+    "http_req_blocked": {
+      "max": 29.1394,
+      "p(90)": 5.827880000000005,
+      "p(95)": 17.483639999999987,
+      "avg": 3.237711111111111,
+      "min": 0,
+      "med": 0
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 9,
+      "rate": 0.9614136421091997
+    },
+    "passedTestsMetric": {
+      "count": 4,
+      "rate": 0.4272949520485332
+    },
+    "failedTestsMetric": {
+      "count": 1,
+      "rate": 0.1068237380121333
+    },
+    "warningsMetric": {
+      "count": 4,
+      "rate": 0.4272949520485332
+    }
+  }
+}

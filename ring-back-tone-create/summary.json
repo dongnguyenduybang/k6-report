@@ -1,0 +1,242 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 10,
+        "passed": 6,
+        "failed": 2,
+        "warnings": 2,
+        "successRate": "60.00%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "name should not be null"
+          ],
+          "actualErrors": [
+            "name expected string",
+            "received null"
+          ],
+          "path": "::Test case #5: should return errors [\"name should not be null\"] when body {\"name\":null,\"ringbackTonePath\":\"https://fs.ugc.ziicdn.net/01JEZJ0GPMSHH2RVX9QTSJJNRX/heic_300kB.heic\"}",
+          "id": "1a14144bcb83bfc3b771f5624ef5dfc1",
+          "timestamp": "2025-07-21T02:17:30.832Z",
+          "missing": [
+            "name expected string",
+            "received null"
+          ],
+          "extra": [
+            "name should not be null"
+          ]
+        },
+        {
+          "expectedErrors": [
+            "ringbackTonePath should not be null"
+          ],
+          "actualErrors": [
+            "ringbackTonePath expected string",
+            "received null"
+          ],
+          "path": "::Test case #9: should return errors [\"ringbackTonePath should not be null\"] when body {\"name\":\"channelname1\",\"ringbackTonePath\":null}",
+          "id": "3e2da5d5a307d63da4bcc0457f95106f",
+          "timestamp": "2025-07-21T02:17:30.832Z",
+          "missing": [
+            "ringbackTonePath expected string",
+            "received null"
+          ],
+          "extra": [
+            "ringbackTonePath should not be null"
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "expectedErrors": [
+            "name string must contain at most 255 character(s)"
+          ],
+          "actualErrors": [],
+          "path": "::Test case #3: should return errors [\"name string must contain at most 255 character(s)\"] when body {\"name\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"ringbackTonePath\":\"https://fs.ugc.ziicdn.net/01JEZJ0GPMSHH2RVX9QTSJJNRX/heic_300kB.heic\"}",
+          "id": "8673cf9f9a5bdf18910c8e770e2206ba",
+          "timestamp": "2025-07-21T02:17:30.832Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "ringbackTonePath required",
+            "ringbackTonePath invalid url"
+          ],
+          "actualErrors": [
+            "ringbackTonePath required"
+          ],
+          "path": "::Test case #8: should return errors [\"ringbackTonePath required\",\"ringbackTonePath invalid url\"] when body {\"name\":\"channelname1\"}",
+          "id": "8a2aa4af67a230e8f65ab57d04e0b780",
+          "timestamp": "2025-07-21T02:17:30.832Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        }
+      ],
+      "passedTests": [
+        {
+          "expectedErrors": [
+            "name expected string,received number"
+          ],
+          "actualErrors": [
+            "name expected string",
+            "received number"
+          ],
+          "path": "::Test case #1: should return errors [\"name expected string,received number\"] when body {\"name\":123,\"ringbackTonePath\":\"https://fs.ugc.ziicdn.net/01JEZJ0GPMSHH2RVX9QTSJJNRX/heic_300kB.heic\"}",
+          "id": "d8d095427e5691a272f7d03cd9e0c4df",
+          "timestamp": "2025-07-21T02:17:30.832Z"
+        },
+        {
+          "expectedErrors": [
+            "name string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "name string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #2: should return errors [\"name string must contain at least 1 character(s)\"] when body {\"name\":\"\",\"ringbackTonePath\":\"https://fs.ugc.ziicdn.net/01JEZJ0GPMSHH2RVX9QTSJJNRX/heic_300kB.heic\"}",
+          "id": "6a0938adf96c608dd1651be2d62d5384",
+          "timestamp": "2025-07-21T02:17:30.832Z"
+        },
+        {
+          "expectedErrors": [
+            "name required"
+          ],
+          "actualErrors": [
+            "name required"
+          ],
+          "path": "::Test case #4: should return errors [\"name required\"] when body {\"ringbackTonePath\":\"https://fs.ugc.ziicdn.net/01JEZJ0GPMSHH2RVX9QTSJJNRX/heic_300kB.heic\"}",
+          "id": "f305c7ea904b861659aa52ca5e673c16",
+          "timestamp": "2025-07-21T02:17:30.832Z"
+        },
+        {
+          "expectedErrors": [
+            "ringbackTonePath expected string,received number"
+          ],
+          "actualErrors": [
+            "ringbackTonePath expected string",
+            "received number"
+          ],
+          "path": "::Test case #6: should return errors [\"ringbackTonePath expected string,received number\"] when body {\"name\":\"channelname1\",\"ringbackTonePath\":123}",
+          "id": "e0328edbebb97f1ac359f96e5fd3c926",
+          "timestamp": "2025-07-21T02:17:30.832Z"
+        },
+        {
+          "expectedErrors": [
+            "ringbackTonePath invalid url",
+            "ringbackTonePath string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "ringbackTonePath invalid url",
+            "ringbackTonePath string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #7: should return errors [\"ringbackTonePath invalid url\",\"ringbackTonePath string must contain at least 1 character(s)\"] when body {\"name\":\"channelname1\",\"ringbackTonePath\":\"\"}",
+          "id": "991a9f7849949e508b24edc00b39ded7",
+          "timestamp": "2025-07-21T02:17:30.832Z"
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [],
+          "path": "::Test case #10: should return errors [] when body {\"name\":\"channelname1\",\"ringbackTonePath\":\"https://fs.ugc.ziicdn.net/01JEZJ0GPMSHH2RVX9QTSJJNRX/heic_300kB.heic\"}",
+          "id": "167bc06870629c500be56fe2255ff22f",
+          "timestamp": "2025-07-21T02:17:30.832Z"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 10,
+      "rate": 0.9411310394249297
+    },
+    "http_req_duration": {
+      "avg": 55.11445,
+      "min": 25.5961,
+      "med": 33.06885,
+      "max": 128.6111,
+      "p(90)": 104.60909,
+      "p(95)": 116.61009499999997
+    },
+    "http_req_connecting": {
+      "avg": 1.21214,
+      "min": 0,
+      "med": 0,
+      "max": 12.1214,
+      "p(90)": 1.2121399999999956,
+      "p(95)": 6.666769999999987
+    },
+    "http_req_tls_handshaking": {
+      "avg": 2.70345,
+      "min": 0,
+      "med": 0,
+      "max": 27.0345,
+      "p(90)": 2.7034499999999904,
+      "p(95)": 14.868974999999972
+    },
+    "iteration_duration": {
+      "p(95)": 10623.7623,
+      "avg": 10623.7623,
+      "min": 10623.7623,
+      "med": 10623.7623,
+      "max": 10623.7623,
+      "p(90)": 10623.7623
+    },
+    "http_req_waiting": {
+      "med": 29.9176,
+      "max": 125.1632,
+      "p(90)": 103.79108,
+      "p(95)": 114.47713999999998,
+      "avg": 50.60522,
+      "min": 13.7184
+    },
+    "http_req_sending": {
+      "avg": 0.6559999999999999,
+      "min": 0,
+      "med": 0.6912,
+      "max": 1.3069,
+      "p(90)": 1.1689299999999998,
+      "p(95)": 1.2379149999999999
+    },
+    "http_req_receiving": {
+      "p(95)": 12.750474999999998,
+      "avg": 3.85323,
+      "min": 0,
+      "med": 0,
+      "max": 13.6174,
+      "p(90)": 11.883549999999998
+    },
+    "http_req_blocked": {
+      "p(95)": 21.832689999999957,
+      "avg": 3.9695799999999997,
+      "min": 0,
+      "med": 0,
+      "max": 39.6958,
+      "p(90)": 3.969579999999986
+    },
+    "vus": {
+      "max": 1,
+      "value": 1,
+      "min": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "count": 10,
+      "rate": 0.9411310394249297
+    },
+    "passedTestsMetric": {
+      "count": 6,
+      "rate": 0.5646786236549578
+    },
+    "failedTestsMetric": {
+      "count": 2,
+      "rate": 0.18822620788498595
+    },
+    "warningsMetric": {
+      "count": 2,
+      "rate": 0.18822620788498595
+    }
+  }
+}
