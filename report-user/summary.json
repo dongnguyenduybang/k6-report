@@ -1,0 +1,312 @@
+{
+  "testResults": {
+    "detailedResults": {
+      "summary": {
+        "totalTests": 17,
+        "passed": 10,
+        "failed": 4,
+        "warnings": 3,
+        "successRate": "58.82%"
+      },
+      "failedTests": [
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "userId expected string, received number"
+          ],
+          "path": "::Test case #1: should return errors [\"Could not resolve permission type\"] when body {\"userId\":123,\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "ec5d1bbd03d8273cdcacbe02ae481df9",
+          "timestamp": "2025-07-21T07:16:07.177Z",
+          "missing": [
+            "userId expected string, received number"
+          ],
+          "extra": [
+            "\"Could not resolve permission type\""
+          ]
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "userId required"
+          ],
+          "path": "::Test case #2: should return errors [\"Could not resolve permission type\"] when body {\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "0bd73f68255ee182d125acee03e2ebb8",
+          "timestamp": "2025-07-21T07:16:07.177Z",
+          "missing": [
+            "userId required"
+          ],
+          "extra": [
+            "\"Could not resolve permission type\""
+          ]
+        },
+        {
+          "expectedErrors": [
+            "Could not resolve permission type"
+          ],
+          "actualErrors": [
+            "userId invalid ulid",
+            "userId string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #3: should return errors [\"Could not resolve permission type\"] when body {\"userId\":\"\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "e233aa99b2f67b245f6d8336eb7f9951",
+          "timestamp": "2025-07-21T07:16:07.178Z",
+          "missing": [
+            "userId invalid ulid",
+            "userId string must contain at least 1 character(s)"
+          ],
+          "extra": [
+            "\"Could not resolve permission type\""
+          ]
+        },
+        {
+          "expectedErrors": [
+            "Unauthorized request"
+          ],
+          "actualErrors": [
+            "userId invalid ulid"
+          ],
+          "path": "::Test case #4: should return errors [\"Unauthorized request\"] when body {\"userId\":\"invalid_value\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "8868c0bf288c83ae334296bce4af61b3",
+          "timestamp": "2025-07-21T07:16:07.178Z",
+          "missing": [
+            "userId invalid ulid"
+          ],
+          "extra": [
+            "\"Unauthorized request\""
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "expectedErrors": [
+            "reportCategory required\",\"reportCategory invalid enum value. Expected 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 20,received 'undefined'"
+          ],
+          "actualErrors": [
+            "reportCategory required"
+          ],
+          "path": "::Test case #8: should return errors [\"reportCategory required\",\"reportCategory invalid enum value. Expected 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 20,received 'undefined'\"] when body {\"userId\":\"{{userId1}}\",\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "12e395e45ab3bb2c0ed0e0cb06c53980",
+          "timestamp": "2025-07-21T07:16:07.178Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "reportCategory should not be empty\",\"reportCategory invalid enum value. Expected 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 20,received ''"
+          ],
+          "actualErrors": [
+            "reportCategory invalid enum value. Expected 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 20, received ''"
+          ],
+          "path": "::Test case #9: should return errors [\"reportCategory should not be empty\",\"reportCategory invalid enum value. Expected 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 20,received ''\"] when body {\"userId\":\"{{userId1}}\",\"reportCategory\":\"\",\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "553c8282b12855f4964b08017e31fbed",
+          "timestamp": "2025-07-21T07:16:07.178Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        },
+        {
+          "expectedErrors": [
+            "reportReason should not be empty",
+            "reportReason string must contain at least 1 character(s)"
+          ],
+          "actualErrors": [
+            "reportReason string must contain at least 1 character(s)"
+          ],
+          "path": "::Test case #11: should return errors [\"reportReason should not be empty\",\"reportReason string must contain at least 1 character(s)\"] when body {\"userId\":\"{{userId1}}\",\"reportCategory\":1,\"reportReason\":\"\",\"pretendingTo\":1}",
+          "id": "8fb1d892b7f21ef55ab27a054ef4164a",
+          "timestamp": "2025-07-21T07:16:07.179Z",
+          "warningMessage": "Actual errors include expected errors but don't match exactly"
+        }
+      ],
+      "passedTests": [
+        {
+          "expectedErrors": [
+            "reportCategory invalid enum value. Expected 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 20,received 'invalid_enum_value'"
+          ],
+          "actualErrors": [
+            "reportCategory invalid enum value. Expected 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 20, received 'invalid_enum_value'"
+          ],
+          "path": "::Test case #5: should return errors [\"reportCategory invalid enum value. Expected 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 20,received 'invalid_enum_value'\"] when body {\"userId\":\"{{userId1}}\",\"reportCategory\":\"invalid_enum_value\",\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "d63131477525af5bc79e154cc2f01f65",
+          "timestamp": "2025-07-21T07:16:07.178Z"
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [],
+          "path": "::Test case #6: should return errors [] when body {\"userId\":\"{{userId1}}\",\"reportCategory\":20,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "799524cedd9648402021ecd7103fbf92",
+          "timestamp": "2025-07-21T07:16:07.178Z"
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [],
+          "path": "::Test case #7: should return errors [] when body {\"userId\":\"{{userId1}}\",\"reportCategory\":3,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "d52b7c96911d5c486f41e16cc5cfe2c0",
+          "timestamp": "2025-07-21T07:16:07.178Z"
+        },
+        {
+          "expectedErrors": [
+            "reportReason expected string,received number"
+          ],
+          "actualErrors": [
+            "reportReason expected string, received number"
+          ],
+          "path": "::Test case #10: should return errors [\"reportReason expected string,received number\"] when body {\"userId\":\"{{userId1}}\",\"reportCategory\":1,\"reportReason\":123,\"pretendingTo\":1}",
+          "id": "e3c6f057ae27dc010416a383bd5aa327",
+          "timestamp": "2025-07-21T07:16:07.178Z"
+        },
+        {
+          "expectedErrors": [
+            "reportReason string must contain at most 255 character(s)"
+          ],
+          "actualErrors": [
+            "reportReason string must contain at most 255 character(s)"
+          ],
+          "path": "::Test case #12: should return errors [\"reportReason string must contain at most 255 character(s)\"] when body {\"userId\":\"{{userId1}}\",\"reportCategory\":1,\"reportReason\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"pretendingTo\":1}",
+          "id": "d4aa143e118b512bd29d43f6910de7bf",
+          "timestamp": "2025-07-21T07:16:07.179Z"
+        },
+        {
+          "expectedErrors": [
+            "reportReason string must contain at most 255 character(s)"
+          ],
+          "actualErrors": [
+            "reportReason string must contain at most 255 character(s)"
+          ],
+          "path": "::Test case #13: should return errors [\"reportReason string must contain at most 255 character(s)\"] when body {\"userId\":\"{{userId1}}\",\"reportCategory\":1,\"reportReason\":\"🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀\",\"pretendingTo\":1}",
+          "id": "eb3587f2bd72586451046ff6bc118e6d",
+          "timestamp": "2025-07-21T07:16:07.182Z"
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [],
+          "path": "::Test case #14: should return errors [] when body {\"userId\":\"{{userId1}}\",\"reportCategory\":1,\"pretendingTo\":1}",
+          "id": "bd0732f2289886e90093031d8c5ec2ac",
+          "timestamp": "2025-07-21T07:16:07.182Z"
+        },
+        {
+          "expectedErrors": [
+            "pretendingTo invalid enum value. Expected 0 | 1 | 2 | 3,received 'invalid_enum_value'"
+          ],
+          "actualErrors": [
+            "pretendingTo invalid enum value. Expected 0 | 1 | 2 | 3, received 'invalid_enum_value'"
+          ],
+          "path": "::Test case #15: should return errors [\"pretendingTo invalid enum value. Expected 0 | 1 | 2 | 3,received 'invalid_enum_value'\"] when body {\"userId\":\"{{userId1}}\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":\"invalid_enum_value\"}",
+          "id": "1ddf34861f4aa6d181db50367f9af19d",
+          "timestamp": "2025-07-21T07:16:07.182Z"
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [],
+          "path": "::Test case #16: should return errors [] when body {\"userId\":\"{{userId1}}\",\"reportCategory\":1,\"reportReason\":\"default report reason\"}",
+          "id": "7afe541278f09321953e3420c6f85aab",
+          "timestamp": "2025-07-21T07:16:07.182Z"
+        },
+        {
+          "expectedErrors": [],
+          "actualErrors": [],
+          "path": "::Test case #17: should return errors [] when body {\"userId\":\"{{userId1}}\",\"reportCategory\":1,\"reportReason\":\"default report reason\",\"pretendingTo\":1}",
+          "id": "cb702be2a75ecf7ebb30ea43c938ef36",
+          "timestamp": "2025-07-21T07:16:07.182Z"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "http_reqs": {
+      "count": 17,
+      "rate": 0.9498656336836926
+    },
+    "http_req_duration": {
+      "p(90)": 85.05902,
+      "p(95)": 105.13161999999998,
+      "avg": 46.65901176470588,
+      "min": 24.7705,
+      "med": 31.2358,
+      "max": 131.5413
+    },
+    "http_req_connecting": {
+      "min": 0,
+      "med": 0,
+      "max": 8.779,
+      "p(90)": 0,
+      "p(95)": 1.7557999999999938,
+      "avg": 0.5164117647058823
+    },
+    "http_req_tls_handshaking": {
+      "avg": 1.3109176470588235,
+      "min": 0,
+      "med": 0,
+      "max": 22.2856,
+      "p(90)": 0,
+      "p(95)": 4.457119999999984
+    },
+    "iteration_duration": {
+      "avg": 17891.8644,
+      "min": 17891.8644,
+      "med": 17891.8644,
+      "max": 17891.8644,
+      "p(90)": 17891.8644,
+      "p(95)": 17891.8644
+    },
+    "http_req_waiting": {
+      "max": 130.9146,
+      "p(90)": 84.53496,
+      "p(95)": 104.39723999999998,
+      "avg": 45.23191176470588,
+      "min": 23.0272,
+      "med": 29.5523
+    },
+    "http_req_sending": {
+      "med": 0.7613,
+      "max": 5.8531,
+      "p(90)": 1.62698,
+      "p(95)": 2.7588599999999976,
+      "avg": 1.0941647058823527,
+      "min": 0
+    },
+    "http_req_receiving": {
+      "med": 0,
+      "max": 2.0071,
+      "p(90)": 1.0404200000000003,
+      "p(95)": 1.6848599999999998,
+      "avg": 0.3329352941176471,
+      "min": 0
+    },
+    "http_req_blocked": {
+      "min": 0,
+      "med": 0,
+      "max": 32.3382,
+      "p(90)": 0,
+      "p(95)": 6.467639999999977,
+      "avg": 1.9022470588235294
+    },
+    "vus": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "vus_max": {
+      "value": 1,
+      "min": 1,
+      "max": 1
+    },
+    "totalTestsMetric": {
+      "rate": 0.9498656336836926,
+      "count": 17
+    },
+    "passedTestsMetric": {
+      "count": 10,
+      "rate": 0.5587444904021721
+    },
+    "failedTestsMetric": {
+      "rate": 0.22349779616086884,
+      "count": 4
+    },
+    "warningsMetric": {
+      "count": 3,
+      "rate": 0.16762334712065163
+    }
+  }
+}
